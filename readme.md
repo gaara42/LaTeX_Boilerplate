@@ -78,3 +78,9 @@ Go to your personal LaTeX projects directory (or wherever) and clone the reposit
 * Windows users: make sure to include pandoc in your `PATH` environment variable.
 * `convert\0HTMLtoLaTeX.bat` ask for an output file name and converts `convert\0HtoL.html` to a .tex file.
 * `convert\0LaTeXtoHTML.bat` ask for an output file name and converts `convert\0LtoH.tex` to an .html file.
+
+###License
+
+Copyright (C) 2012 Biafra Ahanonu <bahanonu@gmail.com>
+
+This program is free software: you can redistribute it and/or modify it under the terms of the [GNU](http://www.gnu.org/licenses/gpl.html). Attribution is appreciated, but not required, if parts of the software are used elsewhere.
