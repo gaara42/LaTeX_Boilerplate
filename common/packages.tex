@@ -1,0 +1,109 @@
+%biafra ahanonu
+%LaTeX_Boilerplate
+%updated: 2012.12.01
+%This document contains all the package loaded, add/remove at will
+
+%Declare type, book is just one
+%a4 is better looking, remove if in USA
+\documentclass[oneside,12pt,a4paper]{book}
+
+%Use key packages for more advanced macros
+% \usepackage{keyval}
+\usepackage{pgfkeys}
+
+%Graphics/Image packages
+\usepackage{graphicx,eso-pic}
+\usepackage{stfloats}
+\usepackage{float}
+\usepackage{subfig}
+\usepackage{caption}
+\usepackage{wrapfig}
+
+%For special symbols
+\usepackage{gensymb}
+
+%Set line spacing
+\usepackage{setspace}
+
+%Insertion of pre-formatted text (e.g. code)
+\usepackage{verbatim}
+
+%Manipulate margins
+\usepackage{packages/simplemargins}
+%Underline headers
+\usepackage{underlin}
+%Modify headers
+\usepackage{fancyhdr}
+
+%Typeset mathematical functions
+\usepackage{mathtools}
+
+%Clickable table of contents
+\usepackage{hyperref}
+
+%______FONTS______
+%Change font to Helvetica
+% \usepackage[T1]{fontenc}
+% \usepackage{helvet}	
+
+%Set base font for document to sans-serif
+%TURN OFF if using Futura or fontspec with XeLaTeX
+% \renewcommand{\familydefault}{\sfdefault}
+
+%Change font to Futura, use XeLaTeX
+\usepackage{fontspec}
+\setmainfont{Futura Std Book}
+
+%Alter specific unicode characters
+% \usepackage{newunicodechar}
+% \newunicodechar{é}{\`{e}}
+
+%Customize titles
+\usepackage{titlesec}
+
+%Remove numbering for initial pages
+\pagestyle{plain}
+
+%Make a table that splits itself across multiple pages
+\usepackage{longtable}
+
+%Arbitrary sizes for fonts
+\usepackage{fix-cm}
+%Changings a fonts leading
+\usepackage{leading}
+
+%______BIBLIOGRAPHY______
+%cite articles with \citep{}
+\usepackage{natbib}
+
+%Force to be A4
+%\usepackage[a4paper]{geometry}
+
+%_______
+%Change header/footer line size
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{.5pt}
+\linespread{.956}
+
+%_______MARGINS______
+\setleftmargin{20.66mm}
+\setrightmargin{20.66mm}
+\settopmargin{29.22mm}
+\setbottommargin{29.22mm}
+\textwidth168.67mm
+\textheight238.56mm
+%_______HEADINGS_______
+%\leftmark = chapter title
+%\rightmark = section title
+%\thepage = page number
+\fancyhead[HL]{}
+\fancyhead[HC]{}
+\fancyhead[HR]{}
+\fancyfoot[FL]{}%\nouppercase
+\fancyfoot[FC]{}
+\fancyfoot[FR]{\textsc{\leftmark} \textbar\ \rightmark\ Filugori \textbar\ \textsc{Ahanonu \textbar\ \thepage}}
+\fancyheadoffset[L, RO]{0cm}
+\fancyfootoffset[L, RO]{0cm}
+%\headheight = 6.5pt	
+%\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+%\renewcommand{\sectionmark}[1]{\markboth{#1}{}}

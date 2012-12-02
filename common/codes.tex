@@ -1,0 +1,193 @@
+%biafra ahanonu
+%LaTeX_Boilerplate
+%updated: 2012.12.01
+
+%_______FIGURE_______
+%Macros to help reduce clutter in text and standardize layout of figures
+
+%_______CITE_______
+\newcommand{\fcite}[2]{(Fig. \ref{fig:#1}#2)}
+
+%______NORMAL_______
+\newcommand{\ffigure}[6]{
+\begin{figure}[#6]
+	%\begin{left}
+	\center
+	\scalebox{1}{\includegraphics[width=#2]{#1}}
+	\captionsetup{labelformat=empty}
+	\caption{\textbf{Figure \ref{fig:#3} |  #4}\\ #5}
+	\label{fig:#3}
+	%\end{left}
+\end{figure}
+}
+
+%______WRAP_______
+%This figure can wrap to multiple pages
+\newcommand{\wfigure}[6]{
+\begin{wrapfigure}{#6}{0.5\textwidth}
+	\vspace{-20pt}
+	\begin{center}
+		\includegraphics[width=#2]{#1}
+	\end{center}
+	\vspace{-20pt}
+	\singlespace
+	\textbf{Figure \ref{fig:#3} |  #4}\\ #5
+	\label{fig:#3}
+	\vspace{-10pt}
+\end{wrapfigure}
+}
+
+%_______Multi_Panel_Figure_______
+%Keys loaded when pgfkeys is called
+\pgfkeys{
+%Call with \pgfkeys{/family, #1}
+%Define a family directory to avoid name-clashes
+ /sfigure/.is family, /sfigure,
+%key/.estore in = \newVariable
+ label/.estore in = \sfigLabel,
+ capTitle/.estore in = \sfigCapTitle,
+ capDes/.estore in = \sfigCapDesc,
+}
+%Create a new figure command
+\newcommand\sfigure[9][]{
+	%command looks like \sfigure[key=val,...]{panelTitle}{imageLocation}..
+	%example: 
+		%\sfigure[label=11,capTitle=Hello,capDes=World]{fig}{images/Map.jpg}{fig}{images/Map.jpg}{fig}{images/Map.jpg}{fig}{images/Map.jpg}
+	%First arg ([key=val,...]) passed to pgfkeys, get new variables back, circumvent the 9 argument rule for \newcommand
+	\pgfkeys{/sfigure, #1}
+	\begin{figure*}[ht!]
+	\begin{center}
+		\subfloat[#2]{\includegraphics[width=3.0in]{#3}}  
+		\subfloat[#4]{\includegraphics[width=3.0in]{#5}} \\
+		\subfloat[#6]{\includegraphics[width=3.0in]{#7}} 
+		\subfloat[#8]{\includegraphics[width=3.0in]{#9}}
+		\captionsetup{labelformat=empty}
+		\caption{\textbf{Figure \ref{fig:\sfigLabel} |  \sfigCapTitle}\\ \sfigCapDesc}
+		\label{fig:\sfigLabel}
+	\end{center}
+	\end{figure*}	
+}
+
+%_______TITLES_______
+%Section, chapter and other title formatting
+%_______CHAPTER_______
+\newcommand{\fchapter}[5]{
+%Input five different, each can be called with #(number)
+%Example \fchapter{Hello}{}{}{World}{}, gives #1=Hello and #4=World
+	\newpage\noindent
+	%Add a phantom section to allow correct linking in table of contents
+	\phantomsection
+	\addcontentsline{toc}{section}{#1}	
+	\textsc{#2 \textbar\ #3 \textbar\ #4 \textbar\ #5}\
+	\begin{spacing}{0}
+		\begin{flushright}
+			\textsc{\textbf{\Huge#1}}
+			\rule{\textwidth}{.5pt}
+		\end{flushright}	
+	\end{spacing}
+	\vspace{26pt}
+	\thispagestyle{empty}
+	%Redefine header for each chapter
+	\chaptermark{#1}	
+	\renewcommand{\leftmark}{#1}
+}
+%_______SECTION_______
+\newcommand{\pchapter}[1]{
+%Used for each section, see CHAPTER for implementation details
+	\newpage\noindent
+	\textsc{}\
+	\begin{spacing}{0}
+		\begin{flushright}
+			\textsc{\textbf{\Huge#1}}
+			\rule{\textwidth}{.5pt}
+		\end{flushright}	
+	\end{spacing}
+	\vspace{26pt}
+	\thispagestyle{empty}
+	%Change to current chapter
+	\chaptermark{#1}	
+	%Redefine header for each chapter
+	\renewcommand{\leftmark}{#1}
+	\addcontentsline{toc}{chapter}{#1}
+}
+%_______TITLE_______
+\newcommand{\tchapter}[4]{
+%Where the first page title goes
+	\textsc{}\
+	\begin{spacing}{0}
+		\noindent
+		\textbf{\scalebox{7}{#1}}\\
+		\textbf{\huge#4}
+	\end{spacing}
+		\vfill
+		\begin{flushright}		
+		\textbf{\textbf{\huge#3} \huge\textbar\ \huge#2}
+		\end{flushright}	
+	%Remove styling
+	\thispagestyle{empty}
+	\vspace{-50pt}
+}
+%_______GRAND_SECTION_______
+\newcommand{\fgsection}[2]{
+%Same 
+	\newpage\noindent
+	%To help proper linking
+	\phantomsection
+	\addcontentsline{toc}{chapter}{#1}	
+	\textsc{#2 AD}\
+	\begin{spacing}{0}
+		\begin{flushright}
+			\textsc{\textbf{\Huge#1}}
+			\rule{\textwidth}{.5pt}
+		\end{flushright}	
+	\end{spacing}
+	\thispagestyle{empty}
+	%Change section to current
+	\sectionmark{#1}
+	%Change header/footer section to current
+	\renewcommand{\rightmark}{#1 \textbar\ #2 \textsc{AD}}
+}
+%_______END_______
+\newcommand{\fesection}[2]{
+%End page formatting, see others for implementation details
+	\newpage\noindent
+	\textsc{#2}\
+	\begin{spacing}{0}
+		\begin{flushright}
+			\textsc{\textbf{\Huge#1}}
+			\rule{\textwidth}{.5pt}
+		\end{flushright}	
+	\end{spacing}
+	\thispagestyle{empty}
+	\sectionmark{#1}
+	\renewcommand{\rightmark}{#1 \textbar\ #2 \textsc{AD}}
+	\addcontentsline{toc}{chapter}{#1}	
+}
+
+%_______SEPARATING_LINE_______
+%Make a line for separating in-text sections
+\newcommand*\sepline{
+  \begin{center}
+    \rule[1ex]{.5\textwidth}{.5pt}
+  \end{center}}
+%_______TABLE_OF_CONTENTS_______
+%Alter TOC layout here
+
+\let\oldtableofcontents\tableofcontents%remember the definition
+\renewcommand\tableofcontents{
+  		\oldtableofcontents\thispagestyle{empty}%use the standard toc
+}
+\makeatletter 
+%Change the TOC command
+\renewcommand\tableofcontents{
+	%TOC title here
+	\begin{spacing}{0}
+		\begin{flushright}
+			\textsc{\textbf{TOC TITLE}}
+			\rule{\textwidth}{.5pt}
+		\end{flushright}	
+	\end{spacing}
+	\pagestyle{empty} 
+	%Actually start the TOC
+	\@starttoc{toc}} 
+\makeatother 

@@ -1,0 +1,25 @@
+%biafra ahanonu
+%LaTeX_Boilerplate
+%updated: 2012.12.01
+%Title page
+
+%Include the actual title
+\vspace{-2cm}\maketitle
+%\doublespace
+\hspace{1in}\vspace{-.7cm}\hspace{1in}\\
+
+%Rulers on each side
+\rule{6.45in}{1pt}\\
+	Lorem ipsum
+\\\rule{6.45in}{1pt}
+
+%Puts a footnote on the bottom of the page
+\renewcommand{\thefootnote}
+
+%Add footnote text, e.g. affiliations
+{\fnsymbol{footnote}}
+	\footnotetext{\vspace{-.3cm}\\Dept. of LaTeX\\ Correspondence: name@place.domain}
+
+%Make page empty	
+\thispagestyle{empty}
+\newpage
