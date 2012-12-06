@@ -60,7 +60,7 @@ Go to your personal LaTeX projects directory (or wherever) and clone the reposit
 
 ###Build
 
-* Windows: run `build.bat'. Removes .aux and other files then builds with (xe)latex and bibtex.
+* Windows: run `build.bat`. Removes .aux and other files then builds with (xe)latex and bibtex.
 
 * Linux: run `build.sh` .Removes .aux and other files then builds with (xe)latex and bibtex.
 	* Note, `build.sh` is not currently in the project, to be added soon!
