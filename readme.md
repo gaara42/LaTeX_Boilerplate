@@ -43,12 +43,27 @@ Go to your personal LaTeX projects directory (or wherever) and clone the reposit
 	* Make sure to have all packages updated.
 * [Pandoc](http://johnmacfarlane.net/pandoc/installing.html) for conversion of files if need be
 
+### Windows
+
+* After installing LaTeX distribution of choice, need to add the folder containing `latex.exe`, `bibtex.exe`, and `xelatex.exe` to you `PATH` environment variable.
+
+### Linux
+
+* `xelatex` and `latex` should automatically be added.
+
 ## Instructions
 
 ###Overview
 
 * The project has been tested on MiKTeX 2.9 and compiles fine (compile `project.tex`). If there are errors, open a issue and let me know.
 * Open `project.tex`, contains the main TeX mark-up and references to other files. `\Include` is used to add other project files.
+
+###Build
+
+* Windows: run `build.bat'. Removes .aux and other files then builds with (xe)latex and bibtex.
+
+* Linux: run `build.sh` .Removes .aux and other files then builds with (xe)latex and bibtex.
+	* Note, `build.sh` is not currently in the project, to be added soon!
 
 ###Pre-loaded
 
@@ -79,7 +94,7 @@ Go to your personal LaTeX projects directory (or wherever) and clone the reposit
 * `convert\0HTMLtoLaTeX.bat` ask for an output file name and converts `convert\0HtoL.html` to a .tex file.
 * `convert\0LaTeXtoHTML.bat` ask for an output file name and converts `convert\0LtoH.tex` to an .html file.
 
-###License
+##License
 
 Copyright (C) 2012 Biafra Ahanonu <bahanonu@gmail.com>
 

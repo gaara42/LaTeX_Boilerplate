@@ -127,6 +127,19 @@
 	\thispagestyle{empty}
 	\vspace{-50pt}
 }
+%______
+%Section MACRO
+\newcommand{\fsection}[1]{
+%Formatting for all chapters standard through this command
+%inputs: 1=chapter, 2=date, 3=location
+	\section*{
+	\vspace{-2em}
+		\begin{flushright}
+			#1
+		\end{flushright}	
+		}
+	\vspace{-2.5em}
+}
 %_______GRAND_SECTION_______
 \newcommand{\fgsection}[2]{
 %Same 
