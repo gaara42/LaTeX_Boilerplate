@@ -7,6 +7,7 @@
 ## Features
 
 * Functional LaTeX project, download and start typesetting right away. Tested and works with MiKTeX.
+* Build scripts (`build.bat` and `build.sh`) for Windows and Unix users.
 * Fully commented with explanations for more difficult to understand elements.
 * Various new commands to allow standardization of figure style and other common formatting. 
 	* Functional \newcommand example implemented with `pgfkeys`.
@@ -16,6 +17,8 @@
 
 ### What's New
 
+* Added `build.sh` for Unix users and updated `build.bat` to support several options at the beginning. (2012.12.08)
+* Updated bibliography to include international support, organization tweaks (2012.12.08)
 * Added to GitHub (2012.12.02)
 
 ### In Development
@@ -45,11 +48,11 @@ Go to your personal LaTeX projects directory (or wherever) and clone the reposit
 
 ### Windows
 
-* After installing LaTeX distribution of choice, need to add the folder containing `latex.exe`, `bibtex.exe`, and `xelatex.exe` to you `PATH` environment variable.
+* After installing LaTeX distribution of choice, need to add the folder containing `pdflatex.exe`, `bibtex.exe`, and `xelatex.exe` to you `PATH` environment variable.
 
 ### Linux
 
-* `xelatex` and `latex` should automatically be added.
+* `xelatex` and `pdflatex` should automatically be added.
 
 ## Instructions
 
@@ -60,10 +63,13 @@ Go to your personal LaTeX projects directory (or wherever) and clone the reposit
 
 ###Build
 
-* Windows: run `build.bat`. Removes .aux and other files then builds with (xe)latex and bibtex.
+* User is prompted to choose whether you want output, it is suppressed using `-interaction=batchmode` latex command-line argument.
 
-* Linux: run `build.sh` .Removes .aux and other files then builds with (xe)latex and bibtex.
-	* Note, `build.sh` is not currently in the project, to be added soon!
+* Windows: double-click `build.bat`. 
+	* Removes .aux and other files then builds with (xe)latex and bibtex.
+
+* Linux: open Terminal, cd to directory, and type `bash build.sh`.
+	* Removes .aux and other files then builds with (xe)latex and bibtex.
 
 ###Pre-loaded
 

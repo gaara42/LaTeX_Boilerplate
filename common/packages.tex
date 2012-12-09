@@ -11,6 +11,9 @@
 % \usepackage{keyval}
 \usepackage{pgfkeys}
 
+%Enable if want no-indent, space between paragraphs
+\usepackage[parfill]{parskip}
+
 %Graphics/Image packages
 \usepackage{graphicx,eso-pic}
 \usepackage{stfloats}
@@ -74,37 +77,10 @@
 
 %______BIBLIOGRAPHY______
 %cite articles with \citep{}
-\usepackage{natbib}
+\usepackage[numbers,super]{natbib}
 % \usepackage{biblatex}
 
 %Force to be A4
 %\usepackage[a4paper]{geometry}
 
-%_______
-%Change header/footer line size
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{.5pt}
-\linespread{.956}
 
-%_______MARGINS______
-\setleftmargin{20.66mm}
-\setrightmargin{20.66mm}
-\settopmargin{29.22mm}
-\setbottommargin{29.22mm}
-\textwidth168.67mm
-\textheight238.56mm
-%_______HEADINGS_______
-%\leftmark = chapter title
-%\rightmark = section title
-%\thepage = page number
-\fancyhead[HL]{}
-\fancyhead[HC]{}
-\fancyhead[HR]{}
-\fancyfoot[FL]{}%\nouppercase
-\fancyfoot[FC]{}
-\fancyfoot[FR]{\textsc{\leftmark} \textbar\ \rightmark\ Filugori \textbar\ \textsc{Ahanonu \textbar\ \thepage}}
-\fancyheadoffset[L, RO]{0cm}
-\fancyfootoffset[L, RO]{0cm}
-%\headheight = 6.5pt	
-%\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
-%\renewcommand{\sectionmark}[1]{\markboth{#1}{}}

@@ -6,6 +6,8 @@
 %_______PRELOAD_______
 %Include packages
 \include{common/packages}	
+%Include packages
+\include{common/header}	
 %Get macro commands
 \include{common/codes}	
 %Meta information to put in PDF
@@ -43,6 +45,9 @@
 
 		%Include introduction
 		\include{chapters/chapter1} 
+
+		%Input will insert to code directly, no new page
+		\input{chapters/chapter1} 
 		
 		%Include section page
 		\fgsection{TITLE}{SUBTITLE}
@@ -58,6 +63,8 @@
 	\newpage
 	%Change style here, default from ChicagoReedweb.bst
 	\bibliographystyle{citations/ChicagoReedweb}
+	%If you want to add all citations in database
+	%\nocite{*}
 	%Citations located in Cited.bib
 	\bibliography{citations/cited} 
 %_______
