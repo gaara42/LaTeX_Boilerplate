@@ -2,7 +2,7 @@
 
 ## Overview
 
-* A LaTeX boilerplate that contains an basic project setup that outlines various features in LaTeX. Code is all commented and will be expanded to include more packages or other aspects of LaTeX. Organized into sections, beginners should be able to debug easier while more advanced users can use it as a quick basic setup to get the ball rolling.
+* A LaTeX boilerplate: skeleton code that implements various commonly used features in LaTeX. Code is all commented and will be expanded to include more packages or other aspects of LaTeX. Organized into sections, beginners should be able to debug easier while more advanced users can use it as a basic setup to get the ball rolling.
 
 ## Features
 
@@ -12,20 +12,8 @@
 * Various new commands to allow standardization of figure style and other common formatting. 
 	* Functional \newcommand example implemented with `pgfkeys`.
 * BibTex example file and example citation usage inside main text.
-
-## Changelog
-
-### What's New
-
-* Added `build.sh` for Unix users and updated `build.bat` to support several options at the beginning. (2012.12.08)
-* Updated bibliography to include international support, organization tweaks (2012.12.08)
-* Added to GitHub (2012.12.02)
-
-### In Development
-
-* Clean-up code and comments, add additional LaTeX features.
-* Addition of conditional statement to figure to dynamically generate different multi-panel figures.
-* Bash scripts for pandoc conversion.
+* Index implemented with example indices implemented in text (i.e. `\index{}`)
+* Much more!
 
 ## Installation
 
@@ -48,57 +36,90 @@ Go to your personal LaTeX projects directory (or wherever) and clone the reposit
 
 ### Windows
 
-* After installing LaTeX distribution of choice, need to add the folder containing `pdflatex.exe`, `bibtex.exe`, and `xelatex.exe` to you `PATH` environment variable.
+* After installing LaTeX distribution of choice, need to add the folder (e.g. `\MikTeX\miktex\bin`) containing `pdflatex.exe`, `bibtex.exe`, `makeindex` and `xelatex.exe` to you `PATH` environment variable.
 
 ### Linux
 
-* `xelatex` and `pdflatex` should automatically be added.
+* Install [MikTeX](https://help.ubuntu.com/community/MiktexPackageManager) or another LaTeX distribution.
+* `pdflatex.exe`, `bibtex.exe`, `makeindex` and `xelatex.exe` should be callable from command-line automatically.
 
 ## Instructions
 
 ###Overview
 
-* The project has been tested on MiKTeX 2.9 and compiles fine (compile `project.tex`). If there are errors, open a issue and let me know.
-* Open `project.tex`, contains the main TeX mark-up and references to other files. `\Include` is used to add other project files.
+* The project has been tested on MiKTeX 2.9 and compiles fine (`project.tex`). If there are errors, open an issue and let me know.
+* Open `project.tex`, contains the main TeX mark-up and references to other files. `\include` is used to add other project files.
 
 ###Build
 
-* User is prompted to choose whether you want output, it is suppressed using `-interaction=batchmode` latex command-line argument.
-
+* User is prompted to choose whether you want output; suppressed using `-interaction=batchmode` for (xe)latex or `--quiet` for bibtex.
+* Removes .aux and other files then builds with (xe)latex and bibtex. Opens .pdf afterwards.
 * Windows: double-click `build.bat`. 
-	* Removes .aux and other files then builds with (xe)latex and bibtex.
+* Unix: open Terminal, cd to directory, and type `bash build.sh`.
 
-* Linux: open Terminal, cd to directory, and type `bash build.sh`.
-	* Removes .aux and other files then builds with (xe)latex and bibtex.
+###Fonts
+
+* `\common\packages.tex` contains packages used and settings to get particular fonts working, example include Helvetica and Futura.
+* Under `\assets` is `FuturaStd-Book.otf`, which must be installed on the system to use xelatex for custom `Futura Std Book` font seen in `packages.tex`.
 
 ###Pre-loaded
 
 * These files are loaded before `\begin{document}`.
 * `common\packages.tex` contains all the packages to be loaded.
-* `common\codes.tex` contains the new commands. `pgfkeys` is used to circumvent the 9-argument problem with \newcommand. All commands are documented and also used within the example files (e.g. `chapters\chapter1.tex`).
-* `common\thanks.tex` is for copyright or other 'thanks' pages.
+* `common\header.tex` contains fancyhdr and other header/footer specifiers.
+* `common\codes.tex` contains the new commands. 
+	* All commands are documented and also used within the example files (e.g. `chapters\chapter1.tex`).
+	* `pgfkeys` is used to circumvent the 9-argument problem with \newcommand. 
+* `common\thanks.tex` is for copyright, thanks and update date tracking.
 
 ###Main Body
 
 * These files are loaded in `\begin{document}` environment.
 * `chapters\chapter1.tex` is an example main text. Includes some citations and figures.
-* `chapters\figures.tex` contains several figures.
+* `chapters\figures.tex` contains example figures using the new figure commands.
+* `chapters\table.tex` contains a row-shaded table.
 * `images\` has example images used in `chapters\chapter1.tex` and `chapters\figures.tex` to create figures.
 * `sections\section1.tex` is an example file to create a new section.
 
 ###Bibliography
 
 * Bibliography implemented in BibTeX, more extensible than manually entering citations.
-* Run BibTeX twice before running (Xe)LaTeX to have citations included.
+* Run BibTeX twice before running (Xe)LaTeX to have citations included (automatically done with build scripts).
 * `citations\cited.bib` is the bibtex file, contains book, article, online and other example source citations.
 * `citations\Citations.xlsx` is an Excel spreadsheet that allows quick formatting of sources into LaTeX format if source online doesn't provide .bib link.
 
+###Index
+
+* Index implemented using `makeidx` package and `makeindex`.
+* `citations\index.tex` contains the TeX code to include in the main project file.
+* `\lbpindex{term}{}` is the new command to help add `term` at specified position while also adding it to the index, e.g. `term\index{term}`.
+
 ###Conversion
 
-* I have included Batch files (bash scripts forthecoming) to easily convert HTML to LaTeX and vis-versa. More Batch/Bash scripts to come for other common conversions.
-* Windows users: make sure to include pandoc in your `PATH` environment variable.
+* I have included batch files (bash scripts forthecoming) to easily convert HTML to LaTeX and vis-versa. More Batch/Bash scripts to come for other common conversions.
+* Windows: make sure to include the `pandoc` directory (e.g. `C:\Program Files\Pandoc`) in your `PATH` environment variable.
 * `convert\0HTMLtoLaTeX.bat` ask for an output file name and converts `convert\0HtoL.html` to a .tex file.
 * `convert\0LaTeXtoHTML.bat` ask for an output file name and converts `convert\0LtoH.tex` to an .html file.
+
+## Changelog
+
+### What's New
+
+* Updated readme (2012.12.23)
+* Added index, redefined its layout and made new index command. (2012.12.22)
+* Redefined references layout. (2012.12.21)
+* Improved `build.bat` a bit, cleans up more files after building. (2012.12.21)
+* Added working example of a table, including shaded rows. (2012.12.21)
+* Improved a bit of the layout and commenting (2012.12.21)
+* Added `build.sh` for Unix users and updated `build.bat` to support several options at the beginning. (2012.12.08)
+* Updated bibliography to include international support, organization tweaks (2012.12.08)
+* Added to GitHub (2012.12.02)
+
+### In Development
+
+* Clean-up code and comments, add additional LaTeX features.
+* Addition of conditional statement to figure to dynamically generate different multi-panel figures.
+* Bash scripts for pandoc conversion.
 
 ##License
 

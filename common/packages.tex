@@ -1,86 +1,106 @@
 %biafra ahanonu
 %LaTeX_Boilerplate
-%updated: 2012.12.01
+%updated: 2012.12.22
 %This document contains all the package loaded, add/remove at will
-
+%_____________________
 %Declare type, book is just one
 %a4 is better looking, remove if in USA
-\documentclass[oneside,12pt,a4paper]{book}
-
+\documentclass[oneside,12pt,a4paper]{book}%a4paper
+%_____________________
+%FUNCTIONS
 %Use key packages for more advanced macros
 % \usepackage{keyval}
 \usepackage{pgfkeys}
-
-%Enable if want no-indent, space between paragraphs
-\usepackage[parfill]{parskip}
-
-%Graphics/Image packages
+%_____________________
+%TABLE
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{booktabs}
+\usepackage{ctable}
+%Give color to tables
+\usepackage[table]{xcolor}
+%Make a table that splits itself across multiple pages
+\usepackage{longtable}
+%_____________________
+%GRAPHICS/IMAGE
 \usepackage{graphicx,eso-pic}
 \usepackage{stfloats}
 \usepackage{float}
 \usepackage{subfig}
 \usepackage{caption}
 \usepackage{wrapfig}
-
+%_____________________
+%TYPOGRAPHIC MODIFICATIONS
+%Enable if want no-indent, space between paragraphs
+\usepackage[parfill]{parskip}
 %For special symbols
 \usepackage{gensymb}
-
 %Set line spacing
 \usepackage{setspace}
-
-%Insertion of pre-formatted text (e.g. code)
-\usepackage{verbatim}
-
-%Manipulate margins
-\usepackage{packages/simplemargins}
-%Underline headers
-\usepackage{underlin}
-%Modify headers
-\usepackage{fancyhdr}
-
-%Typeset mathematical functions
-\usepackage{mathtools}
-
-%Clickable table of contents
-\usepackage{hyperref}
-
-%______FONTS______
-%Change font to Helvetica
-% \usepackage[T1]{fontenc}
-% \usepackage{helvet}	
-
-%Set base font for document to sans-serif
-%TURN OFF if using Futura or fontspec with XeLaTeX
-% \renewcommand{\familydefault}{\sfdefault}
-
-%Change font to Futura, use XeLaTeX
-\usepackage{fontspec}
-\setmainfont{Futura Std Book}
-
-%Alter specific unicode characters
-% \usepackage{newunicodechar}
-% \newunicodechar{é}{\`{e}}
-
-%Customize titles
-\usepackage{titlesec}
-
-%Remove numbering for initial pages
-\pagestyle{plain}
-
-%Make a table that splits itself across multiple pages
-\usepackage{longtable}
-
 %Arbitrary sizes for fonts
 \usepackage{fix-cm}
 %Changings a fonts leading
 \usepackage{leading}
-
-%______BIBLIOGRAPHY______
-%cite articles with \citep{}
-\usepackage[numbers,super]{natbib}
-% \usepackage{biblatex}
-
+%Insertion of pre-formatted text (e.g. code)
+\usepackage{verbatim}
+%Fix spacing table
+\usepackage{booktabs}
 %Force to be A4
 %\usepackage[a4paper]{geometry}
-
-
+\usepackage{multicol}
+%_____________________
+%HEADER
+%Manipulate margins
+\usepackage{styles/simplemargins}
+%Underline headers
+\usepackage{underlin}
+%Modify headers
+\usepackage{fancyhdr}
+%Remove numbering for initial pages
+\pagestyle{fancy}
+%_____________________
+%MATH
+%Typeset mathematical functions
+\usepackage{mathtools}
+%_____________________
+%INTERACTION
+%Clickable table of contents
+\usepackage{hyperref}
+\hypersetup{
+    hidelinks = true,
+}
+%_____________________
+%FONTS
+%___Helvetica, use pdfLaTeX
+% \usepackage[T1]{fontenc}
+% \usepackage{helvet}	
+%Set base font for document to sans-serif
+%TURN OFF if using Futura or fontspec with XeLaTeX
+% \renewcommand{\familydefault}{\sfdefault}
+%___Futura, use XeLaTeX
+\usepackage{fontspec}
+%Must have Futura installed on system
+\setmainfont{Futura Std Book}
+%___Unicode
+% \usepackage{newunicodechar}
+% \newunicodechar{é}{\`{e}}
+%___Set Font
+% \settextfont{Arial}
+% \setlatintextfont{Arial}
+%_____________________
+%TITLE
+\usepackage{titlesec}
+%Remove spacing above chapter, for bibliography mainly
+% \titlespacing*{\chapter}{0pt}{-40pt}{0pt}
+%_____________________
+%BIBLIOGRAPHY
+%cite articles with \citep{}
+\usepackage[numbers,super,sort&compress]{natbib}
+% \usepackage{biblatex}
+%Rename the bibliography to whatever name you want
+\renewcommand\bibname{References}
+%__________________
+%INDEX
+%Used to make indices with: \index{term}
+\usepackage{makeidx}
+\makeindex

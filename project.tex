@@ -1,9 +1,10 @@
 %biafra ahanonu
 %LaTeX_Boilerplate
-%updated: 2012.12.01
-%Basic LaTeX project. Contains most features: macros, bibliography, figures, and other components. Fully commented and organized into sections, beginners should be able to debug easier.
+%updated: 2012.12.23
+%Basic LaTeX project. Features: build script, useful packages, new commands, bibliography, indexing, figures, tables and other components. 
+%Fully commented and modular, should make debug and adding easier.
 
-%_______PRELOAD_______
+%_______PREAMBLE_______
 %Include packages
 \include{common/packages}	
 %Include packages
@@ -12,6 +13,7 @@
 \include{common/codes}	
 %Meta information to put in PDF
 \hypersetup{pdfauthor={Author},pdftitle={Title},pdfsubject={Space},pdfkeywords={Space}}
+
 %_______DOCUMENT_______
 \begin{document}	
 	%Change font size and line spacing
@@ -20,7 +22,7 @@
 
 	%_______TITLE_______
 	\begin{titlepage}	
-		\tchapter{Title}{Subtitle}{Author}{}
+		\lbptitle{Title}{Subtitle}{Author}{}
 	\end{titlepage}
 	\pagenumbering{roman}	
 
@@ -41,31 +43,36 @@
 	%\doublespacing	
 
 	%Change font spacing
-	\begin{spacing}{1.18}
+	% \begin{spacing}{1.18}
+	% \end{spacing}
 
-		%Include introduction
-		\include{chapters/chapter1} 
+	%If you want multiple columns
+	% \begin{multicols}{2}
+	% \end{multicols}
 
-		%Input will insert to code directly, no new page
-		\input{chapters/chapter1} 
-		
+	%Part of book
+	\lbppart{Part I}{Subtitle}
 		%Include section page
-		\fgsection{TITLE}{SUBTITLE}
 		\include{sections/section1}
+			%Include introduction
+			\include{chapters/chapter1}
+			\include{chapters/chapter2} 
+			%Direct code insert, no new page
+			% \input{chapters/chapter1} 
+	%The end section page
+	\lbpendsection{End of Preview}{We've only just begun\dots}
 
-		%The end section page
-		\fesection{End of Preview}{We've only just begun\dots}
+	%Appendix
+	\include{sections/appendix}
+		%Input will insert to code directly, no new page
+		\input{chapters/table} 
+		\input{chapters/figures} 
 
-	\end{spacing}
+		%_______BIBLIOGRAPHY_______
+		\include{citations/references}
 
-	%_______BIBLIOGRAPHY_______
-	%Use Citations.xlsx for quick formatting, else get from the web and insert into Cited.bib
-	\newpage
-	%Change style here, default from ChicagoReedweb.bst
-	\bibliographystyle{citations/ChicagoReedweb}
-	%If you want to add all citations in database
-	%\nocite{*}
-	%Citations located in Cited.bib
-	\bibliography{citations/cited} 
+		%_______INDEX_______
+		\input{citations/index}
+
 %_______
 \end{document}

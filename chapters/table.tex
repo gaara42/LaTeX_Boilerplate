@@ -1,0 +1,23 @@
+%biafra ahanonu
+%LaTeX_Boilerplate
+%updated: 2012.12.22
+%Example of table with shaded rows
+\lbpchapter{Table}{Subtitle}{Subsubtitle}{}{}
+
+\begin{table*}[ht!]
+\centering
+	\rowcolors{1}{}{gray!35}
+	\begin{tabular}[t]{p{1in}p{1in}p{1in}p{1in}p{1in}p{0in}}
+		\toprule
+			Name & Type & \%$\Delta$ & Onset & Localization & \\
+		\midrule
+			YAP & protein & 60 & E18 & Nuclear->Cytoplasm & \\
+			Hippo & protein & 40 & E18 & Cytoplasm & \\
+			agmatine & metaboliote & 20 & ? & Ex->Cytoplasm & \\
+			Lim1 & protein & -50 & E9.5 & Cytoplasm & \\
+			FoxC1/2 & protein & -10 & E11.5 & Cytoplasm & \\
+		\bottomrule
+	\end{tabular}
+	\caption{Hypothetical list of \lbpindex{kidney} proteins and metabolites identified after removal of housekeeping and injury genes. \textbf{\%$\Delta$} is protein or metabolite\index{metabolite} level change from \textbf{onset} to cessation of kidney growth. Onset time is part hypothetical, part from the literature.}
+	\label{table:candidates}
+\end{table*}
