@@ -76,17 +76,18 @@
 %Input five different, each can be called with #(number)
 %Example \fchapter{Hello}{}{}{World}{}, gives #1=Hello and #4=World
 	\newpage\noindent
+	\begin{spacing}{0}
+		\begin{flushright}
+			\textbf{\Huge#1#2}
+			% \colorbox{black}{\color{white}\makebox[\paperwidth][r]{\textbf{\Huge#1#2}}}	
+			\rule{\textwidth}{.5pt}
+		\end{flushright}	
+	\end{spacing}
 	%Add a phantom section to allow correct linking in table of contents
 	\phantomsection
 	\addcontentsline{toc}{section}{#1}	
 	% #2 
 	% \textbar\ #3 \textbar\ #4 \textbar\ #5\
-	\begin{spacing}{0}
-		\begin{flushright}
-			\textbf{\Huge#1}
-			\rule{\textwidth}{.5pt}
-		\end{flushright}	
-	\end{spacing}
 	\vspace{26pt}
 	% \thispagestyle{empty}
 	%Redefine header for each chapter
@@ -97,14 +98,14 @@
 \newcommand{\lbpsection}[1]{
 %Used for each section, see CHAPTER for implementation details
 	\newpage\noindent
-	\phantomsection
-	\addcontentsline{toc}{chapter}{#1}
 	\begin{spacing}{0}
 		\begin{flushright}
 			\textbf{\Huge#1}
 			\rule{\textwidth}{.5pt}
 		\end{flushright}	
 	\end{spacing}
+	\phantomsection
+	\addcontentsline{toc}{chapter}{#1}
 	\vspace{26pt}
 	\thispagestyle{empty}
 	%Change to current chapter
@@ -132,16 +133,16 @@
 \newcommand{\lbppart}[2]{
 %For book parts, see CHAPTER for implementation details 
 	\newpage\noindent
-	%To help proper linking
-	\phantomsection
-	\addcontentsline{toc}{chapter}{#1}	
-	% #2\
 	\begin{spacing}{0}
 		\begin{flushleft}
 			\textbf{\Huge#1}
 			\rule{\textwidth}{.5pt}
 		\end{flushleft}	
 	\end{spacing}
+	%To help proper linking
+	\phantomsection
+	\addcontentsline{toc}{chapter}{#1}	
+	% #2\
 	\thispagestyle{empty}
 	%Change section to current
 	\sectionmark{#1}
@@ -152,22 +153,26 @@
 \newcommand{\lbpendsection}[2]{
 %Last page, see CHAPTER for implementation details
 	\newpage\noindent
-	\phantomsection
-	\addcontentsline{toc}{chapter}{#1}	
-	% #2\
 	\begin{spacing}{0}
 		\begin{flushright}
 			\textbf{\Huge#1}
 			\rule{\textwidth}{.5pt}
 		\end{flushright}	
 	\end{spacing}
+	\phantomsection
+	\addcontentsline{toc}{chapter}{#1}	
+	% #2\
 	\thispagestyle{empty}
 	\sectionmark{#1}
 	\renewcommand{\rightmark}{}
 }
 %_______INDEX_______
 %Provide a standard index command, allow easier modification later
-\newcommand{\lbpindex}[2]{#1\index{#1}}
+\newcommand{\lbpindex}[2]{
+	\ifthenelse{\isempty{#2}}%
+    {#1\index{#1}}% if #2 is empty
+    {#1\index{#2!#1}}% if #2 is not empty
+}
 %Redefine the index environment
 \makeatletter
 \renewenvironment{theindex}{%

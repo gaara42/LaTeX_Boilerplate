@@ -4,13 +4,22 @@
 %Modify headers
 \usepackage{fancyhdr}
 %________________________________________________________
+%PAGE SIZE
+% \usepackage[paperwidth=13.33in,paperheight=7.5in]{geometry}
+%________________________________________________________
 %MARGINS
-\setleftmargin{20.66mm}
-\setrightmargin{20.66mm}
-\settopmargin{29.22mm}
-\setbottommargin{29.22mm}
-\textwidth168.67mm
-\textheight238.56mm
+\setleftmargin{.0625\dimexpr\paperwidth}
+\setrightmargin{.0625\dimexpr\paperwidth}
+\settopmargin{.0625\dimexpr\paperheight}
+\setbottommargin{.0625\dimexpr\paperheight}
+\textwidth=.875\dimexpr\paperwidth
+\textheight=.875\dimexpr\paperheight
+% \setleftmargin{20.66mm}
+% \setrightmargin{20.66mm}
+% \settopmargin{29.22mm}
+% \setbottommargin{29.22mm}
+% \textwidth168.67mm
+% \textheight238.56mm
 %________________________________________________________
 %HEADINGS
 %\leftmark = chapter title

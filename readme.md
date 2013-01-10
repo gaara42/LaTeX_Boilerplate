@@ -7,7 +7,7 @@
 ## Features
 
 * Functional LaTeX project, download and start typesetting right away. Tested and works with MiKTeX.
-* Build scripts (`build.bat` and `build.sh`) for Windows and Unix users.
+* Automated compiling via scripts for Windows (`build.bat`) and Unix (`build.sh`) users.
 * Fully commented with explanations for more difficult to understand elements.
 * Various new commands to allow standardization of figure style and other common formatting. 
 	* Functional \newcommand example implemented with `pgfkeys`.
@@ -105,6 +105,8 @@ Go to your personal LaTeX projects directory (or wherever) and clone the reposit
 
 ### What's New
 
+* Improved table of contents referencing, added nested indexing example and function, and several new packages. (2013.01.10)
+* Margins and text height/width are now relative rather than absolute, if page size changes, text should dynamically change as well. (2013.01.10)
 * Updated readme (2012.12.23)
 * Added index, redefined its layout and made new index command. (2012.12.22)
 * Redefined references layout. (2012.12.21)
