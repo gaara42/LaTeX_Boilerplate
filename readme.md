@@ -105,6 +105,7 @@ Go to your personal LaTeX projects directory (or wherever) and clone the reposit
 
 ### What's New
 
+* Added color to the figures and table titles, improved index formatting, provided example alternative titlepage, and expanded multi-figure function to accept 2-4 figures and adjust accordingly. Added defaults to batch file. Slightly changed organization of some tex files (see `titlepage.tex`). (2013.01.11)
 * Improved table of contents referencing, added nested indexing example and function, and several new packages. (2013.01.10)
 * Margins and text height/width are now relative rather than absolute, if page size changes, text should dynamically change as well. (2013.01.10)
 * Updated readme (2012.12.23)

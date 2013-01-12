@@ -21,8 +21,9 @@
 	\fontsize{12}{15}\leading{15pt}
 
 	%_______TITLE_______
+	\include{common/titlepage}	
 	\begin{titlepage}	
-		\lbptitle{Title}{Subtitle}{Author}{}
+		\lbptitle{Alternative Title}{Subtitle}{Author}{}
 	\end{titlepage}
 	\pagenumbering{roman}	
 
@@ -32,6 +33,8 @@
 	
 	%_______TABLE_OF_CONTENTS_______
 	\tableofcontents
+	\listoffigures
+	\listoftables
 	%Change to 1,2,3...
 	\pagenumbering{arabic}
 	
@@ -65,8 +68,8 @@
 	%Appendix
 	\include{sections/appendix}
 		%Input will insert to code directly, no new page
-		\input{chapters/table} 
-		\input{chapters/figures} 
+		\input{appendix/table} 
+		\input{appendix/figures} 
 
 		%_______BIBLIOGRAPHY_______
 		\include{citations/references}

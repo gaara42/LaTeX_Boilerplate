@@ -7,7 +7,14 @@
 cls
 ::Welcome
 ECHO LaTeX_Boilerplate Builder v1.0
+ECHO biafra ahanonu
 ECHO _______
+
+::Defaults
+SET TEX=xelatex
+SET OUTPUT="-interaction=batchmode"
+SET BOUTPUT="--quiet"
+SET RERUN=1
 
 ::Ask user for name of project file
 SET /P PROJECTT=name of TEX file to compile? 

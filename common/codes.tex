@@ -4,9 +4,9 @@
 %Create new commands to make figures, chapters and other parts standardized, most begin with lbp for LaTeX Boilerplate followed by description
 %_______CITE_______
 %Figure citation cmd
-\newcommand{\figcite}[2]{ (Fig. \ref{fig:#1}#2)}
+\newcommand{\figcite}[2]{ ({\color{red}Fig. \ref{fig:#1}#2})}
 %Table citation cmd
-\newcommand{\tabcite}[2]{ (Table \ref{table:#1}#2)}
+\newcommand{\tabcite}[2]{ ({\color{red}Table \ref{table:#1}#2})}
 %_______FIGURE_______
 %Macros to help reduce clutter in text and standardize layout of figures
 %______NORMAL_______
@@ -15,12 +15,29 @@
 \begin{figure}[#6]
 	%\begin{left}
 	\center
-	\scalebox{1}{\includegraphics[width=#2]{#1}}
+	\scalebox{1}{\includegraphics[width=#2,scale=1.0]{#1}}
 	\captionsetup{labelformat=empty}
-	\caption{\textbf{Figure \ref{fig:#3} |  #4}\\ #5}
+	\caption{\textbf{{\color{red}Figure \ref{fig:#3}} |  #4}\\ #5}
 	\label{fig:#3}
 	%\end{left}
 \end{figure}
+}
+\newcommand{\lbpblankfigure}[6]{
+%\lbpfigure{image_location}{width}{reference}{title}{description}{page_location}
+\vfill
+{
+\centering
+\begin{figure}[#6]
+	%\begin{left}
+	% \center
+	\scalebox{1}{\includegraphics[width=#2,scale=1.0]{#1}}
+	\captionsetup{labelformat=empty}
+	\caption{#5}
+	\label{fig:#3}
+	%\end{left}
+\end{figure}
+}
+\vfill
 }
 %______WRAP_______
 %This figure can wrap to multiple pages
@@ -29,7 +46,7 @@
 \begin{wrapfigure}{#6}{0.5\textwidth}
 	\vspace{-20pt}
 	\begin{center}
-		\includegraphics[width=#2]{#1}
+		\includegraphics[width=#2,scale=1.0]{#1}
 	\end{center}
 	\vspace{-20pt}
 	\singlespace
@@ -58,12 +75,16 @@
 	\pgfkeys{/multiFigure, #1}
 	\begin{figure*}[ht!]
 	\begin{center}
-		\subfloat[#2]{\includegraphics[width=3.0in]{#3}}  
-		\subfloat[#4]{\includegraphics[width=3.0in]{#5}} \\
-		\subfloat[#6]{\includegraphics[width=3.0in]{#7}} 
-		\subfloat[#8]{\includegraphics[width=3.0in]{#9}}
+		\subfloat[#2]{\includegraphics[width=.45\textwidth,scale=1.0]{#3}}  
+		\subfloat[#4]{\includegraphics[width=.45\textwidth,scale=1.0]{#5}} \\
+		\ifthenelse{\isempty{#7}}{}{
+		\subfloat[#6]{\includegraphics[width=.45\textwidth,scale=1.0]{#7}}
+		} 
+		\ifthenelse{\isempty{#8}}{}{
+		\subfloat[#8]{\includegraphics[width=.45\textwidth,scale=1.0]{#9}}
+		}
 		\captionsetup{labelformat=empty}
-		\caption{\textbf{Figure \ref{fig:\multiFigLabel} |  \multiFigCapTitle}\\ \multiFigCapDesc}
+		\caption{\textbf{{\color{red}Figure \ref{fig:\multiFigLabel}} |  \multiFigCapTitle}\\ \multiFigCapDesc}
 		\label{fig:\multiFigLabel}
 	\end{center}
 	\end{figure*}	
@@ -71,6 +92,15 @@
 %__________________________________________
 % TITLES
 %Section, chapter and other title formatting
+%_______H1 Format_______
+\newcommand{\lbps}[2]{
+	\phantomsection
+	\addcontentsline{toc}{subsection}{#1}
+	\textbf{\large#1}\index{#1}\\
+}
+\newcommand{\lbpss}[2]{
+	\textbf{\large#1}\index{#1}\\
+}
 %_______CHAPTER_______
 \newcommand{\lbpchapter}[5]{
 %Input five different, each can be called with #(number)
@@ -78,7 +108,7 @@
 	\newpage\noindent
 	\begin{spacing}{0}
 		\begin{flushright}
-			\textbf{\Huge#1#2}
+			\textbf{\Huge#1}
 			% \colorbox{black}{\color{white}\makebox[\paperwidth][r]{\textbf{\Huge#1#2}}}	
 			\rule{\textwidth}{.5pt}
 		\end{flushright}	
@@ -118,13 +148,15 @@
 %First page title, see CHAPTER for implementation details
 	\begin{spacing}{0}
 		\noindent
-		\textbf{\scalebox{7}{#1}}\\
+		\textbf{{\fontsize{50}{60}\selectfont #1}}
+		% \textbf{\scalebox{7}{#1}}\\
 		\textbf{\huge#4}
 	\end{spacing}
 	\vfill
 	\begin{flushright}		
 	\textbf{\textbf{\huge#3} \huge\textbar\ \huge#2}
 	\end{flushright}	
+	\vspace{2em}
 	%Remove styling
 	% \thispagestyle{empty}
 	\vspace{-50pt}
@@ -183,6 +215,7 @@
 			\rule{\textwidth}{.5pt}
 		\end{flushright}	
 	\end{spacing}	
+	\vspace{1em}
 	\columnseprule \z@
 	\columnsep 35\p@
 	\idx@heading
@@ -257,3 +290,49 @@
        {\@latex@warning{Empty `thebibliography' environment}}%
       \endlist}
 \makeatother
+%_____________________
+%LIST OF FIGURES
+\let\oldlistoffigures\listoffigures%remember the definition
+\renewcommand\listoffigures{
+  		\oldlistoffigures\thispagestyle{empty}%use the standard toc
+}
+\makeatletter 
+%Change the LOF command
+\renewcommand\listoffigures{
+	%LOF title
+	\begin{spacing}{0}
+		\begin{flushright}
+			\textbf{\Huge Figures}\\
+			\rule{\textwidth}{.5pt}
+		\end{flushright}	
+	\end{spacing}	
+	\thispagestyle{empty}
+	% \pagestyle{empty} 
+	%Start the LOF
+	\vspace{1em}
+	\@starttoc{lof}
+} 
+\makeatother 
+%_____________________
+%LIST OF Tables
+\let\oldlistoftables\listoftables%remember the definition
+\renewcommand\listoftables{
+  		\oldlistoftables\thispagestyle{empty}%use the standard toc
+}
+\makeatletter 
+%Change the LOT command
+\renewcommand\listoftables{
+	%LOT title
+	\begin{spacing}{0}
+		\begin{flushright}
+			\textbf{\Huge Tables}\\
+			\rule{\textwidth}{.5pt}
+		\end{flushright}	
+	\end{spacing}	
+	\thispagestyle{empty}
+	% \pagestyle{empty} 
+	%Start the LOT
+	\vspace{1em}
+	\@starttoc{lot}
+} 
+\makeatother 

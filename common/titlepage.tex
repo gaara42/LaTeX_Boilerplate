@@ -1,0 +1,30 @@
+%biafra ahanonu
+%LaTeX_Boilerplate
+%updated: 2012.12.01
+%Title page
+
+%Include the actual title
+\vspace{-2cm}%\maketitle
+\textbf{\Large Title}\\
+\textbf{\Large Author*}
+%\doublespace
+\hspace{1in}\vspace{-.7cm}\hspace{1in}\\
+
+%Rulers on each side
+\rule{\textwidth}{1pt}\\
+	\textbf{Overview} Integer purus lacus, adipiscing eget dictum non, commodo non arcu. Donec adipiscing luctus massa, non placerat sem dignissim vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\\
+	\textbf{Specifics} Integer purus lacus, adipiscing eget dictum non, commodo non arcu. Donec adipiscing luctus massa, non placerat sem dignissim vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas..\\
+\rule{\textwidth}{1pt}
+
+\lbpblankfigure{images/title.png}{\textwidth}{biology_scales}{}{Exciting catch phrase!}{h!}
+
+%Puts a footnote on the bottom of the page
+\renewcommand{\thefootnote}
+
+%Add footnote text, e.g. affiliations
+{\fnsymbol{footnote}}
+	\footnotetext{\vspace{-.3cm}\\Dept. of LaTeX, Lamport University\\ Correspondence: latex@someaddress.com}
+
+%Make page empty	
+\thispagestyle{empty}
+\newpage
