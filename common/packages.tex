@@ -9,10 +9,36 @@
 %_____________________
 %FUNCTIONS
 %Use key packages for more advanced macros
-% \usepackage{keyval}
+%\usepackage{keyval}
 \usepackage{pgfkeys}
-%If then 
+%If then statements
 \usepackage{xifthen}
+%Allow parsing and looping over lists
+\usepackage{amsmath}
+\usepackage{xparse}
+% Do math
+\usepackage[nomessages]{fp}% http://ctan.org/pkg/fp
+%_____________________
+%CODING
+%Include code
+% \usepackage{minted}
+\usepackage{listings}
+\lstset{frame=tb,
+  language=R,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{red},
+  keywordstyle=\color{blue},
+  commentstyle=\color{gray},
+  stringstyle=\color{purple},
+  breaklines=true,
+  breakatwhitespace=true
+  tabsize=3
+}
 %_____________________
 %TABLE
 \usepackage{color}
@@ -29,7 +55,8 @@
 \usepackage{stfloats}
 \usepackage{float}
 \usepackage{subfig}
-\usepackage{caption}
+% Left align and justify captions
+\usepackage[font=small,justification=justified,singlelinecheck=false]{caption}
 \usepackage{wrapfig}
 %Insert PDF
 \usepackage{pdfpages}
@@ -57,14 +84,20 @@
 \setlength{\columnseprule}{.5pt}
 %Space above multicol
 \setlength\multicolsep{0pt}
-% \setlength{\parskip}{0pt}
+%\setlength{\parskip}{0pt}
 %Change lists
 \usepackage{enumitem}
-% nolistsep
+%nolistsep
 \setlist{noitemsep,topsep=-1em,parsep=0pt,partopsep=-1em}
-% \setenumerate{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
-% \setdescription{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
-% \setitemize{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
+%\setenumerate{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
+%\setdescription{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
+%\setitemize{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
+%Split arbitrarily long text to multiple lines
+\usepackage{seqsplit}
+% Flush footnotes
+\usepackage[hang,flushmargin]{footmisc} 
+% Lipsum included for filler text
+\usepackage{lipsum}
 %_____________________
 %HEADER
 %Manipulate margins
@@ -84,36 +117,40 @@
 %Clickable table of contents
 \usepackage{hyperref}
 \hypersetup{
-    hidelinks = true,
+  hidelinks=true,
+  colorlinks,
+  citecolor=red,
+  urlcolor=red,
+  linkcolor=red,
 }
 %_____________________
 %FONTS
 %___Helvetica, use pdfLaTeX
-% \usepackage[T1]{fontenc}
-% \usepackage{helvet}	
+%\usepackage[T1]{fontenc}
+%\usepackage{helvet}	
 %Set base font for document to sans-serif
 %TURN OFF if using Futura or fontspec with XeLaTeX
-% \renewcommand{\familydefault}{\sfdefault}
+%\renewcommand{\familydefault}{\sfdefault}
 %___Futura, use XeLaTeX
 \usepackage{fontspec}
 %Must have Futura installed on system
 \setmainfont{Futura Std Book}
 %___Unicode
-% \usepackage{newunicodechar}
-% \newunicodechar{é}{\`{e}}
+%\usepackage{newunicodechar}
+%\newunicodechar{é}{\`{e}}
 %___Set Font
-% \settextfont{Arial}
-% \setlatintextfont{Arial}
+%\settextfont{Arial}
+%\setlatintextfont{Arial}
 %_____________________
 %TITLE
 \usepackage{titlesec}
 %Remove spacing above chapter, for bibliography mainly
-% \titlespacing*{\chapter}{0pt}{-40pt}{0pt}
+%\titlespacing*{\chapter}{0pt}{-40pt}{0pt}
 %_____________________
 %BIBLIOGRAPHY
 %cite articles with \citep{}
 \usepackage[numbers,super,sort&compress]{natbib}
-% \usepackage{biblatex}
+%\usepackage{biblatex}
 %Rename the bibliography to whatever name you want
 \renewcommand\bibname{References}
 %__________________

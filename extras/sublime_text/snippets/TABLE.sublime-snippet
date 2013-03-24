@@ -1,0 +1,22 @@
+<snippet>
+	<content>
+	<![CDATA[
+\\begin{table*}[ht!]
+\\small
+\\centering
+	\\rowcolors{1}{}{gray!35}
+	\\begin{tabular}[t]{p{.30\\textwidth}p{.10\\textwidth}p{.50\\textwidth}}
+		\\toprule
+			Signal & Organelle & Description\\
+		\\midrule
+			column1 & column2 & column3
+		\\bottomrule
+	\\end{tabular}
+	\\captionsetup{labelformat=empty}
+	\\caption[TITLE]{\\textbf{{\\color{red}Table \\ref{table:LABEL}} |  TITLE}\\\\ DESCRIPTION}
+	\\label{table:LABEL}
+\\end{table*}
+	]]>
+	</content>
+	<scope>source.tex</scope>
+</snippet>

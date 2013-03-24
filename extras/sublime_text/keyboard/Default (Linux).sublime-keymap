@@ -1,0 +1,12 @@
+[
+{ "keys": ["ctrl+shift+b"], "command": "insert_snippet", "args": {"contents": "\\textbf{${0:$SELECTION}}" }},
+{ "keys": ["ctrl+shift+c"], "command": "insert_snippet", "args": {"contents": "\\citep{${0:$SELECTION}}" }},
+{ "keys": ["ctrl+shift+e"], "command": "insert_snippet", "args": {"contents": "\\emph{${0:$SELECTION}}" }},
+{ "keys": ["ctrl+shift+a"], "command": "insert_snippet", "args": {"contents": "\\href{$0}{$SELECTION}" }},
+{ "keys": ["ctrl+shift+h"], "command": "insert_snippet", "args": {"contents": "\\lbps{${0:$SELECTION}}{$1}" }},
+{ "keys": ["ctrl+shift+f"], "command": "insert_snippet", "args": {"contents": "\\lbpfigure{${0:filepath}}{${1:\\textwidth}}{${2:label}}{${3:title}}{${4:description}}{${5:h!}}" }},
+{ "keys": ["ctrl+shift+m"], "command": "insert_snippet", "args": {"name": "Packages/LaTeXShortcuts/snippets/MULTIFIG.sublime-snippet"}},
+{ "keys": ["ctrl+shift+r"], "command": "insert_snippet", "args": {"contents": "\\lidx{${0:$SELECTION}}{}" }},
+{ "keys": ["ctrl+shift+l"], "command": "insert_snippet", "args": {"name": "Packages/LaTeXShortcuts/snippets/LIST.sublime-snippet"}},
+{ "keys": ["ctrl+shift+x"], "command": "insert_snippet", "args": {"name": "Packages/LaTeXShortcuts/snippets/TABLE.sublime-snippet"}}
+]

@@ -13,6 +13,7 @@
 	* Functional \newcommand example implemented with `pgfkeys`.
 * BibTex example file and example citation usage inside main text.
 * Index implemented with example indices implemented in text (i.e. `\index{}`)
+* Automatic list creation, answer key code, and equation citation.
 * Much more!
 
 ## Installation
@@ -56,6 +57,10 @@ Go to your personal LaTeX projects directory (or wherever) and clone the reposit
 * Removes .aux and other files then builds with (xe)latex and bibtex. Opens .pdf afterwards.
 * Windows: double-click `build.bat`. 
 * Unix: open Terminal, cd to directory, and type `bash build.sh`.
+
+###Shortcuts
+
+* Sublime Text 2 shortcuts have been added to the `\extras\sublime_text` folder.
 
 ###Fonts
 
@@ -105,6 +110,10 @@ Go to your personal LaTeX projects directory (or wherever) and clone the reposit
 
 ### What's New
 
+* Split each different example into its own chapter for easier maintenance. Should also make it easier for people to find and use examples. (2013.03.17)
+* Added equation macro along with new command to include code bits directly in the project. Improved `build.bat` to allow for more defaults to be set, saving key presses. Improved page height and margin calculations. (2013.03.16)
+* Demo of previous new features, improvement to `build.sh` to bring it up to date with `build.bat`. Added an example .eps file to show postscript integration works (2013.03.03).
+* New functions to make list creation easier, improve the default `\href` function, \answer function for document-wide switching on/off of specific text (useful for answer keys), and much more. Improvement to multifig to allow better detection of different inputs and adjust formatting accordingly (2013.02.23).
 * Added color to the figures and table titles, improved index formatting, provided example alternative titlepage, and expanded multi-figure function to accept 2-4 figures and adjust accordingly. Added defaults to batch file. Slightly changed organization of some tex files (see `titlepage.tex`). (2013.01.11)
 * Improved table of contents referencing, added nested indexing example and function, and several new packages. (2013.01.10)
 * Margins and text height/width are now relative rather than absolute, if page size changes, text should dynamically change as well. (2013.01.10)

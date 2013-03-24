@@ -8,18 +8,27 @@
 % \usepackage[paperwidth=13.33in,paperheight=7.5in]{geometry}
 %________________________________________________________
 %MARGINS
-\setleftmargin{.0625\dimexpr\paperwidth}
-\setrightmargin{.0625\dimexpr\paperwidth}
-\settopmargin{.0625\dimexpr\paperheight}
-\setbottommargin{.0625\dimexpr\paperheight}
-\textwidth=.875\dimexpr\paperwidth
-\textheight=.875\dimexpr\paperheight
-% \setleftmargin{20.66mm}
-% \setrightmargin{20.66mm}
-% \settopmargin{29.22mm}
-% \setbottommargin{29.22mm}
-% \textwidth168.67mm
-% \textheight238.56mm
+% Size of text as a percent of page dimensions
+\def\pctsize{8}
+% Size of margins as percent of page dimensions
+% \newcount\pctsizess
+% \pctsizess=\pctsize
+% \divide\pctsizess by -2
+% \newcount\pctsizeG
+% \pctsizeG=5
+% \advance\pctsizeG by \pctsizess
+% Use .5-.5\pctsize to calculate this
+\def\pctsizem{.1}
+% \FPeval{\pctsizem}{.5-.5\pctsize}
+% Set text height/width
+\textwidth=.1\pctsize\dimexpr\paperwidth
+\textheight=.1\pctsize\dimexpr\paperheight
+% Set margins
+\setleftmargin{\pctsizem\dimexpr\paperwidth}
+\setrightmargin{\pctsizem\dimexpr\paperwidth}
+\settopmargin{\pctsizem\dimexpr\paperheight}
+\setbottommargin{\pctsizem\dimexpr\paperheight}
+
 %________________________________________________________
 %HEADINGS
 %\leftmark = chapter title

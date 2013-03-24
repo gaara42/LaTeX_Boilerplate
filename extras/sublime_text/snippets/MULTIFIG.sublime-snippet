@@ -1,0 +1,6 @@
+<snippet>
+	<content>
+	<![CDATA[\\multifig[label={${0:label}},capTitle={${1:description}}]{${2:fig1_description}}{${3:fig1path}}{${4:fig2_description}}{${5:fig2path}}{${6:fig3_description}}{${7:fig3path}}{${8:fig4_description}}{${9:fig4path}}]]>
+	</content>
+	<scope>source.tex</scope>
+</snippet>

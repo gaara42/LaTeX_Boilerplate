@@ -2,11 +2,55 @@
 %LaTeX_Boilerplate
 %updated: 2012.12.01
 %Create new commands to make figures, chapters and other parts standardized, most begin with lbp for LaTeX Boilerplate followed by description
+%_______BIOINFOMATICS_______
+% Automatic fasta formatting
+\newcommand{\fasta}[2]{
+#1
+\begin{spacing}{0}{\tiny\seqsplit{#2}}\end{spacing}\vspace{1em}
+}
+%_______LIST_______
+% Automatic list creation!
+\NewDocumentCommand \lbpitemize {> { \SplitList { , } } m }{%
+	\begin{itemize}
+	{\footnotesize
+		\ProcessList {#1} {\myref }
+	}
+	\end{itemize}
+ }
+\NewDocumentCommand{\myref}{m}{
+	\item \llidx{#1}{}
+}
+%_______CODE_______
+% Use to include a code file in the text
+\newcommand{\includecode}[3][c]{\lstinputlisting[caption=#3, escapechar=, style=custom#1]{#2}}
+%_______EQUATION_______
+\newcommand{\lbpeq}[3]{
+	\begin{equation}
+		\label{eq:#2}
+		#1
+	\end{equation}
+}
+%_______LINK_______
+\makeatletter
+\let\oldhref=\href
+\renewcommand{\href}[2]{\oldhref{#1}{{\color{red}#2}}}
+\makeatother
+% \renewcommand\UrlFont{\ttfamily\color{red}}
+% \renewcommand{\href}[2]{{\color{red}\hyper@linkurl{\Hurl{#2}}{\Hurl{#1}}}}
+% \DeclareRobustCommand{\href}{\hyper@normalise\href@}
+% \renewcommand{\href}[2]{}
+% \newcommand\hreffootnote@[2]{\footnote{\hyper@linkurl{\Hurl{#2}}{#1}}}
+% \DeclareRobustCommand{\hreffootnote}{\hyper@normalise\hreffootnote@}
+%_______ANSWERS_______
+% Switch on/off answers
+\newcommand{\answers}[1]{{\color{blue}#1}}
 %_______CITE_______
 %Figure citation cmd
 \newcommand{\figcite}[2]{ ({\color{red}Fig. \ref{fig:#1}#2})}
 %Table citation cmd
 \newcommand{\tabcite}[2]{ ({\color{red}Table \ref{table:#1}#2})}
+% Equations
+\newcommand{\eqcite}[2]{{\color{red}Eq. \ref{eq:#1}#2}}
 %_______FIGURE_______
 %Macros to help reduce clutter in text and standardize layout of figures
 %______NORMAL_______
@@ -38,6 +82,18 @@
 \end{figure}
 }
 \vfill
+}
+%______INTEXT_______
+\newcommand{\lbpfloat}[6]{
+%\lbpfigure{image_location}{width}{reference}{title}{description}{page_location}
+\begin{wrapfigure}{#6}{#2}
+	\begin{center}
+		\scalebox{1}{\includegraphics[width=#2,scale=1.0]{#1}}
+	\end{center}
+	\captionsetup{labelformat=empty}
+	\caption[#4]{\textbf{{\color{red}Figure \ref{fig:#3}} |  #4}\\ #5}
+	\label{fig:#3}
+\end{wrapfigure}
 }
 %______WRAP_______
 %This figure can wrap to multiple pages
@@ -76,7 +132,9 @@
 	\begin{figure*}[ht!]
 	\begin{center}
 		\subfloat[#2]{\includegraphics[width=.45\textwidth,scale=1.0]{#3}}  
-		\subfloat[#4]{\includegraphics[width=.45\textwidth,scale=1.0]{#5}} \\
+		\ifthenelse{\isempty{#5}}{}{
+		\subfloat[#4]{\includegraphics[width=.45\textwidth,scale=1.0]{#5}}
+		}\\
 		\ifthenelse{\isempty{#7}}{}{
 		\subfloat[#6]{\includegraphics[width=.45\textwidth,scale=1.0]{#7}}
 		} 
@@ -200,7 +258,12 @@
 }
 %_______INDEX_______
 %Provide a standard index command, allow easier modification later
-\newcommand{\lbpindex}[2]{
+\newcommand{\lidx}[2]{
+	\ifthenelse{\isempty{#2}}%
+    {{\color{blue}#1}\index{#1}}% if #2 is empty
+    {{\color{blue}#1}\index{#2!#1}}% if #2 is not empty
+}
+\newcommand{\llidx}[2]{
 	\ifthenelse{\isempty{#2}}%
     {#1\index{#1}}% if #2 is empty
     {#1\index{#2!#1}}% if #2 is not empty
