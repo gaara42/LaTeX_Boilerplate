@@ -694,7 +694,7 @@ header p {
   left: 0;
   right: 50%;
   height: 50px;
-  margin-right: -382px;
+  /*margin-right: -382px;*/
   position: relative;
   /*top: 115px;*/
   background: red;
@@ -753,7 +753,7 @@ header p {
 #banner .fork {
   position: relative;
   left: 50%;
-  margin-left: -325px;
+  /*margin-left: -325px;*/
   padding: 10px 12px;
   margin-top: 6px;
   line-height: 14px;
