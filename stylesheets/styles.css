@@ -691,8 +691,8 @@ header p {
 
 #banner {
   z-index: 100;
-  left: 0;
-  right: 50%;
+  /*left: 0;*/
+  /*right: 50%;*/
   height: 50px;
   /*margin-right: -382px;*/
   position: relative;
@@ -710,6 +710,7 @@ header p {
   -khtml-border-radius: 0px 2px 2px 0px;
   border-radius: 0px 2px 2px 0px;*/
   padding-right: 10px;
+  width: 100%;
 }
 #banner .button {
   /*border: 1px solid #dba500;*/
