@@ -508,7 +508,8 @@ body {
   font-weight: 300;
   margin: 0px;
   padding: 0px 0 20px 0px;
-  background: url(../images/body-background.png) #eae6d1;
+  background-color:white;
+  /*background: url(../images/body-background.png) #eae6d1;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -653,24 +654,25 @@ dt {
 header {
   padding: 25px 20px 40px 20px;
   margin: 0;
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
   text-align: center;
-  background: url(../images/background.png) #4276b6;
+  background-color: white;
+/*  background: url(../images/background.png) #4276b6;
   -moz-box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.75);
   -o-box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.75);
-  box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.75);*/
   z-index: 99;
   -webkit-font-smoothing: antialiased;
   min-height: 76px;
 }
 header h1 {
   font: 40px/48px "Copse", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #f3f3f3;
+  color: white;
   text-shadow: 0px 2px 0px #235796;
   margin: 0px;
   white-space: nowrap;
@@ -692,10 +694,10 @@ header p {
   right: 50%;
   height: 50px;
   margin-right: -382px;
-  position: fixed;
+  position: relative;
   top: 115px;
   background: red;
-  border: 1px solid #f0b500;
+  /*border: 1px solid #f0b500;
   -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
   -o-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
@@ -705,12 +707,13 @@ header p {
   -o-border-radius: 0px 2px 2px 0px;
   -ms-border-radius: 0px 2px 2px 0px;
   -khtml-border-radius: 0px 2px 2px 0px;
-  border-radius: 0px 2px 2px 0px;
+  border-radius: 0px 2px 2px 0px;*/
   padding-right: 10px;
 }
 #banner .button {
-  border: 1px solid #dba500;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffe788), color-stop(100%, #ffce38));
+  /*border: 1px solid #dba500;*/
+  background-color:white;
+  /*background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffe788), color-stop(100%, #ffce38));
   background: -webkit-linear-gradient(#ffe788, #ffce38);
   background: -moz-linear-gradient(#ffe788, #ffce38);
   background: -o-linear-gradient(#ffe788, #ffce38);
@@ -726,13 +729,13 @@ header p {
   -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.1);
   -o-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.1);
-  background-color: #FFE788;
+  background-color: #FFE788;*/
   margin-left: 5px;
   padding: 10px 12px;
   margin-top: 6px;
   line-height: 14px;
   font-size: 14px;
-  color: #333;
+  color: black;
   font-weight: bold;
   display: inline-block;
   text-align: center;
@@ -754,7 +757,7 @@ header p {
   margin-top: 6px;
   line-height: 14px;
   font-size: 14px;
-  background-color: #FFE788;
+  background-color: white;
 }
 #banner .downloads {
   float: right;
@@ -764,7 +767,7 @@ header p {
   float: left;
   line-height: 52px;
   font-size: 90%;
-  color: #9d7f0d;
+  color: black;
   text-transform: uppercase;
   text-shadow: rgba(255, 255, 255, 0.2) 0 1px 0;
 }
@@ -779,7 +782,7 @@ header p {
   display: inline;
 }
 #banner ul li a.button {
-  background-color: #FFE788;
+  background-color: white;
 }
 #banner #logo {
   position: absolute;
@@ -797,7 +800,8 @@ section {
   margin: 20px 0;
   margin-top: 190px;
   position: relative;
-  background: #fbfbfb;
+  background-color: white;
+/*  background: #fbfbfb;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   -o-border-radius: 3px;
@@ -808,7 +812,7 @@ section {
   -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.09), inset 0px 0px 2px 2px rgba(255, 255, 255, 0.5), inset 0 0 5px 5px rgba(255, 255, 255, 0.4);
   -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.09), inset 0px 0px 2px 2px rgba(255, 255, 255, 0.5), inset 0 0 5px 5px rgba(255, 255, 255, 0.4);
   -o-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.09), inset 0px 0px 2px 2px rgba(255, 255, 255, 0.5), inset 0 0 5px 5px rgba(255, 255, 255, 0.4);
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.09), inset 0px 0px 2px 2px rgba(255, 255, 255, 0.5), inset 0 0 5px 5px rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.09), inset 0px 0px 2px 2px rgba(255, 255, 255, 0.5), inset 0 0 5px 5px rgba(255, 255, 255, 0.4);*/
 }
 
 small {
@@ -817,7 +821,7 @@ small {
 
 nav {
   width: 230px;
-  position: fixed;
+  position: relative;
   top: 220px;
   left: 50%;
   margin-left: -580px;
@@ -936,7 +940,7 @@ footer {
     float: left;
     display: inline-block;
     margin-left: 0px;
-    position: fixed;
+    position: relative;
     left: 20px;
   }
 
