@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>latex boilerplate by gaara42</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>latex boilerplate</h1>
+        <p>A LaTeX boilerplate to allow beginners/advanced users to start LaTeX projects quickly.</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/gaara42/LaTeX_Boilerplate" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/gaara42/LaTeX_Boilerplate/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/gaara42/LaTeX_Boilerplate/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>LaTeX Boilerplate</h1>
+
+<h2>Overview</h2>
+
+<ul>
+<li>A LaTeX boilerplate: skeleton code that implements various commonly used features in LaTeX. Code is all commented and will be expanded to include more packages or other aspects of LaTeX. Organized into sections, beginners should be able to debug easier while more advanced users can use it as a basic setup to get the ball rolling.</li>
+</ul><h2>Features</h2>
+
+<ul>
+<li>Functional LaTeX project, download and start typesetting right away. Tested and works with MiKTeX.</li>
+<li>Automated compiling via scripts for Windows (<code>build.bat</code>) and Unix (<code>build.sh</code>) users.</li>
+<li>Fully commented with explanations for more difficult to understand elements.</li>
+<li>Various new commands to allow standardization of figure style and other common formatting. 
+
+<ul>
+<li>Functional \newcommand example implemented with <code>pgfkeys</code>.</li>
+</ul>
+</li>
+<li>BibTex example file and example citation usage inside main text.</li>
+<li>Index implemented with example indices implemented in text (i.e. <code>\index{}</code>)</li>
+<li>Automatic list creation, answer key code, and equation citation.</li>
+<li>Much more!</li>
+</ul><h2>Installation</h2>
+
+<h3>Git</h3>
+
+<p>Go to your personal LaTeX projects directory (or wherever) and clone the repository using the command below:</p>
+
+<pre><code>git clone https://github.com/gaara42/LaTeX_Boilerplate
+</code></pre>
+
+<h3>Manual</h3>
+
+<ul>
+<li>Download the files using the GitHub .zip download option</li>
+<li>Unzip the files and rename the folder to whatever name you want, references are relative only below the root folder.</li>
+</ul><h3>Dependencies</h3>
+
+<ul>
+<li>LaTeX (e.g. <a href="http://miktex.org/">MikTeX</a>). 
+
+<ul>
+<li>Make sure to have all packages updated.</li>
+</ul>
+</li>
+<li>
+<a href="http://johnmacfarlane.net/pandoc/installing.html">Pandoc</a> for conversion of files if need be</li>
+</ul><h3>Windows</h3>
+
+<ul>
+<li>After installing LaTeX distribution of choice, need to add the folder (e.g. <code>\MikTeX\miktex\bin</code>) containing <code>pdflatex.exe</code>, <code>bibtex.exe</code>, <code>makeindex</code> and <code>xelatex.exe</code> to you <code>PATH</code> environment variable.</li>
+</ul><h3>Linux</h3>
+
+<ul>
+<li>Install <a href="https://help.ubuntu.com/community/MiktexPackageManager">MikTeX</a> or another LaTeX distribution.</li>
+<li>
+<code>pdflatex.exe</code>, <code>bibtex.exe</code>, <code>makeindex</code> and <code>xelatex.exe</code> should be callable from command-line automatically.</li>
+</ul><h2>Instructions</h2>
+
+<h3>Overview</h3>
+
+<ul>
+<li>The project has been tested on MiKTeX 2.9 and compiles fine (<code>project.tex</code>). If there are errors, open an issue and let me know.</li>
+<li>Open <code>project.tex</code>, contains the main TeX mark-up and references to other files. <code>\include</code> is used to add other project files.</li>
+</ul><h3>Build</h3>
+
+<ul>
+<li>User is prompted to choose whether you want output; suppressed using <code>-interaction=batchmode</code> for (xe)latex or <code>--quiet</code> for bibtex.</li>
+<li>Removes .aux and other files then builds with (xe)latex and bibtex. Opens .pdf afterwards.</li>
+<li>Windows: double-click <code>build.bat</code>. </li>
+<li>Unix: open Terminal, cd to directory, and type <code>bash build.sh</code>.</li>
+</ul><h3>Shortcuts</h3>
+
+<ul>
+<li>Sublime Text 2 shortcuts have been added to the <code>\extras\sublime_text</code> folder.</li>
+</ul><h3>Fonts</h3>
+
+<ul>
+<li>
+<code>\common\packages.tex</code> contains packages used and settings to get particular fonts working, example include Helvetica and Futura.</li>
+<li>Under <code>\assets</code> is <code>FuturaStd-Book.otf</code>, which must be installed on the system to use xelatex for custom <code>Futura Std Book</code> font seen in <code>packages.tex</code>.</li>
+</ul><h3>Pre-loaded</h3>
+
+<ul>
+<li>These files are loaded before <code>\begin{document}</code>.</li>
+<li>
+<code>common\packages.tex</code> contains all the packages to be loaded.</li>
+<li>
+<code>common\header.tex</code> contains fancyhdr and other header/footer specifiers.</li>
+<li>
+<code>common\codes.tex</code> contains the new commands. 
+
+<ul>
+<li>All commands are documented and also used within the example files (e.g. <code>chapters\chapter1.tex</code>).</li>
+<li>
+<code>pgfkeys</code> is used to circumvent the 9-argument problem with \newcommand. </li>
+</ul>
+</li>
+<li>
+<code>common\thanks.tex</code> is for copyright, thanks and update date tracking.</li>
+</ul><h3>Main Body</h3>
+
+<ul>
+<li>These files are loaded in <code>\begin{document}</code> environment.</li>
+<li>
+<code>chapters\chapter1.tex</code> is an example main text. Includes some citations and figures.</li>
+<li>
+<code>chapters\figures.tex</code> contains example figures using the new figure commands.</li>
+<li>
+<code>chapters\table.tex</code> contains a row-shaded table.</li>
+<li>
+<code>images\</code> has example images used in <code>chapters\chapter1.tex</code> and <code>chapters\figures.tex</code> to create figures.</li>
+<li>
+<code>sections\section1.tex</code> is an example file to create a new section.</li>
+</ul><h3>Bibliography</h3>
+
+<ul>
+<li>Bibliography implemented in BibTeX, more extensible than manually entering citations.</li>
+<li>Run BibTeX twice before running (Xe)LaTeX to have citations included (automatically done with build scripts).</li>
+<li>
+<code>citations\cited.bib</code> is the bibtex file, contains book, article, online and other example source citations.</li>
+<li>
+<code>citations\Citations.xlsx</code> is an Excel spreadsheet that allows quick formatting of sources into LaTeX format if source online doesn't provide .bib link.</li>
+</ul><h3>Index</h3>
+
+<ul>
+<li>Index implemented using <code>makeidx</code> package and <code>makeindex</code>.</li>
+<li>
+<code>citations\index.tex</code> contains the TeX code to include in the main project file.</li>
+<li>
+<code>\lbpindex{term}{}</code> is the new command to help add <code>term</code> at specified position while also adding it to the index, e.g. <code>term\index{term}</code>.</li>
+</ul><h3>Conversion</h3>
+
+<ul>
+<li>I have included batch files (bash scripts forthecoming) to easily convert HTML to LaTeX and vis-versa. More Batch/Bash scripts to come for other common conversions.</li>
+<li>Windows: make sure to include the <code>pandoc</code> directory (e.g. <code>C:\Program Files\Pandoc</code>) in your <code>PATH</code> environment variable.</li>
+<li>
+<code>convert\0HTMLtoLaTeX.bat</code> ask for an output file name and converts <code>convert\0HtoL.html</code> to a .tex file.</li>
+<li>
+<code>convert\0LaTeXtoHTML.bat</code> ask for an output file name and converts <code>convert\0LtoH.tex</code> to an .html file.</li>
+</ul><h2>Changelog</h2>
+
+<h3>What's New</h3>
+
+<ul>
+<li>Split each different example into its own chapter for easier maintenance. Should also make it easier for people to find and use examples. (2013.03.17)</li>
+<li>Added equation macro along with new command to include code bits directly in the project. Improved <code>build.bat</code> to allow for more defaults to be set, saving key presses. Improved page height and margin calculations. (2013.03.16)</li>
+<li>Demo of previous new features, improvement to <code>build.sh</code> to bring it up to date with <code>build.bat</code>. Added an example .eps file to show postscript integration works (2013.03.03).</li>
+<li>New functions to make list creation easier, improve the default <code>\href</code> function, \answer function for document-wide switching on/off of specific text (useful for answer keys), and much more. Improvement to multifig to allow better detection of different inputs and adjust formatting accordingly (2013.02.23).</li>
+<li>Added color to the figures and table titles, improved index formatting, provided example alternative titlepage, and expanded multi-figure function to accept 2-4 figures and adjust accordingly. Added defaults to batch file. Slightly changed organization of some tex files (see <code>titlepage.tex</code>). (2013.01.11)</li>
+<li>Improved table of contents referencing, added nested indexing example and function, and several new packages. (2013.01.10)</li>
+<li>Margins and text height/width are now relative rather than absolute, if page size changes, text should dynamically change as well. (2013.01.10)</li>
+<li>Updated readme (2012.12.23)</li>
+<li>Added index, redefined its layout and made new index command. (2012.12.22)</li>
+<li>Redefined references layout. (2012.12.21)</li>
+<li>Improved <code>build.bat</code> a bit, cleans up more files after building. (2012.12.21)</li>
+<li>Added working example of a table, including shaded rows. (2012.12.21)</li>
+<li>Improved a bit of the layout and commenting (2012.12.21)</li>
+<li>Added <code>build.sh</code> for Unix users and updated <code>build.bat</code> to support several options at the beginning. (2012.12.08)</li>
+<li>Updated bibliography to include international support, organization tweaks (2012.12.08)</li>
+<li>Added to GitHub (2012.12.02)</li>
+</ul><h3>In Development</h3>
+
+<ul>
+<li>Clean-up code and comments, add additional LaTeX features.</li>
+<li>Addition of conditional statement to figure to dynamically generate different multi-panel figures.</li>
+<li>Bash scripts for pandoc conversion.</li>
+</ul><h2>License</h2>
+
+<p>Biafra Ahanonu <a href="mailto:bahanonu@gmail.com">bahanonu@gmail.com</a></p>
+
+<p>This program is free software: you can redistribute it and/or modify it under the terms of the <a href="http://www.gnu.org/licenses/gpl.html">GNU</a>. Attribution is appreciated, but not required, if parts of the software are used elsewhere.</p>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/gaara42">gaara42</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-29690550-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
