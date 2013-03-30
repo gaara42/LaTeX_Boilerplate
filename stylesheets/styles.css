@@ -1,6 +1,7 @@
 /*
 Leap Day for GitHub Pages
 by Matt Graham
+modified by biafra ahanonu
 */
 @font-face {
   font-family: 'Quattrocento Sans';
@@ -896,10 +897,10 @@ footer {
   }
 
   section {
-    border: 1px solid #e5e5e5;
-    border-width: 1px 0;
+    /*border: 1px solid #e5e5e5;*/
+    /*border-width: 1px 0;*/
     padding: 20px auto;
-    margin: 190px auto 20px;
+    /*margin: 190px auto 20px;*/
     max-width: 600px;
   }
 
