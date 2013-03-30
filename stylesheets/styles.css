@@ -671,7 +671,7 @@ header {
   min-height: 76px;
 }
 header h1 {
-  font: 40px/48px "Copse", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 40px/48px "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: black;
   /*text-shadow: 0px 2px 0px #235796;*/
   margin: 0px;
@@ -798,7 +798,7 @@ section {
   width: 590px;
   padding: 30px 30px 50px 30px;
   margin: 20px 0;
-  margin-top: 190px;
+  /*margin-top: 190px;*/
   position: relative;
   background-color: white;
 /*  background: #fbfbfb;
