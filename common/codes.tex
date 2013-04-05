@@ -22,7 +22,13 @@
 }
 %_______CODE_______
 % Use to include a code file in the text
-\newcommand{\includecode}[3][c]{\lstinputlisting[caption=#3, escapechar=, style=custom#1]{#2}}
+\renewcommand{\lstlistingname}{{\color{red}Code}}
+\DeclareCaptionFont{white}{ \color{white} }
+\DeclareCaptionFormat{listing}{
+  \parbox{\textwidth}{{\color{red}#1}#2#3}
+}
+\captionsetup[lstlisting]{ format=listing, labelfont=red, textfont=black, singlelinecheck=false, margin=0pt, font={bf,footnotesize} }
+\newcommand{\includecode}[6][c]{\lstinputlisting[caption=#3, escapechar=, style=custom#1,label=code:#4,firstline=#5, lastline=#6]{#2}}
 %_______EQUATION_______
 \newcommand{\lbpeq}[3]{
 	\begin{equation}
@@ -45,12 +51,14 @@
 % Switch on/off answers
 \newcommand{\answers}[1]{{\color{blue}#1}}
 %_______CITE_______
-%Figure citation cmd
-\newcommand{\figcite}[2]{ ({\color{red}Fig. \ref{fig:#1}#2})}
-%Table citation cmd
-\newcommand{\tabcite}[2]{ ({\color{red}Table \ref{table:#1}#2})}
+% Code citation cmd
+\newcommand{\codecite}[2]{{\color{red}\autoref{code:#1}#2}}
+% Figure citation cmd
+\newcommand{\figcite}[2]{{\color{red}\autoref{fig:#1}#2}}
+% Table citation cmd
+\newcommand{\tabcite}[2]{{\color{red}\autoref{table:#1}#2}}
 % Equations
-\newcommand{\eqcite}[2]{{\color{red}Eq. \ref{eq:#1}#2}}
+\newcommand{\eqcite}[2]{{\color{red}\autoref{eq:#1}#2}}
 %_______FIGURE_______
 %Macros to help reduce clutter in text and standardize layout of figures
 %______NORMAL_______

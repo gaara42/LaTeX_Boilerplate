@@ -80,10 +80,15 @@ Go to your personal LaTeX projects directory (or wherever) and clone the reposit
 ###Main Body
 
 * These files are loaded in `\begin{document}` environment.
-* `chapters\chapter1.tex` is an example main text. Includes some citations and figures.
-* `chapters\figures.tex` contains example figures using the new figure commands.
-* `chapters\table.tex` contains a row-shaded table.
-* `images\` has example images used in `chapters\chapter1.tex` and `chapters\figures.tex` to create figures.
+* `\chapters\citations.tex` includes some citations to figures, tables, and code.
+* `\chapters\code.tex` shows how to include code in document by referencing source file.
+* `\chapters\equations.tex` has several example equations.
+* `\chapters\fasta.tex` include a macro to simplify integration of FASTA sequences into documents.
+* `\chapters\lists.tex` shows the use of `\lbpitemize`, a macro create to make list creation faster and use less lines.
+* `\chapters\problems.tex` demonstrates several example problems and use of the `\answers` macro.
+* `\appendix\figures.tex` contains example figures using the new figure commands.
+* `\appendix\table.tex` contains a row-shaded table.
+* `\images` has example images used in `\appendix\figures.tex` to create figures.
 * `sections\section1.tex` is an example file to create a new section.
 
 ###Bibliography
@@ -108,8 +113,10 @@ Go to your personal LaTeX projects directory (or wherever) and clone the reposit
 
 ## Changelog
 
-### What's New
-
+<!-- * TODO Improved organization of  -->
+<!-- * TODO Added working example of latex conversion with pandoc -->
+* Improved code listing function and added `\codecite` for referencing code within text. Added code to customize the listing output (to be `Code` instead of the more obscure `Listing`) (2013.04.04).
+* Changed from `\ref` to `\autoref` for figure/table/equation citation to make entire link clickable (2013.04.02).
 * Split each different example into its own chapter for easier maintenance. Should also make it easier for people to find and use examples. (2013.03.17)
 * Added equation macro along with new command to include code bits directly in the project. Improved `build.bat` to allow for more defaults to be set, saving key presses. Improved page height and margin calculations. (2013.03.16)
 * Demo of previous new features, improvement to `build.sh` to bring it up to date with `build.bat`. Added an example .eps file to show postscript integration works (2013.03.03).

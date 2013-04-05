@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.4-0.9998 (MiKTeX 2.9) (preloaded format=xelatex 2012.12.1)  23 MAR 2013 21:24
+This is XeTeX, Version 3.1415926-2.4-0.9998 (MiKTeX 2.9) (preloaded format=xelatex 2012.12.1)  4 APR 2013 21:01
 entering extended mode
 **project.tex /wait
 (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\project.tex
@@ -1193,12 +1193,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--17
 \tf@toc=\write5
 (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\project.lof)
 \tf@lof=\write6
-(C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\project.lot)
-\tf@lot=\write7
-[1
+[2
 
-] [2] [3] (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\chapters/citations.tex) 
-[4
+] (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\project.lot)
+\tf@lot=\write7
+[1] [2] [3] (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\chapters/citations.tex
+) [4
 
 ] (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\chapters/lists.tex
 Underfull \hbox (badness 10000) in paragraph at lines 10--12
@@ -1246,7 +1246,7 @@ See the Listings package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10 ...l.nn.R}{hierarchical neural networks in R}
+l.10 ...rchical neural networks in R}{hhnn}{1}{30}
                                                   
 The following styles weren't loadable:
     ,customc$
@@ -1259,19 +1259,81 @@ See the Listings package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10 ...l.nn.R}{hierarchical neural networks in R}
+l.10 ...rchical neural networks in R}{hhnn}{1}{30}
                                                   
 The style is not loadable. Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
+
+
+! Package caption Error: `red' undefined in families `caption@fnt'.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 ...rchical neural networks in R}{hhnn}{1}{30}
+                                                  
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package caption Error: `black' undefined in families `caption@fnt'.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 ...rchical neural networks in R}{hhnn}{1}{30}
+                                                  
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (1.92667pt too wide) in paragraph at lines 10--10
+[] $[]$ 
+ []
 
 LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 10.
 
 (C:\Users\B\Software\Portable\MikTeX\tex\latex\euenc\eu1lmtt.fd
 File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\data/hierarchical.nn.R [6
+) (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\data/hierarchical.nn.R)
+
+! Package caption Error: `red' undefined in families `caption@fnt'.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 ...rchical neural networks in R}{hhnn}{1}{30}
+                                                  
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
-])
+! Package caption Error: `black' undefined in families `caption@fnt'.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 ...rchical neural networks in R}{hhnn}{1}{30}
+                                                  
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 
 ! Package Listings Error: Couldn't load requested style.
 
@@ -1279,7 +1341,7 @@ See the Listings package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.13 ...e{data/playlist.py}{python playlist maker}
+l.14 ...hon playlist maker}{pythonPlaylist}{1}{30}
                                                   
 The following styles weren't loadable:
     ,customc$
@@ -1292,43 +1354,180 @@ See the Listings package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.13 ...e{data/playlist.py}{python playlist maker}
+l.14 ...hon playlist maker}{pythonPlaylist}{1}{30}
                                                   
 The style is not loadable. Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-(C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\data/playlist.py [7]
-Overfull \hbox (25.8853pt too wide) in paragraph at lines 48--50
-[][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+
+! Package caption Error: `red' undefined in families `caption@fnt'.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 ...hon playlist maker}{pythonPlaylist}{1}{30}
+                                                  
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package caption Error: `black' undefined in families `caption@fnt'.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 ...hon playlist maker}{pythonPlaylist}{1}{30}
+                                                  
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (1.92667pt too wide) in paragraph at lines 14--14
+[] $[]$ 
  []
 
-[8]
-Overfull \hbox (29.46062pt too wide) in paragraph at lines 66--67
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][]  
+(C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\data/playlist.py [6
+
+
+])
+
+! Package caption Error: `red' undefined in families `caption@fnt'.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 ...hon playlist maker}{pythonPlaylist}{1}{30}
+                                                  
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package caption Error: `black' undefined in families `caption@fnt'.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 ...hon playlist maker}{pythonPlaylist}{1}{30}
+                                                  
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package Listings Error: Couldn't load requested style.
+
+See the Listings package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 ...{bash playlist maker}{bashPlaylist}{1}{30}
+                                                  
+The following styles weren't loadable:
+    ,customc$
+This may cause errors in the sequel.
+
+
+! Package Listings Error: style customc undefined.
+
+See the Listings package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 ...{bash playlist maker}{bashPlaylist}{1}{30}
+                                                  
+The style is not loadable. Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package caption Error: `red' undefined in families `caption@fnt'.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 ...{bash playlist maker}{bashPlaylist}{1}{30}
+                                                  
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package caption Error: `black' undefined in families `caption@fnt'.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 ...{bash playlist maker}{bashPlaylist}{1}{30}
+                                                  
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (1.92667pt too wide) in paragraph at lines 18--18
+[] $[]$ 
  []
 
-[9]
-Overfull \hbox (14.3878pt too wide) in paragraph at lines 123--125
-[][][][][][][][][][][][][][][][][][]  
- []
+(C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\data/playlistMaker.sh [7])
+
+! Package caption Error: `red' undefined in families `caption@fnt'.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 ...{bash playlist maker}{bashPlaylist}{1}{30}
+                                                  
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (123.61403pt too wide) in paragraph at lines 126--128
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][]  
- []
+! Package caption Error: `black' undefined in families `caption@fnt'.
 
-) [10]) [11] (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\chapters/fasta.tex) [
-12
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 ...{bash playlist maker}{bashPlaylist}{1}{30}
+                                                  
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+) [8] (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\chapters/fasta.tex) [9
 
 
 ] (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\chapters/problems.tex
 
-LaTeX Warning: Reference `fig:wk7:thermal_regulation' on page 13 undefined on i
+LaTeX Warning: Reference `fig:wk7:thermal_regulation' on page 10 undefined on i
 nput line 10.
 
-) [13
+) [10
 
 
 ] (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\chapters/equations.tex
@@ -1343,12 +1542,12 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-) [14
+) [11
 
 
-] [15
+] [12
 
-] (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\sections/appendix.tex) [16
+] (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\sections/appendix.tex) [13
 
 ] (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\appendix/table.tex
 Underfull \hbox (badness 10000) in paragraph at lines 14--14
@@ -1371,7 +1570,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-) (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\appendix/figures.tex [17
+) (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\appendix/figures.tex [14
 
 ]
 File: images/pueblobonito.jpg Graphic file (type QTm)
@@ -1565,8 +1764,8 @@ File: images/thermo_regulation.eps Graphic file (type eps)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [18] [19] [20] (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\citations/referen
-ces.tex (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\project.bbl)) [21
+) [15] [16] [17] (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\citations/referen
+ces.tex (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\project.bbl)) [18
 
 ] (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\citations/index.tex (C:\Users\B\
 Dropbox\GitHub\LaTeX_Boilerplate\project.ind
@@ -1614,7 +1813,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[22
+[19
 
 
 ]))
@@ -1641,12 +1840,12 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 85.
  ) 
 Here is how much of TeX's memory you used:
- 29909 strings out of 429035
- 540351 string characters out of 3166573
- 720452 words of memory out of 3000000
- 32659 multiletter control sequences out of 15000+200000
- 9212 words of font info for 59 fonts, out of 3000000 for 9000
+ 29892 strings out of 429035
+ 540317 string characters out of 3166573
+ 715866 words of memory out of 3000000
+ 32637 multiletter control sequences out of 15000+200000
+ 9220 words of font info for 60 fonts, out of 3000000 for 9000
  912 hyphenation exceptions out of 8191
- 65i,12n,98p,1257b,2458s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 65i,12n,98p,1263b,1777s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on project.pdf (25 pages).
+Output written on project.pdf (23 pages).
