@@ -742,7 +742,7 @@ header p {
   font-size: 14px;
   color: black;
   font-weight: bold;
-  display: inline-block;
+  display: block;
   text-align: center;
   float:right;
 }
@@ -756,8 +756,6 @@ header p {
   background-color: #ffeca0;
 }
 #banner .fork {
-  position: relative;
-  left: 50%;
   /*margin-left: -325px;*/
   padding: 10px 12px;
   margin-top: 6px;
@@ -945,11 +943,7 @@ footer {
     top: 80px;
   }
   #banner .fork {
-    float: left;
-    display: inline-block;
-    margin-left: 0px;
-    position: relative;
-    left: 20px;
+    display: block;
   }
 
   section {
