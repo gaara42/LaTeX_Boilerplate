@@ -757,6 +757,7 @@ header p {
 }
 #banner .fork {
   /*margin-left: -325px;*/
+  margin-left:10px;
   padding: 10px 12px;
   margin-top: 6px;
   line-height: 14px;
@@ -792,7 +793,7 @@ header p {
   position: absolute;
   height: 36px;
   width: 36px;
-  right: 7px;
+  left: 7px;
   top: 7px;
   display: block;
   background: url(../images/octocat-logo.png);
