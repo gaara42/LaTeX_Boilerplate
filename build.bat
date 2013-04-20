@@ -5,6 +5,8 @@
 ::Turn off echoing of commands
 @ECHO OFF
 cls
+::Allow proper variable setting
+setlocal enabledelayedexpansion
 ::Welcome
 ECHO LaTeX_Boilerplate Builder v1.0
 ECHO biafra ahanonu
@@ -27,7 +29,7 @@ del project.name
 
 ::Display and check defaults
 ECHO 1=yes, 2=no
-ECHO text file: %TEX%
+ECHO latex compiler: %TEX%
 ECHO latex output? %OUTPUT%
 ECHO bibtex output? %BOUTPUT%
 ECHO rerun batch? %RERUN%
@@ -46,13 +48,13 @@ IF %DCHECK% EQU 2 (
 
 	::Ask for version of (xe)latex to use
 	SET /P TEX="xelatex[1] or pdflatex[2]? "
-	IF %TEX% EQU 1 SET TEX=xelatex
-	IF %TEX% EQU 2 SET TEX=pdflatex
+	IF !TEX! EQU 1 SET TEX=xelatex
+	IF !TEX! EQU 2 SET TEX=pdflatex
 	SET /P OUTPUT="Output? yes[1] or no[2]: "
-	IF %OUTPUT% EQU 1 SET OUTPUT=""
-	IF %OUTPUT% EQU 1 SET BOUTPUT=""
-	IF %OUTPUT% EQU 2 SET OUTPUT="-interaction=batchmode"
-	IF %OUTPUT% EQU 2 SET BOUTPUT="--quiet"
+	IF !OUTPUT! EQU 1 SET OUTPUT=""
+	IF !OUTPUT! EQU 1 SET BOUTPUT=""
+	IF !OUTPUT! EQU 2 SET OUTPUT="-interaction=batchmode"
+	IF !OUTPUT! EQU 2 SET BOUTPUT="--quiet"
 	SET /P DPDF="Display PDF? yes[1] or no[2]: "
 )
 ::If temp files exist, delete them
@@ -61,7 +63,6 @@ IF EXIST %PROJECT%.log (
 	DEL %PROJECT%.*
 )
 REN temp.tex %PROJECT%.tex
-
 ::Compile several times to get all references/links/indices correct
 ECHO _______
 SET /a build=0
@@ -102,3 +103,5 @@ IF %DPDF%==1 (
 ::Ask if user wants to rerun the script
 SET /P RERUN=Rerun script? yes[1] or no[2]: 
 IF %RERUN% EQU 1 build.bat
+::Return expansion variable to normal
+endlocal

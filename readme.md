@@ -115,6 +115,7 @@ Go to your personal LaTeX projects directory (or wherever) and clone the reposit
 
 <!-- * TODO Improved organization of  -->
 <!-- * TODO Added working example of latex conversion with pandoc -->
+* Fixed `build.bat` to include variable expansion, resetting defaults should work properly now.
 * Improved code listing function and added `\codecite` for referencing code within text. Added code to customize the listing output (to be `Code` instead of the more obscure `Listing`) (2013.04.04).
 * Changed from `\ref` to `\autoref` for figure/table/equation citation to make entire link clickable (2013.04.02).
 * Split each different example into its own chapter for easier maintenance. Should also make it easier for people to find and use examples. (2013.03.17)
