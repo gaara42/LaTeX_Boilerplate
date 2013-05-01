@@ -1,0 +1,115 @@
+% biafra ahanonu
+% latex_boilerplate
+% updated: 2013.04.30
+%_______FIGURE_______
+%Macros to help reduce clutter in text and standardize layout of figures
+%______NORMAL_______
+\newcommand{\lbpfigure}[6]{
+%\lbpfigure{image_location}{width}{reference}{title}{description}{page_location}
+\begin{figure}[#6]
+	%\begin{left}
+	\center
+	\scalebox{1}{\includegraphics[width=#2,scale=1.0]{#1}}
+	\captionsetup{labelformat=empty}
+	\caption{\textbf{{\color{red}Figure \ref{fig:#3}} |  #4}\\ #5}
+	\label{fig:#3}
+	%\end{left}
+\end{figure}
+}
+\newcommand{\lbpblankfigure}[6]{
+%\lbpfigure{image_location}{width}{reference}{title}{description}{page_location}
+\vfill
+{
+\centering
+\begin{figure}[#6]
+	%\begin{left}
+	% \center
+	\scalebox{1}{\includegraphics[width=#2,scale=1.0]{#1}}
+	\captionsetup{labelformat=empty}
+	\caption{#5}
+	\label{fig:#3}
+	%\end{left}
+\end{figure}
+}
+\vfill
+}
+%______INTEXT_______
+\newcommand{\lbpfloat}[6]{
+%\lbpfigure{image_location}{width}{reference}{title}{description}{page_location}
+\begin{wrapfigure}{#6}{#2}
+	\begin{center}
+		\scalebox{1}{\includegraphics[width=#2,scale=1.0]{#1}}
+	\end{center}
+	\captionsetup{labelformat=empty}
+	\caption[#4]{\textbf{{\color{red}Figure \ref{fig:#3}} |  #4}\\ #5}
+	\label{fig:#3}
+\end{wrapfigure}
+}
+%______WRAP_______
+%This figure can wrap to multiple pages
+%\lbpfigure{image_location}{width}{reference}{title}{description}{page_location}
+\newcommand{\widefig}[6]{
+\begin{wrapfigure}{#6}{0.5\textwidth}
+	\vspace{-20pt}
+	\begin{center}
+		\includegraphics[width=#2,scale=1.0]{#1}
+	\end{center}
+	\vspace{-20pt}
+	\singlespace
+	\textbf{Figure \ref{fig:#3} |  #4}\\ #5
+	\label{fig:#3}
+	\vspace{-10pt}
+\end{wrapfigure}
+}
+%_______Multi_Panel_Figure_______
+%Keys loaded when pgfkeys is called
+\pgfkeys{
+	%Call with \pgfkeys{/family, #1}
+	%Define a family directory to avoid name-clashes
+	/multiFigure/.is family, /multiFigure,
+	%key/.estore in = \newVariable
+	label/.estore in = \multiFigLabel,
+	capTitle/.estore in = \multiFigCapTitle,
+	capDes/.estore in = \multiFigCapDesc,
+}
+%Create a new multi figure command
+\newcommand\multifig[9][]{
+	%command looks like \multiFigure[key=val,...]{panelTitle}{imageLocation}..
+	%example: 
+		%\multiFigure[label=11,capTitle=Hello,capDes=World]{fig}{images/Map.jpg}{fig}{images/Map.jpg}{fig}{images/Map.jpg}{fig}{images/Map.jpg}
+	%First arg ([key=val,...]) passed to pgfkeys, get new variables back, circumvent the 9 argument rule for \newcommand
+	\pgfkeys{/multiFigure, #1}
+	\begin{figure*}[ht!]
+	\begin{center}
+		\subfloat[#2]{\includegraphics[width=.45\textwidth,scale=1.0]{#3}}  
+		\ifthenelse{\isempty{#5}}{}{
+		\subfloat[#4]{\includegraphics[width=.45\textwidth,scale=1.0]{#5}}
+		}\\
+		\ifthenelse{\isempty{#7}}{}{
+		\subfloat[#6]{\includegraphics[width=.45\textwidth,scale=1.0]{#7}}
+		} 
+		\ifthenelse{\isempty{#8}}{}{
+		\subfloat[#8]{\includegraphics[width=.45\textwidth,scale=1.0]{#9}}
+		}
+		\captionsetup{labelformat=empty}
+		\caption{\textbf{{\color{red}Figure \ref{fig:\multiFigLabel}} |  \multiFigCapTitle}\\ \multiFigCapDesc}
+		\label{fig:\multiFigLabel}
+	\end{center}
+	\end{figure*}	
+}
+%_______Watermark_______
+\newcommand\watermarkpic[1]{
+	\AddToShipoutPicture*{\watermarkpicfxn{#1}}
+}
+\newcommand\watermarkpicfxn[1]{
+	\put(-.01in,0){
+		\parbox[b][\paperheight]{\paperwidth}{%
+			\vfill
+			% \centering
+			% ,height=\paperheight
+			% width=\paperwidth+.02in
+			\includegraphics[width=\paperwidth,keepaspectratio]{#1}%
+			\vfill
+		}
+	}
+}

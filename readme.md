@@ -44,6 +44,22 @@ Go to your personal LaTeX projects directory (or wherever) and clone the reposit
 * Install [MikTeX](https://help.ubuntu.com/community/MiktexPackageManager) or another LaTeX distribution.
 * `pdflatex.exe`, `bibtex.exe`, `makeindex` and `xelatex.exe` should be callable from command-line automatically.
 
+## xelatex, pdflatex, and htlatex
+
+* The option to compile between `xelatex`, `pdflatex`, and `htlatex` is given in `build.(bat/sh)`. `xelatex` and `pdflatex` will both give a PDF output while `htlatex` will produce a html webpage. `xelatex` is mainly when using non-standard fonts.
+
+###xelatex
+
+* Nothing to see here (for now!).
+
+###pdflatex
+
+* Comment out `\usepackage{fontspec}` and `\setmainfont{Futura Std Book}` in `package.tex` to avoid errors.
+
+###htlatex
+
+* See `pdflatex`. In addition, may need to remove figures or other special floats if errors occur.
+
 ## Instructions
 
 ###Overview
@@ -115,7 +131,11 @@ Go to your personal LaTeX projects directory (or wherever) and clone the reposit
 
 <!-- * TODO Improved organization of  -->
 <!-- * TODO Added working example of latex conversion with pandoc -->
-* Fixed `build.bat` to include variable expansion, resetting defaults should work properly now.
+<!-- * Updated `build.sh` to be at same functional level as `build.bat`.  -->
+* Separated different types of commands into individual .tex files, centrally imported in `common\codes.tex` and located in `\common\code`. Added watermark to the `\lbptitle` command. Organization of files made more logical. (2013.04.30)
+* Now an option in `build.bat` to compile with htlatex along with example output. Comment out `fontspec` package in `package.tex` to avoid errors. Added `\watermarkpic` command to allow insertion of full height or width watermarks on pages (vertically centered by default). In addition, cleaned up the code for removing files after each run in `build.bat`. (2013.04.29)
+* Added `\unskip` to reduce unnecessary space caused by use of `\lidx` and other macros. (2013.04.25)
+* Fixed `build.bat` to include variable expansion, resetting defaults should work properly now. (2013.04.20)
 * Improved code listing function and added `\codecite` for referencing code within text. Added code to customize the listing output (to be `Code` instead of the more obscure `Listing`) (2013.04.04).
 * Changed from `\ref` to `\autoref` for figure/table/equation citation to make entire link clickable (2013.04.02).
 * Split each different example into its own chapter for easier maintenance. Should also make it easier for people to find and use examples. (2013.03.17)

@@ -10,7 +10,7 @@
 %Include packages
 \include{common/header}	
 %Get macro commands
-\include{common/codes}	
+\include{code/codes}	
 %Meta information to put in PDF
 \hypersetup{pdfauthor={Author},pdftitle={Title},pdfsubject={Space},pdfkeywords={Space}}
 
@@ -23,7 +23,7 @@
 	%_______TITLE_______
 	\include{common/titlepage}	
 	\begin{titlepage}	
-		\lbptitle{Alternative Title}{Subtitle}{Author}{}
+		\lbptitle{Alternative Title}{Subtitle}{Author}{images/title2.png}
 	\end{titlepage}
 	\pagenumbering{roman}	
 
@@ -70,16 +70,16 @@
 	\lbpendsection{End of Preview}{We've only just begun\dots}
 
 	%Appendix
-	\include{sections/appendix}
+	\include{appendix/appendix}
 		%Input will insert to code directly, no new page
 		\input{appendix/table} 
 		\input{appendix/figures} 
 
-		%_______BIBLIOGRAPHY_______
-		\include{citations/references}
+	%_______BIBLIOGRAPHY_______
+	\include{citations/references}
 
-		%_______INDEX_______
-		\input{citations/index}
+	%_______INDEX_______
+	\input{citations/index}
 
 %_______
 \end{document}

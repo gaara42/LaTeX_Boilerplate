@@ -1,7 +1,7 @@
-This is XeTeX, Version 3.1415926-2.4-0.9998 (MiKTeX 2.9) (preloaded format=xelatex 2012.12.1)  4 APR 2013 21:01
+This is XeTeX, Version 3.1415926-2.4-0.9998 (MiKTeX 2.9) (preloaded format=xelatex 2013.4.25)  30 APR 2013 16:46
 entering extended mode
 **project.tex /wait
-(C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\project.tex
+(C:\Users\B\Dropbox\GitHub\latex_boilerplate\project.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -14,7 +14,7 @@ ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
 \@input{common/packages.aux}
-(C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\common/packages.tex (C:\Users\B\So
+(C:\Users\B\Dropbox\GitHub\latex_boilerplate\common/packages.tex (C:\Users\B\So
 ftware\Portable\MikTeX\tex\latex\base\book.cls
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
 (C:\Users\B\Software\Portable\MikTeX\tex\latex\base\bk12.clo
@@ -617,36 +617,47 @@ Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 ) (C:\Users\B\Software\Portable\MikTeX\tex\latex\lipsum\lipsum.sty
 Package: lipsum 2011/04/14 v1.2 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count192
-) (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\styles/simplemargins.sty
+) (C:\Users\B\Software\Portable\MikTeX\tex\latex\ulem\ulem.sty
+\UL@box=\box83
+\UL@hyphenbox=\box84
+\UL@skip=\skip72
+\UL@hook=\toks39
+\UL@height=\dimen261
+\UL@pe=\count193
+\UL@pixel=\dimen262
+\ULC@box=\box85
+Package: ulem 2012/05/18
+\ULdepth=\dimen263
+) (C:\Users\B\Dropbox\GitHub\latex_boilerplate\styles/simplemargins.sty
 Simplemargins margin control commands <15 Mar 93>.
-\smpagewidth=\skip72
-\smpageheight=\skip73
+\smpagewidth=\skip73
+\smpageheight=\skip74
 ) (C:\Users\B\Software\Portable\MikTeX\tex\latex\underlin\underlin.sty
 Package: underlin 1997/02/16 v1.01 underlined running head (RmS)
 ) (C:\Users\B\Software\Portable\MikTeX\tex\latex\fancyhdr\fancyhdr.sty
-\fancy@headwidth=\skip74
-\f@ncyO@elh=\skip75
-\f@ncyO@erh=\skip76
-\f@ncyO@olh=\skip77
-\f@ncyO@orh=\skip78
-\f@ncyO@elf=\skip79
-\f@ncyO@erf=\skip80
-\f@ncyO@olf=\skip81
-\f@ncyO@orf=\skip82
+\fancy@headwidth=\skip75
+\f@ncyO@elh=\skip76
+\f@ncyO@erh=\skip77
+\f@ncyO@olh=\skip78
+\f@ncyO@orh=\skip79
+\f@ncyO@elf=\skip80
+\f@ncyO@erf=\skip81
+\f@ncyO@olf=\skip82
+\f@ncyO@orf=\skip83
 ) (C:\Users\B\Software\Portable\MikTeX\tex\latex\mh\mathtools.sty
 Package: mathtools 2012/04/24 v1.12 mathematical typesetting tools
 (C:\Users\B\Software\Portable\MikTeX\tex\latex\mh\mhsetup.sty
 Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
 )
-\g_MT_multlinerow_int=\count193
-\l_MT_multwidth_dim=\dimen261
-\origjot=\skip83
-\l_MT_shortvdotswithinadjustabove_dim=\dimen262
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen263
-\l_MT_above_intertext_dim=\dimen264
-\l_MT_below_intertext_dim=\dimen265
-\l_MT_above_shortintertext_dim=\dimen266
-\l_MT_below_shortintertext_dim=\dimen267
+\g_MT_multlinerow_int=\count194
+\l_MT_multwidth_dim=\dimen264
+\origjot=\skip84
+\l_MT_shortvdotswithinadjustabove_dim=\dimen265
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen266
+\l_MT_above_intertext_dim=\dimen267
+\l_MT_below_intertext_dim=\dimen268
+\l_MT_above_shortintertext_dim=\dimen269
+\l_MT_below_shortintertext_dim=\dimen270
 ) (C:\Users\B\Software\Portable\MikTeX\tex\latex\hyperref\hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 (C:\Users\B\Software\Portable\MikTeX\tex\generic\oberdiek\hobsub-hyperref.sty
@@ -699,13 +710,13 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 ) (C:\Users\B\Software\Portable\MikTeX\tex\latex\oberdiek\kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen268
-\Hy@linkcounter=\count194
-\Hy@pagecounter=\count195
+\@linkdim=\dimen271
+\Hy@linkcounter=\count195
+\Hy@pagecounter=\count196
 (C:\Users\B\Software\Portable\MikTeX\tex\latex\hyperref\pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count196
+\Hy@SavedSpaceFactor=\count197
 (C:\Users\B\Software\Portable\MikTeX\tex\latex\00miktex\hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
@@ -716,16 +727,16 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count197
+\c@Hy@tempcnt=\count198
 (C:\Users\B\Software\Portable\MikTeX\tex\xelatex\xetexurl\url.sty
 \Urlmuskip=\muskip17
 Package: url 2004/03/15  ver 3.1  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen269
-\Fld@menulength=\count198
-\Field@Width=\dimen270
-\Fld@charsize=\dimen271
+\XeTeXLinkMargin=\dimen272
+\Fld@menulength=\count199
+\Field@Width=\dimen273
+\Fld@charsize=\dimen274
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -735,9 +746,10 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count199
-\c@Item=\count200
-\c@Hfootnote=\count201
+\Hy@abspage=\count200
+\c@Item=\count201
+Normal \count register pool exhausted, switching to extended pool.
+\c@Hfootnote=\count277
 )
 
 Package hyperref Message: Driver (autodetected): hxetex.
@@ -750,12 +762,11 @@ File: puenc.def 2012/11/06 v6.83m Hyperref: PDF Unicode definition (HO)
 Package: stringenc 2011/12/02 v1.10 Convert strings between diff. encodings (HO
 )
 )
-\pdfm@box=\box83
-Normal \count register pool exhausted, switching to extended pool.
-\c@Hy@AnnotLevel=\count277
-\HyField@AnnotCount=\count278
-\Fld@listcount=\count279
-\c@bookmark@seq@number=\count280
+\pdfm@box=\box86
+\c@Hy@AnnotLevel=\count278
+\HyField@AnnotCount=\count279
+\Fld@listcount=\count280
+\c@bookmark@seq@number=\count281
 (C:\Users\B\Software\Portable\MikTeX\tex\latex\oberdiek\rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package rerunfilecheck Info: Feature \pdfmdfivesum is not available
@@ -765,22 +776,22 @@ Package rerunfilecheck Info: Feature \pdfmdfivesum is not available
 tly
 (rerunfilecheck)             and the loading of the package is aborted.
 )
-\Hy@SectionHShift=\skip84
+\Hy@SectionHShift=\skip85
 )
 
 Package hyperref Warning: Unexpected value for option `hidelinks'
-(hyperref)                is ignored on input line 125.
+(hyperref)                is ignored on input line 127.
 
-Package hyperref Info: Option `colorlinks' set `true' on input line 125.
+Package hyperref Info: Option `colorlinks' set `true' on input line 127.
 (C:\Users\B\Software\Portable\MikTeX\tex\latex\fontspec\fontspec.sty
 Package: fontspec 2012/05/06 v2.2b Advanced font selection for XeLaTeX/LuaLaTeX
 
-\l_fontspec_script_int=\count281
-\l_fontspec_language_int=\count282
-\l_fontspec_strnum_int=\count283
-\l_fontspec_tmpa_dim=\dimen272
-\l_fontspec_tmpb_dim=\dimen273
-\l_fontspec_tmpc_dim=\dimen274
+\l_fontspec_script_int=\count282
+\l_fontspec_language_int=\count283
+\l_fontspec_strnum_int=\count284
+\l_fontspec_tmpa_dim=\dimen275
+\l_fontspec_tmpb_dim=\dimen276
+\l_fontspec_tmpc_dim=\dimen277
 Variant \tl_gset:cV already defined; not changing it on line 66
 (C:\Users\B\Software\Portable\MikTeX\tex\latex\fontspec\fontspec-patches.sty
 Package: fontspec-patches 2012/05/06 v2.2b Advanced font selection for XeLaTeX/
@@ -788,8 +799,6 @@ LuaLaTeX
 (C:\Users\B\Software\Portable\MikTeX\tex\latex\base\fixltx2e.sty
 Package: fixltx2e 2006/09/13 v1.1m fixes to LaTeX
 LaTeX Info: Redefining \em on input line 420.
-LaTeX Info: The control sequence `\[' is already robust on input line 471.
-LaTeX Info: The control sequence `\]' is already robust on input line 472.
 )
 LaTeX Info: Redefining \em on input line 22.
 LaTeX Info: Redefining \emph on input line 29.
@@ -826,9 +835,9 @@ LaTeX Font Info:    Try loading font information for EU1+lmss on input line 357
 (C:\Users\B\Software\Portable\MikTeX\tex\latex\euenc\eu1lmss.fd
 File: eu1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ))
-\tipaTiiicode=\count284
-\tipasavetokens=\toks39
-\tipachecktokens=\toks40
+\tipaTiiicode=\count285
+\tipasavetokens=\toks40
+\tipachecktokens=\toks41
 )
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -936,13 +945,13 @@ File: eu1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 .................................................
 Variant \prop_gput:cnV already defined; not changing it on line 485
 Variant \prop_gput:cnx already defined; not changing it on line 486
-\l_fontspec_tmp_int=\count285
+\l_fontspec_tmp_int=\count286
 LaTeX Info: Redefining \itshape on input line 1893.
 LaTeX Info: Redefining \slshape on input line 1897.
 LaTeX Info: Redefining \scshape on input line 1901.
 LaTeX Info: Redefining \upshape on input line 1905.
 (C:\Users\B\Software\Portable\MikTeX\tex\latex\fontspec\fontspec.cfg)))
-\g_fontspec_family_Futura Std Book_int=\count286
+\g_fontspec_family_Futura Std Book_int=\count287
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -965,21 +974,21 @@ LaTeX Info: Redefining \upshape on input line 1905.
 .................................................
 (C:\Users\B\Software\Portable\MikTeX\tex\latex\titlesec\titlesec.sty
 Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
-\ttl@box=\box84
-\beforetitleunit=\skip85
-\aftertitleunit=\skip86
-\ttl@plus=\dimen275
-\ttl@minus=\dimen276
-\ttl@toksa=\toks41
-\titlewidth=\dimen277
-\titlewidthlast=\dimen278
-\titlewidthfirst=\dimen279
+\ttl@box=\box87
+\beforetitleunit=\skip86
+\aftertitleunit=\skip87
+\ttl@plus=\dimen278
+\ttl@minus=\dimen279
+\ttl@toksa=\toks42
+\titlewidth=\dimen280
+\titlewidthlast=\dimen281
+\titlewidthfirst=\dimen282
 ) (C:\Users\B\Software\Portable\MikTeX\tex\latex\natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip87
-\bibsep=\skip88
+\bibhang=\skip88
+\bibsep=\skip89
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count287
+\c@NAT@ctr=\count288
 ) (C:\Users\B\Software\Portable\MikTeX\tex\latex\base\makeidx.sty
 Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
 )
@@ -987,32 +996,37 @@ Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
 Writing index file project.idx
 )
 \@input{common/header.aux}
-(C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\common/header.tex)
+(C:\Users\B\Dropbox\GitHub\latex_boilerplate\common/header.tex)
 \@input{common/codes.aux}
-(C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\common/codes.tex
+(C:\Users\B\Dropbox\GitHub\latex_boilerplate\common/codes.tex (C:\Users\B\Dropb
+ox\GitHub\latex_boilerplate\common/code/misc.tex
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
 . Defining document command \lbpitemize with arg. spec. '> { \SplitList { , }
-. } m ' on line 19.
+. } m ' on line 18.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \myref with arg. spec. 'm' on line 22.
+. Defining document command \myref with arg. spec. 'm' on line 21.
 .................................................
-) (C:\Users\B\Software\Portable\MikTeX\tex\generic\oberdiek\se-ascii-print.def
+) (C:\Users\B\Dropbox\GitHub\latex_boilerplate\common/code/refs.tex) (C:\Users\
+B\Dropbox\GitHub\latex_boilerplate\common/code/figures.tex) (C:\Users\B\Dropbox
+\GitHub\latex_boilerplate\common/code/sections.tex) (C:\Users\B\Dropbox\GitHub\
+latex_boilerplate\common/code/index.tex)) (C:\Users\B\Software\Portable\MikTeX\
+tex\generic\oberdiek\se-ascii-print.def
 File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 
-) (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\project.aux (C:\Users\B\Dropbox\
-GitHub\LaTeX_Boilerplate\common/titlepage.aux) (C:\Users\B\Dropbox\GitHub\LaTeX
-_Boilerplate\common/thanks.aux) (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\ch
-apters/citations.aux) (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\chapters/lis
-ts.aux) (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\chapters/code.aux) (C:\Use
-rs\B\Dropbox\GitHub\LaTeX_Boilerplate\chapters/fasta.aux) (C:\Users\B\Dropbox\G
-itHub\LaTeX_Boilerplate\chapters/problems.aux) (C:\Users\B\Dropbox\GitHub\LaTeX
-_Boilerplate\chapters/equations.aux) (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerpla
-te\sections/appendix.aux) (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\citation
+) (C:\Users\B\Dropbox\GitHub\latex_boilerplate\project.aux (C:\Users\B\Dropbox\
+GitHub\latex_boilerplate\common/titlepage.aux) (C:\Users\B\Dropbox\GitHub\latex
+_boilerplate\common/thanks.aux) (C:\Users\B\Dropbox\GitHub\latex_boilerplate\ch
+apters/citations.aux) (C:\Users\B\Dropbox\GitHub\latex_boilerplate\chapters/lis
+ts.aux) (C:\Users\B\Dropbox\GitHub\latex_boilerplate\chapters/code.aux) (C:\Use
+rs\B\Dropbox\GitHub\latex_boilerplate\chapters/fasta.aux) (C:\Users\B\Dropbox\G
+itHub\latex_boilerplate\chapters/problems.aux) (C:\Users\B\Dropbox\GitHub\latex
+_boilerplate\chapters/equations.aux) (C:\Users\B\Dropbox\GitHub\latex_boilerpla
+te\sections/appendix.aux) (C:\Users\B\Dropbox\GitHub\latex_boilerplate\citation
 s/references.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
@@ -1040,8 +1054,8 @@ LaTeX Font Info:    Try loading font information for T3+cmr on input line 18.
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
 LaTeX Font Info:    ... okay on input line 18.
-\c@lstlisting=\count288
-\AtBeginShipoutBox=\box85
+\c@lstlisting=\count289
+\AtBeginShipoutBox=\box88
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
@@ -1064,13 +1078,13 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (C:\Users\B\Software\Portable\MikTeX\tex\generic\oberdiek\gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count289
+\c@section@level=\count290
 )
 LaTeX Info: Redefining \ref on input line 18.
 LaTeX Info: Redefining \pageref on input line 18.
 LaTeX Info: Redefining \nameref on input line 18.
-(C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\project.out) (C:\Users\B\Dropbox\G
-itHub\LaTeX_Boilerplate\project.out)
+(C:\Users\B\Dropbox\GitHub\latex_boilerplate\project.out) (C:\Users\B\Dropbox\G
+itHub\latex_boilerplate\project.out)
 \@outlinefile=\write4
 .................................................
 . fontspec info: "setup-math"
@@ -1142,7 +1156,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> EU1/lmss/bx/n on input line 18.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> EU1/lmtt/bx/n on input line 18.
-(C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\common/titlepage.tex
+(C:\Users\B\Dropbox\GitHub\latex_boilerplate\common/titlepage.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--12
 
  []
@@ -1150,12 +1164,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--12
 
 Overfull \hbox (30.0pt too wide) in paragraph at lines 14--18
 [] 
- []
-
-File: images/title.png Graphic file (type QTm)
-<use  "images/title.png" >
-Underfull \hbox (badness 10000) in paragraph at lines 19--19
-
  []
 
 
@@ -1170,10 +1178,33 @@ Package hyperref Warning: Ignoring empty anchor on input line 26.
 
 
 
-]) [1
+])
+! Missing number, treated as zero.
+<to be read again> 
+                   \protect 
+l.27 ^^I\end{titlepage}
+                       
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \protect 
+l.27 ^^I\end{titlepage}
+                       
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+File: images/title2.png Graphic file (type QTm)
+<use  "images/title2.png" > [1
 
 
-] (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\common/thanks.tex
+] (C:\Users\B\Dropbox\GitHub\latex_boilerplate\common/thanks.tex
 
 LaTeX Font Warning: Font shape `EU1/FuturaStdBook(0)/m/sc' undefined
 (Font)              using `EU1/FuturaStdBook(0)/m/n' instead on input line 9.
@@ -1189,18 +1220,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--17
 
 ) [1
 
-] (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\project.toc)
+] (C:\Users\B\Dropbox\GitHub\latex_boilerplate\project.toc)
 \tf@toc=\write5
-(C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\project.lof)
+(C:\Users\B\Dropbox\GitHub\latex_boilerplate\project.lof)
 \tf@lof=\write6
-[2
-
-] (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\project.lot)
+(C:\Users\B\Dropbox\GitHub\latex_boilerplate\project.lot)
 \tf@lot=\write7
-[1] [2] [3] (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\chapters/citations.tex
-) [4
+[1
 
-] (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\chapters/lists.tex
+] [2] [3] (C:\Users\B\Dropbox\GitHub\latex_boilerplate\chapters/citations.tex) 
+[4
+
+] (C:\Users\B\Dropbox\GitHub\latex_boilerplate\chapters/lists.tex
 Underfull \hbox (badness 10000) in paragraph at lines 10--12
 
  []
@@ -1238,7 +1269,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--15
 ) [5
 
 
-] (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\chapters/code.tex
+] (C:\Users\B\Dropbox\GitHub\latex_boilerplate\chapters/code.tex
 
 ! Package Listings Error: Couldn't load requested style.
 
@@ -1303,7 +1334,7 @@ LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 10.
 
 (C:\Users\B\Software\Portable\MikTeX\tex\latex\euenc\eu1lmtt.fd
 File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\data/hierarchical.nn.R)
+) (C:\Users\B\Dropbox\GitHub\latex_boilerplate\data/hierarchical.nn.R)
 
 ! Package caption Error: `red' undefined in families `caption@fnt'.
 
@@ -1394,7 +1425,7 @@ Overfull \hbox (1.92667pt too wide) in paragraph at lines 14--14
 [] $[]$ 
  []
 
-(C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\data/playlist.py [6
+(C:\Users\B\Dropbox\GitHub\latex_boilerplate\data/playlist.py [6
 
 
 ])
@@ -1488,7 +1519,7 @@ Overfull \hbox (1.92667pt too wide) in paragraph at lines 18--18
 [] $[]$ 
  []
 
-(C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\data/playlistMaker.sh [7])
+(C:\Users\B\Dropbox\GitHub\latex_boilerplate\data/playlistMaker.sh [7])
 
 ! Package caption Error: `red' undefined in families `caption@fnt'.
 
@@ -1519,10 +1550,10 @@ section about errors.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-) [8] (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\chapters/fasta.tex) [9
+) [8] (C:\Users\B\Dropbox\GitHub\latex_boilerplate\chapters/fasta.tex) [9
 
 
-] (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\chapters/problems.tex
+] (C:\Users\B\Dropbox\GitHub\latex_boilerplate\chapters/problems.tex
 
 LaTeX Warning: Reference `fig:wk7:thermal_regulation' on page 10 undefined on i
 nput line 10.
@@ -1530,7 +1561,7 @@ nput line 10.
 ) [10
 
 
-] (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\chapters/equations.tex
+] (C:\Users\B\Dropbox\GitHub\latex_boilerplate\chapters/equations.tex
 ! Undefined control sequence.
 <argument> \abs 
                 {x-\mu _{i}}^2
@@ -1547,9 +1578,9 @@ and I'll forget about whatever was undefined.
 
 ] [12
 
-] (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\sections/appendix.tex) [13
+] (C:\Users\B\Dropbox\GitHub\latex_boilerplate\sections/appendix.tex) [13
 
-] (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\appendix/table.tex
+] (C:\Users\B\Dropbox\GitHub\latex_boilerplate\appendix/table.tex
 Underfull \hbox (badness 10000) in paragraph at lines 14--14
 []|\EU1/FuturaStdBook(0)/m/n/12 Nuclear-
  []
@@ -1570,7 +1601,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-) (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\appendix/figures.tex [14
+) (C:\Users\B\Dropbox\GitHub\latex_boilerplate\appendix/figures.tex [14
 
 ]
 File: images/pueblobonito.jpg Graphic file (type QTm)
@@ -1764,11 +1795,11 @@ File: images/thermo_regulation.eps Graphic file (type eps)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [15] [16] [17] (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\citations/referen
-ces.tex (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\project.bbl)) [18
+) [15] [16] [17] (C:\Users\B\Dropbox\GitHub\latex_boilerplate\citations/referen
+ces.tex (C:\Users\B\Dropbox\GitHub\latex_boilerplate\project.bbl)) [18
 
-] (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\citations/index.tex (C:\Users\B\
-Dropbox\GitHub\LaTeX_Boilerplate\project.ind
+] (C:\Users\B\Dropbox\GitHub\latex_boilerplate\citations/index.tex (C:\Users\B\
+Dropbox\GitHub\latex_boilerplate\project.ind
 ! Undefined control sequence.
 \theindex ...le \z@ \columnsep 35\p@ \idx@heading 
                                                   \index@preamble \par \nobr...
@@ -1819,15 +1850,15 @@ and I'll forget about whatever was undefined.
 ]))
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 85.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 85.
-(C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\project.aux (C:\Users\B\Dropbox\Gi
-tHub\LaTeX_Boilerplate\common/titlepage.aux) (C:\Users\B\Dropbox\GitHub\LaTeX_B
-oilerplate\common/thanks.aux) (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\chap
-ters/citations.aux) (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\chapters/lists
-.aux) (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\chapters/code.aux) (C:\Users
-\B\Dropbox\GitHub\LaTeX_Boilerplate\chapters/fasta.aux) (C:\Users\B\Dropbox\Git
-Hub\LaTeX_Boilerplate\chapters/problems.aux) (C:\Users\B\Dropbox\GitHub\LaTeX_B
-oilerplate\chapters/equations.aux) (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate
-\sections/appendix.aux) (C:\Users\B\Dropbox\GitHub\LaTeX_Boilerplate\citations/
+(C:\Users\B\Dropbox\GitHub\latex_boilerplate\project.aux (C:\Users\B\Dropbox\Gi
+tHub\latex_boilerplate\common/titlepage.aux) (C:\Users\B\Dropbox\GitHub\latex_b
+oilerplate\common/thanks.aux) (C:\Users\B\Dropbox\GitHub\latex_boilerplate\chap
+ters/citations.aux) (C:\Users\B\Dropbox\GitHub\latex_boilerplate\chapters/lists
+.aux) (C:\Users\B\Dropbox\GitHub\latex_boilerplate\chapters/code.aux) (C:\Users
+\B\Dropbox\GitHub\latex_boilerplate\chapters/fasta.aux) (C:\Users\B\Dropbox\Git
+Hub\latex_boilerplate\chapters/problems.aux) (C:\Users\B\Dropbox\GitHub\latex_b
+oilerplate\chapters/equations.aux) (C:\Users\B\Dropbox\GitHub\latex_boilerplate
+\sections/appendix.aux) (C:\Users\B\Dropbox\GitHub\latex_boilerplate\citations/
 references.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 85.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 85.
@@ -1840,12 +1871,12 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 85.
  ) 
 Here is how much of TeX's memory you used:
- 29892 strings out of 429035
- 540317 string characters out of 3166573
- 715866 words of memory out of 3000000
- 32637 multiletter control sequences out of 15000+200000
- 9220 words of font info for 60 fonts, out of 3000000 for 9000
+ 29987 strings out of 429035
+ 541460 string characters out of 3166573
+ 716961 words of memory out of 3000000
+ 32713 multiletter control sequences out of 15000+200000
+ 9326 words of font info for 61 fonts, out of 3000000 for 9000
  912 hyphenation exceptions out of 8191
- 65i,12n,98p,1263b,1777s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 65i,13n,98p,1263b,1777s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on project.pdf (23 pages).
+Output written on project.pdf (22 pages).

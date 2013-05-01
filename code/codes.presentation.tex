@@ -1,64 +1,12 @@
-%biafra ahanonu
-%LaTeX_Boilerplate
-%updated: 2012.12.01
-%Create new commands to make figures, chapters and other parts standardized, most begin with lbp for LaTeX Boilerplate followed by description
-%_______BIOINFOMATICS_______
-% Automatic fasta formatting
-\newcommand{\fasta}[2]{
-#1
-\begin{spacing}{0}{\tiny\seqsplit{#2}}\end{spacing}\vspace{1em}
-}
-%_______LIST_______
-% Automatic list creation!
-\NewDocumentCommand \lbpitemize {> { \SplitList { , } } m }{%
-	\begin{itemize}
-	{\footnotesize
-		\ProcessList {#1} {\myref }
-	}
-	\end{itemize}
- }
-\NewDocumentCommand{\myref}{m}{
-	\item \llidx{#1}{}
-}
-%_______CODE_______
-% Use to include a code file in the text
-\renewcommand{\lstlistingname}{{\color{red}Code}}
-\DeclareCaptionFont{white}{ \color{white} }
-\DeclareCaptionFormat{listing}{
-  \parbox{\textwidth}{{\color{red}#1}#2#3}
-}
-\captionsetup[lstlisting]{ format=listing, labelfont=red, textfont=black, singlelinecheck=false, margin=0pt, font={bf,footnotesize} }
-\newcommand{\includecode}[6][c]{\lstinputlisting[caption=#3, escapechar=, style=custom#1,label=code:#4,firstline=#5, lastline=#6]{#2}}
-%_______EQUATION_______
-\newcommand{\lbpeq}[3]{
-	\begin{equation}
-		\label{eq:#2}
-		#1
-	\end{equation}
-}
-%_______LINK_______
-\makeatletter
-\let\oldhref=\href
-\renewcommand{\href}[2]{\oldhref{#1}{{\color{red}#2}}}
-\makeatother
-% \renewcommand\UrlFont{\ttfamily\color{red}}
-% \renewcommand{\href}[2]{{\color{red}\hyper@linkurl{\Hurl{#2}}{\Hurl{#1}}}}
-% \DeclareRobustCommand{\href}{\hyper@normalise\href@}
-% \renewcommand{\href}[2]{}
-% \newcommand\hreffootnote@[2]{\footnote{\hyper@linkurl{\Hurl{#2}}{#1}}}
-% \DeclareRobustCommand{\hreffootnote}{\hyper@normalise\hreffootnote@}
-%_______ANSWERS_______
-% Switch on/off answers
-\newcommand{\answers}[1]{{\color{blue}#1}}
+% biafra ahanonu
+% latex_boilerplate
+% updated: 2013.04.30
+% add-on to codex.tex
 %_______CITE_______
-% Code citation cmd
-\newcommand{\codecite}[2]{{\color{red}\autoref{code:#1}#2}}
-% Figure citation cmd
-\newcommand{\figcite}[2]{{\color{red}\autoref{fig:#1}#2}}
-% Table citation cmd
-\newcommand{\tabcite}[2]{{\color{red}\autoref{table:#1}#2}}
-% Equations
-\newcommand{\eqcite}[2]{{\color{red}\autoref{eq:#1}#2}}
+%Figure citation cmd
+\newcommand{\figcite}[2]{{\color{red} (Fig. \ref{fig:#1}#2)}}
+%Table citation cmd
+\newcommand{\tabcite}[2]{{\color{red} (Table \ref{table:#1}#2)}}
 %_______FIGURE_______
 %Macros to help reduce clutter in text and standardize layout of figures
 %______NORMAL_______
@@ -74,34 +22,17 @@
 	%\end{left}
 \end{figure}
 }
-\newcommand{\lbpblankfigure}[6]{
+\newcommand{\lbphfigure}[7]{
 %\lbpfigure{image_location}{width}{reference}{title}{description}{page_location}
-\vfill
-{
-\centering
-\begin{figure}[#6]
+\begin{figure}[#7]
 	%\begin{left}
-	% \center
-	\scalebox{1}{\includegraphics[width=#2,scale=1.0]{#1}}
+	\center
+	\scalebox{1}{\includegraphics[width=#2,height=#3,scale=1.0]{#1}}
 	\captionsetup{labelformat=empty}
-	\caption{#5}
-	\label{fig:#3}
+	\caption{\textbf{{\color{red}Figure \ref{fig:#4}} |  #5}\\ #6}
+	\label{fig:#4}
 	%\end{left}
 \end{figure}
-}
-\vfill
-}
-%______INTEXT_______
-\newcommand{\lbpfloat}[6]{
-%\lbpfigure{image_location}{width}{reference}{title}{description}{page_location}
-\begin{wrapfigure}{#6}{#2}
-	\begin{center}
-		\scalebox{1}{\includegraphics[width=#2,scale=1.0]{#1}}
-	\end{center}
-	\captionsetup{labelformat=empty}
-	\caption[#4]{\textbf{{\color{red}Figure \ref{fig:#3}} |  #4}\\ #5}
-	\label{fig:#3}
-\end{wrapfigure}
 }
 %______WRAP_______
 %This figure can wrap to multiple pages
@@ -114,7 +45,7 @@
 	\end{center}
 	\vspace{-20pt}
 	\singlespace
-	\textbf{Figure \ref{fig:#3} |  #4}\\ #5
+	\textbf{{\color{red}Figure \ref{fig:#3}} |  #4}\\ #5
 	\label{fig:#3}
 	\vspace{-10pt}
 \end{wrapfigure}
@@ -129,6 +60,7 @@
 	label/.estore in = \multiFigLabel,
 	capTitle/.estore in = \multiFigCapTitle,
 	capDes/.estore in = \multiFigCapDesc,
+	figwidth/.estore in = \multiFigwidth,
 }
 %Create a new multi figure command
 \newcommand\multifig[9][]{
@@ -139,34 +71,36 @@
 	\pgfkeys{/multiFigure, #1}
 	\begin{figure*}[ht!]
 	\begin{center}
-		\subfloat[#2]{\includegraphics[width=.45\textwidth,scale=1.0]{#3}}  
-		\ifthenelse{\isempty{#5}}{}{
-		\subfloat[#4]{\includegraphics[width=.45\textwidth,scale=1.0]{#5}}
-		}\\
-		\ifthenelse{\isempty{#7}}{}{
-		\subfloat[#6]{\includegraphics[width=.45\textwidth,scale=1.0]{#7}}
-		} 
-		\ifthenelse{\isempty{#8}}{}{
-		\subfloat[#8]{\includegraphics[width=.45\textwidth,scale=1.0]{#9}}
-		}
+		\subfloat[#2]{\includegraphics[width=\multiFigwidth,scale=1.0]{#3}}  
+		\ifthenelse{\isempty{#5}}{}{\subfloat[#4]{\includegraphics[width=\multiFigwidth,scale=1.0]{#5}}}
+		% If we only have three figures, make one row!
+		\ifthenelse{\isempty{#9}}{}{\\}		
+		\ifthenelse{\isempty{#7}}{}{\subfloat[#6]{\includegraphics[width=\multiFigwidth,scale=1.0]{#7}}} 
+		\ifthenelse{\isempty{#8}}{}{\subfloat[#8]{\includegraphics[width=\multiFigwidth,scale=1.0]{#9}}}
 		\captionsetup{labelformat=empty}
 		\caption{\textbf{{\color{red}Figure \ref{fig:\multiFigLabel}} |  \multiFigCapTitle}\\ \multiFigCapDesc}
 		\label{fig:\multiFigLabel}
 	\end{center}
 	\end{figure*}	
 }
+\newcommand\watermarkpic[1]{
+	\AddToShipoutPicture*{\watermarkpicfxn{#1}}
+}
+\newcommand\watermarkpicfxn[1]{
+	\put(-.01in,0){
+		\parbox[b][\paperheight]{\paperwidth}{%
+			% \vfill
+			% \centering
+			% ,height=\paperheight
+			% width=\paperwidth+.02in
+			\includegraphics[height=\paperheight,keepaspectratio]{#1}%
+			\vfill
+		}
+	}
+}
 %__________________________________________
 % TITLES
 %Section, chapter and other title formatting
-%_______H1 Format_______
-\newcommand{\lbps}[2]{
-	\phantomsection
-	\addcontentsline{toc}{subsection}{#1}
-	\textbf{\large#1}\index{#1}\\
-}
-\newcommand{\lbpss}[2]{
-	\textbf{\large#1}\index{#1}\\
-}
 %_______CHAPTER_______
 \newcommand{\lbpchapter}[5]{
 %Input five different, each can be called with #(number)
@@ -174,7 +108,9 @@
 	\newpage\noindent
 	\begin{spacing}{0}
 		\begin{flushright}
-			\textbf{\Huge#1}
+			% \textbf{\Huge#1}\footnote{#2}
+			{\Huge#1}
+			\ifthenelse{\isempty{#2}}{}{\let\thefootnote\relax\footnote{#2#3}}
 			% \colorbox{black}{\color{white}\makebox[\paperwidth][r]{\textbf{\Huge#1#2}}}	
 			\rule{\textwidth}{.5pt}
 		\end{flushright}	
@@ -196,7 +132,7 @@
 	\newpage\noindent
 	\begin{spacing}{0}
 		\begin{flushright}
-			\textbf{\Huge#1}
+			\Huge#1
 			\rule{\textwidth}{.5pt}
 		\end{flushright}	
 	\end{spacing}
@@ -212,31 +148,79 @@
 %_______TITLE_______
 \newcommand{\lbptitle}[4]{
 %First page title, see CHAPTER for implementation details
-	\begin{spacing}{0}
-		\noindent
-		\textbf{{\fontsize{50}{60}\selectfont #1}}
-		% \textbf{\scalebox{7}{#1}}\\
-		\textbf{\huge#4}
-	\end{spacing}
+	% \begin{spacing}{0}
+	% 	\noindent
+	% 	{\fontsize{50}{60}\selectfont #1}\\
+	% 	\huge
+	% \end{spacing}
+	\null
 	\vfill
-	\begin{flushright}		
-	\textbf{\textbf{\huge#3} \huge\textbar\ \huge#2}
-	\end{flushright}	
-	\vspace{2em}
+	\hspace{-.0625\dimexpr\paperwidth}
+	\colorbox{black}{
+		\color{white}\makebox[\paperwidth][r]{
+			{\fontsize{40}{60}\selectfont #1\hspace{.0625\dimexpr\paperwidth}}
+		}
+	}
+
+	\vspace{-1em}
+	\hspace{-.0625\dimexpr\paperwidth}
+	\colorbox{red}{
+		\color{white}\makebox[\paperwidth][l]{\null}
+	}
+
+	\vspace{-1em}
+	\hspace{-.0625\dimexpr\paperwidth}
+	\colorbox{white}{
+		\color{black}\makebox[\paperwidth][r]{
+			{\fontsize{30}{50}\selectfont {#3 \textbar\ #2 \textbar\ {\color{red}#4}}\hspace{.0625\dimexpr\paperwidth}}
+		}
+	}
+	% \begin{flushright}		
+	% 	{\huge#3 \textbar\ #2 \textbar\ {\color{red}#4}}
+	% \end{flushright}	
+
+	\vspace{-.0625\dimexpr\paperheight}
 	%Remove styling
 	% \thispagestyle{empty}
-	\vspace{-50pt}
+	% \vspace{-50pt}
 }
 %_______PART_______
-\newcommand{\lbppart}[2]{
+\newcommand{\lbppart}[3]{
 %For book parts, see CHAPTER for implementation details 
 	\newpage\noindent
-	\begin{spacing}{0}
-		\begin{flushleft}
-			\textbf{\Huge#1}
-			\rule{\textwidth}{.5pt}
-		\end{flushleft}	
-	\end{spacing}
+	\watermarkpic{#3}
+	\null
+	\vfill
+	\hspace{-.0625\dimexpr\paperwidth}
+	\colorbox{red}{
+		\color{white}\makebox[\paperwidth][r]{
+			{\fontsize{40}{60}\selectfont #1\hspace{.0625\dimexpr\paperwidth}}
+		}
+	}
+
+	\vspace{-1em}
+	\hspace{-.0625\dimexpr\paperwidth}
+	\colorbox{white}{
+		\color{white}\makebox[\paperwidth][r]{
+			{\fontsize{10}{10}\selectfont #1\hspace{.0625\dimexpr\paperwidth}}
+		}
+	}
+
+	\vspace{-1.5em}
+	\hspace{-.0625\dimexpr\paperwidth}
+	\colorbox{black}{
+		\color{white}\makebox[\paperwidth][l]{
+			{\fontsize{30}{50}\selectfont #2\hspace{.0625\dimexpr\paperwidth}}
+		}
+	}
+
+	\vspace{-.0625\dimexpr\paperheight}
+	% \begin{spacing}{0}
+	% 	\begin{flushleft}
+	% 		\Huge#1
+	% 		\rule{\textwidth}{.5pt}
+	% 	\end{flushleft}	
+	% \end{spacing}
 	%To help proper linking
 	\phantomsection
 	\addcontentsline{toc}{chapter}{#1}	
@@ -253,7 +237,7 @@
 	\newpage\noindent
 	\begin{spacing}{0}
 		\begin{flushright}
-			\textbf{\Huge#1}
+			\Huge#1
 			\rule{\textwidth}{.5pt}
 		\end{flushright}	
 	\end{spacing}
@@ -266,12 +250,7 @@
 }
 %_______INDEX_______
 %Provide a standard index command, allow easier modification later
-\newcommand{\lidx}[2]{
-	\ifthenelse{\isempty{#2}}%
-    {{\color{blue}#1}\index{#1}}% if #2 is empty
-    {{\color{blue}#1}\index{#2!#1}}% if #2 is not empty
-}
-\newcommand{\llidx}[2]{
+\newcommand{\lbpindex}[2]{
 	\ifthenelse{\isempty{#2}}%
     {#1\index{#1}}% if #2 is empty
     {#1\index{#2!#1}}% if #2 is not empty
@@ -282,8 +261,8 @@
 	\renewcommand{\leftmark}{Index}
 	\begin{spacing}{0}
 		\begin{flushright}
-			\textbf{\Huge \indexname}
-			\rule{\textwidth}{.5pt}
+			\Huge \indexname\\
+			\rule{\textwidth}{.5pt}\\
 		\end{flushright}	
 	\end{spacing}	
 	\vspace{1em}
@@ -317,7 +296,7 @@
 	%TOC title
 	\begin{spacing}{0}
 		\begin{flushright}
-			\textbf{\Huge Table of Contents}
+			\Huge Table of Contents
 			\rule{\textwidth}{.5pt}
 		\end{flushright}	
 	\end{spacing}	
@@ -336,7 +315,7 @@
     {
 	\begin{spacing}{0}
 		\begin{flushright}
-			\textbf{\Huge \bibname}
+			\Huge \bibname\\
 			\rule{\textwidth}{.5pt}
 		\end{flushright}	
 	\end{spacing}
@@ -368,18 +347,65 @@
   		\oldlistoffigures\thispagestyle{empty}%use the standard toc
 }
 \makeatletter 
-%Change the LOF command
+%Change the TOC command
 \renewcommand\listoffigures{
-	%LOF title
+	%TOC title
 	\begin{spacing}{0}
 		\begin{flushright}
-			\textbf{\Huge Figures}\\
+			\textbf{\Huge Figures}
 			\rule{\textwidth}{.5pt}
 		\end{flushright}	
 	\end{spacing}	
 	\thispagestyle{empty}
 	% \pagestyle{empty} 
-	%Start the LOF
+	%Start the TOC
+	\vspace{1em}
+	\@starttoc{lof}
+} 
+\makeatother 
+% %_____________________
+% %LIST OF Tables
+% \let\oldlistoftables\listoftables%remember the definition
+% \renewcommand\listoftables{
+%   		\oldlistoftables\thispagestyle{empty}%use the standard toc
+% }
+% \makeatletter 
+% %Change the TOC command
+% \renewcommand\listoftables{
+% 	%TOC title
+% 	\begin{spacing}{0}
+% 		\begin{flushright}
+% 			\textbf{\Huge Tables}\\
+% 			\rule{\textwidth}{.5pt}
+% 		\end{flushright}	
+% 	\end{spacing}	
+% 	\thispagestyle{empty}
+% 	% \pagestyle{empty} 
+% 	%Start the TOC
+% 	\vspace{1em}
+% 	\@starttoc{lot}
+% } 
+% \makeatother 
+
+%_____________________
+%LIST OF FIGURES
+\let\oldlistoffigures\listoffigures%remember the definition
+\renewcommand\listoffigures{
+  		\oldlistoffigures\thispagestyle{empty}%use the standard toc
+}
+\makeatletter 
+%Change the TOC command
+\renewcommand\listoffigures{
+	%TOC title
+	\begin{spacing}{0}
+		\begin{flushright}
+			\textbf{\Huge Figures}
+			\rule{\textwidth}{.5pt}
+		\end{flushright}	
+	\end{spacing}	
+	\thispagestyle{empty}
+	% \pagestyle{empty} 
+	%Start the TOC
 	\vspace{1em}
 	\@starttoc{lof}
 } 
@@ -391,9 +417,9 @@
   		\oldlistoftables\thispagestyle{empty}%use the standard toc
 }
 \makeatletter 
-%Change the LOT command
+%Change the TOC command
 \renewcommand\listoftables{
-	%LOT title
+	%TOC title
 	\begin{spacing}{0}
 		\begin{flushright}
 			\textbf{\Huge Tables}\\
@@ -402,7 +428,7 @@
 	\end{spacing}	
 	\thispagestyle{empty}
 	% \pagestyle{empty} 
-	%Start the LOT
+	%Start the TOC
 	\vspace{1em}
 	\@starttoc{lot}
 } 

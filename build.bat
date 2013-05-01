@@ -1,107 +1,121 @@
 ::biafra ahanonu
 ::update: 2013.03.17
-::LaTeX_Boilerplate
+::latex_boilerplate
 
-::Turn off echoing of commands
-@ECHO OFF
+::turn off echoing of commands
+@echo off
 cls
-::Allow proper variable setting
+::allow proper variable setting
 setlocal enabledelayedexpansion
-::Welcome
-ECHO LaTeX_Boilerplate Builder v1.0
-ECHO biafra ahanonu
+::welcome
+echo latex_boilerplate builder v1.0
+echo biafra ahanonu
+::display current directory and title
 pwd
-TITLE %CD%
-ECHO _______
+title %cd%
+echo _______
 
-::Defaults
-SET TEX=xelatex
-SET OUTPUT="-interaction=batchmode"
-SET BOUTPUT="--quiet"
-SET RERUN=1
-SET DPDF=2
-SET DCHECK=1
-::Get name of project TEX file from root
-::for /f "delims=" %a in ('dir /B *.tex') do @set PROJECT=%a
-dir /B *.tex>project.name
-set /p PROJECTT= < project.name
+::defaults
+set tex=xelatex
+set output="-interaction=batchmode"
+set boutput="--quiet"
+set rerun=1
+set dpdf=0
+set dcheck=1
+set checkout=1
+::get name of project tex file from root
+::for /f "delims=" %a in ('dir /b *.tex') do @set project=%a
+dir /b *.tex>project.name
+set /p projectt= < project.name
 del project.name
 
-::Display and check defaults
-ECHO 1=yes, 2=no
-ECHO latex compiler: %TEX%
-ECHO latex output? %OUTPUT%
-ECHO bibtex output? %BOUTPUT%
-ECHO rerun batch? %RERUN%
-ECHO show pdf? %DPDF%
-ECHO project file: %PROJECTT%
-::Remove extension
-SET PROJECT=%PROJECTT:~0,-4%
+:settings
+::display and check defaults
+echo current settings
+echo yes[1], no[0]
+echo latex compiler: %tex%
+echo latex output? %output%
+echo bibtex output? %boutput%
+echo rerun batch? %rerun%
+echo show pdf? %dpdf%
+echo project file: %projectt%
+::remove extension
+set project=%projectt:~0,-4%
 
-SET /P DCHECK="Defaults work? yes[1] or no[2]: "
+set /p dcheck="settings work? yes[1] or no[0]: "
 
-IF %DCHECK% EQU 2 (
-	::Ask user for name of project file
-	SET /P PROJECTT=name of TEX file to compile? 
-	::Remove extension
-	SET PROJECT=%PROJECTT:~0,-4%
+if %dcheck% equ 0 (
+	::ask user for name of project file
+	set /p projectt=name of tex file to compile? 
+	::remove extension
+	set project=%projectt:~0,-4%
 
-	::Ask for version of (xe)latex to use
-	SET /P TEX="xelatex[1] or pdflatex[2]? "
-	IF !TEX! EQU 1 SET TEX=xelatex
-	IF !TEX! EQU 2 SET TEX=pdflatex
-	SET /P OUTPUT="Output? yes[1] or no[2]: "
-	IF !OUTPUT! EQU 1 SET OUTPUT=""
-	IF !OUTPUT! EQU 1 SET BOUTPUT=""
-	IF !OUTPUT! EQU 2 SET OUTPUT="-interaction=batchmode"
-	IF !OUTPUT! EQU 2 SET BOUTPUT="--quiet"
-	SET /P DPDF="Display PDF? yes[1] or no[2]: "
+	::ask for version of (xe)latex to use
+	set /p tex="xelatex[1] pdflatex[2] htlatex[3]? "
+	if !tex! equ 1 set tex=xelatex
+	if !tex! equ 2 set tex=pdflatex
+	if !tex! equ 3 set tex=htlatex
+	set /p checkout="output? yes[1] or no[0]: "
+	if !checkout! equ 1 set output=""
+	if !checkout! equ 1 set boutput=""
+	if !checkout! equ 0 set output="-interaction=batchmode"
+	if !checkout! equ 0 set boutput="--quiet"
+	set /p dpdf="display pdf? yes[1] or no[0]: "
+
+	cls
+	goto settings
 )
-::If temp files exist, delete them
-REN %PROJECT%.tex temp.tex
-IF EXIST %PROJECT%.log (
-	DEL %PROJECT%.*
-)
-REN temp.tex %PROJECT%.tex
-::Compile several times to get all references/links/indices correct
-ECHO _______
-SET /a build=0
+::if temp files exist, delete them
+for /f %%a in ('dir /b ^| findstr /v "tex html pdf log" ^| findstr /r %project%') do del %%a
+
+ren temp.tex %project%.tex
+::compile several times to get all references/links/indices correct
+echo _______
+set /a build=0
+echo %tex%
+if %tex%==htlatex goto htmlout
+if %tex%==pdflatex goto loop
+if %tex%==xelatex goto loop
+
+::htlatex section
+:htmlout
+echo %tex% %project%.tex
+::switch for if user wants output
+if %checkout% equ 1 %tex% %project%.tex 
+if %checkout% equ 0 %tex% %project%.tex > html.log
+goto end
+
+::pdflatex and xelatex section
 :loop
-IF %build%==3 GOTO END
-ECHO build #%build%
-%TEX% --enable-installer %OUTPUT% %PROJECT%.tex /wait
-bibtex %BOUTPUT% %PROJECT%
-makeindex %PROJECT%.idx
-ECHO _______
-SET /a build=%build%+1
-GOTO LOOP
+if %build%==3 goto end
+echo build #%build%
+%tex% --enable-installer %output% %project%.tex /wait
+bibtex %boutput% %project%
+makeindex %project%.idx
+echo _______
+set /a build=%build%+1
+goto loop
 :end
 
-::Remove all project files, save .tex and .pdf
-REN %PROJECT%.tex temp.tex
-REN %PROJECT%.pdf temp.pdf
-REN %PROJECT%.log temp.log
-IF EXIST %PROJECT%.aux (
-	DEL %PROJECT%.*
-)
-REN temp.tex %PROJECT%.tex
-REN temp.pdf %PROJECT%.pdf
-REN temp.log %PROJECT%.log 
+@echo on
+echo cleaning up and deleting files...
+::remove all project files, save the below
+for /f %%a in ('dir /b ^| findstr /v "tex html pdf log" ^| findstr /r %project%') do del %%a
+::remove all .aux files
+del /s *.aux
+@echo off
+echo done with cleanup
+echo _______
 
-::Remove all .aux files
-@ECHO ON
-DEL /S *.aux
-@ECHO OFF
-
-::Open project file
-IF %DPDF%==1 (
-	ECHO Opening %PROJECT%.pdf...
-	%PROJECT%.pdf
+::open project file
+if %dpdf%==1 (
+	echo opening %project%.pdf...
+	%project%.pdf
 )
 
-::pause
-::Ask if user wants to rerun the script
-SET /P RERUN=Rerun script? yes[1] or no[2]: 
-IF %RERUN% EQU 1 build.bat
-::Return expansion variable to normal
+::ask if user wants to rerun the script
+set /p rerun=rerun script? yes[1] or no[2]: 
+if %rerun% equ 1 build.bat
+
+::return expansion variable to normal
 endlocal

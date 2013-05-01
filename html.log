@@ -1,0 +1,331 @@
+
+>latex  \makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx"\HCode\def\HCode"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.{\g@addto@macro\@documentclasshook{\RequirePackage[#1,html]{tex4ht}}\let\HCode\documentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname tex4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{\HCode}{\documentstyle[tex4ht]}}}\makeatother\HCode .a.b.c.\input  project.tex 
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9)
+entering extended mode
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+(C:\Users\B\Dropbox\GitHub\latex_boilerplate\project.tex
+(C:\Users\B\Dropbox\GitHub\latex_boilerplate\common/packages.tex
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\base\book.cls
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\base\bk12.clo))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\tex4ht.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\usepackage.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\pgf\utilities\pgfkeys.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\pgf\utilities\pgfkeys.code.tex
+
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\pgf\utilities\pgfkeysfiltered.
+code.tex))) (C:\Users\B\Software\Portable\MikTeX\tex\latex\xifthen\xifthen.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\misc\etex.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\tools\calc.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\base\ifthen.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\ifmtarg\ifmtarg.sty))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\ams\math\amsmath.sty
+For additional information on amsmath, use the `?' option.
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\ams\math\amstext.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\ams\math\amsgen.sty))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\ams\math\amsbsy.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\ams\math\amsopn.sty))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3packages\xparse\xparse.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\expl3.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3names.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3bootstrap.sty))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3basics.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3expan.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3tl.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3seq.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3int.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3quark.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3prg.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3clist.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3token.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3prop.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3msg.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3file.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3skip.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3keys.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3fp.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3box.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3coffins.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3color.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3luatex.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3candidates.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\oberdiek\ifpdf.sty)))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\fp\fp.sty
+`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\fp\defpattern.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\fp\fp-basic.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\fp\fp-addons.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\fp\fp-snap.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\fp\fp-exp.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\fp\fp-trigo.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\fp\fp-pas.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\fp\fp-random.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\fp\fp-eqn.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\fp\fp-upn.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\fp\fp-eval.sty))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\listings\listings.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\keyval.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\listings\lstmisc.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\listings\listings.cfg))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\listings\lstlang1.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\listings\lstlang2.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\listings\lstlang3.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\color.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\00miktex\color.cfg)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\dvips.def)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\dvipsnam.def))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\colortbl\colortbl.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\tools\array.sty))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\booktabs\booktabs.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\ctable\ctable.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\xkeyval\xkeyval.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\xkeyval\xkeyval.tex))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\tools\tabularx.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\rotating\rotating.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\graphicx.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\graphics.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\trig.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\00miktex\graphics.cfg)))))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\xcolor\xcolor.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\00miktex\color.cfg))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\tools\longtable.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\eso-pic\eso-pic.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\oberdiek\atbegshi.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\oberdiek\infwarerr.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\oberdiek\ltxcmds.sty)))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\sttools\stfloats.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\float\float.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\subfig\subfig.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\caption\caption.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\caption\caption3.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\caption\ltcaption.sty)))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\wrapfig\wrapfig.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\pdfpages\pdfpages.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\pdfpages\pppdftex.def
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\pdfpages\ppnull.def
+
+Package pdfpages Warning: I will use a dummy \includepdf command
+(pdfpages)                which will NOT insert any pages, because
+(pdfpages)                you are producing DVI output.
+
+))) (C:\Users\B\Software\Portable\MikTeX\tex\latex\ltxmisc\parskip.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\was\gensymb.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\setspace\setspace.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\base\fix-cm.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\base\ts1enc.def))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\leading\leading.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\tools\verbatim.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\tools\multicol.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\enumitem\enumitem.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\seqsplit\seqsplit.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\footmisc\footmisc.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\lipsum\lipsum.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\ulem\ulem.sty)
+(C:\Users\B\Dropbox\GitHub\latex_boilerplate\styles/simplemargins.sty
+Simplemargins margin control commands <15 Mar 93>.
+) (C:\Users\B\Software\Portable\MikTeX\tex\latex\underlin\underlin.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\fancyhdr\fancyhdr.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\mh\mathtools.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\mh\mhsetup.sty))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\hyperref\hyperref.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\oberdiek\hobsub-hyperref.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\oberdiek\hobsub-generic.sty))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\ifxetex\ifxetex.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\oberdiek\auxhook.sty
+
+Package auxhook Warning: Cannot patch \document,
+(auxhook)                using \AtBeginDocument instead.
+
+) (C:\Users\B\Software\Portable\MikTeX\tex\latex\oberdiek\kvoptions.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\hyperref\pd1enc.def)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\00miktex\hyperref.cfg)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\ltxmisc\url.sty)
+
+Package hyperref Message: Stopped early.
+
+)
+
+Package hyperref Message: Driver: htex4ht.
+
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\hyperref\htex4ht.def)
+
+Package hyperref Warning: Unexpected value for option `hidelinks'
+(hyperref)                is ignored on input line 127.
+
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\base\fontenc.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\base\t1enc.def))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\psnfss\helvet.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\titlesec\titlesec.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\natbib\natbib.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\base\makeidx.sty)
+Writing index file project.idx
+) (C:\Users\B\Dropbox\GitHub\latex_boilerplate\common/header.tex)
+(C:\Users\B\Dropbox\GitHub\latex_boilerplate\common/codes.tex
+(C:\Users\B\Dropbox\GitHub\latex_boilerplate\common/code/misc.tex)
+(C:\Users\B\Dropbox\GitHub\latex_boilerplate\common/code/refs.tex)
+(C:\Users\B\Dropbox\GitHub\latex_boilerplate\common/code/figures.tex)
+(C:\Users\B\Dropbox\GitHub\latex_boilerplate\common/code/sections.tex)
+(C:\Users\B\Dropbox\GitHub\latex_boilerplate\common/code/index.tex))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\tex4ht.4ht
+::::::::::::::::::::::::::::::::::::::::::
+ TeX4ht info is available in the log file 
+::::::::::::::::::::::::::::::::::::::::::
+) (C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\tex4ht.sty
+--- needs --- tex4ht project ---
+(C:\Users\B\Dropbox\GitHub\latex_boilerplate\project.tmp)
+l.1437 --- TeX4ht warning --- No file project.xref ---
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\latex.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\fontmath.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\array.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\color.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\colortbl.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\book.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\ifthen.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\amsmath.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\amstext.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\amsbsy.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\amsopn.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\listings.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\dvips.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\dvipsnam.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\dvipsnam.def)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\booktabs.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\tabularx.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\rotating.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\graphicx.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\graphics.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\xcolor.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\color.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\longtable.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\float.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\caption.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\wrapfig.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\verbatim.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\multicol.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\enumitem.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\footmisc.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\ulem.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\mathtools.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\hyperref.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\hyperref\nameref.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\oberdiek\gettitlestring.sty))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\nameref.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\pd1enc.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\url.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\titlesec.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\natbib.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\makeidx.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+No file project.aux.
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\psnfss\t1phv.fd)
+
+Package caption Warning: \caption will not be redefined since it's already
+(caption)                redefined by a document class or package which is
+(caption)                unknown to the caption package.
+See the caption package documentation for explanation.
+
+
+Package gensymb Warning: Not defining \perthousand.
+
+
+Package gensymb Warning: Not defining \micro.
+
+[1] (C:\Users\B\Dropbox\GitHub\latex_boilerplate\common/titlepage.tex [2])
+[3] [4] [5]
+! Missing number, treated as zero.
+<to be read again> 
+                   \let 
+l.27 	\end{titlepage}
+                     
+? 

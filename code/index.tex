@@ -1,0 +1,41 @@
+% biafra ahanonu
+% latex_boilerplate
+% updated: 2013.04.30
+%_______INDEX_______
+%Provide a standard index command, allow easier modification later
+\newcommand{\lidx}[2]{
+\unskip
+	\ifthenelse{\isempty{#2}}%
+    {{\color{blue}#1}\index{#1}}% if #2 is empty
+    {{\color{blue}#1}\index{#2!#1}}% if #2 is not empty
+\unskip
+}
+\newcommand{\llidx}[2]{
+\unskip
+	\ifthenelse{\isempty{#2}}%
+    {#1\index{#1}}% if #2 is empty
+    {#1\index{#2!#1}}% if #2 is not empty
+\unskip
+}
+%Redefine the index environment
+\makeatletter
+\renewenvironment{theindex}{%
+	\renewcommand{\leftmark}{Index}
+	\begin{spacing}{0}
+		\begin{flushright}
+			\textbf{\Huge \indexname}
+			\rule{\textwidth}{.5pt}
+		\end{flushright}	
+	\end{spacing}	
+	\vspace{1em}
+	\columnseprule \z@
+	\columnsep 35\p@
+	\idx@heading
+	\index@preamble\par\nobreak
+	\thispagestyle{\indexpagestyle}\parindent\z@
+	\setlength{\parskip}{\z@ \@plus .3\p@}%
+	\setlength{\parfillskip}{\z@ \@plus 1fil}%
+	\begin{multicols}{2}%
+	\let\item\@idxitem
+}{\end{multicols}\clearpage}   
+\makeatother
