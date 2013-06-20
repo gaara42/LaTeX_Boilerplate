@@ -1,0 +1,104 @@
+% biafra ahanonu
+% latex_boilerplate
+% updated: 2013.04.30
+%_______CSS_______
+%Make a line for separating in-text sections
+\newcommand*\googleanalytics{
+	\HCode{
+		<script src="scripts/googleanalytics.js" ></script>
+	}
+}
+%_______CSS_______
+%Make a line for separating in-text sections
+\newcommand*\cssoutput{
+	\HCode{
+	<style>
+		img:hover{
+			opacity: 0.5;
+		}
+		.brainText{
+			width: 80\%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.brainText a{
+			text-decoration: underline;
+			color:red;
+		}
+		div.maketitle{
+			margin-left:auto;
+			margin-right:auto;
+			text-align:center;
+		}
+		div.tableofcontents, div.theindex{
+		/*	-moz-column-width: 45\%; 
+			-webkit-column-width: 45\%; */
+			-moz-column-count: 2; 
+			-webkit-column-count: 2; 
+			-moz-column-gap: 1em; 
+			-webkit-column-gap: 1em; 
+			-moz-column-rule: 1px solid black; 
+			-webkit-column-rule: 1px solid black;
+		}
+		.tableofcontents a{
+			text-decoration: none;
+		}
+		hr.figure,hr.endfigure,div.caption{
+			width:80\%;
+			max-width:742px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		div.caption{
+			text-indent:0;
+		}
+		.brainText img{
+			max-width:742px;
+			max-height:342px;
+		}
+		div.figure{
+			text-align: center;
+		}
+		.caption .id{
+			color:red;
+			font-weight: bold;
+		}
+		.likesectionHead,.likechapterHead{
+			font-weight: bold;
+		}
+		.cmbx-12,.footnote-mark a{
+			font-weight: bold;
+			color:red;
+		}
+		.cmti-12{
+			color:blue;
+			font-style: normal;
+		}
+		hr{
+			background-color: red;
+			height:1px;
+			border-width: 0;
+		}
+		hr.headingsep{
+			height:3px;
+		}
+		p.indent{
+			text-indent:0px;
+		}
+		div.footnotes{
+			border-top: solid 1px black;
+			border-bottom: solid 1px black;
+			margin-right:0;
+			width:80\%;
+			border-color:red;
+			margin-bottom:7em;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		@media only screen and (max-width : 1000px){
+			-moz-column-count: 1; 
+			-webkit-column-count: 1; 
+		}
+	</style>
+	}
+}

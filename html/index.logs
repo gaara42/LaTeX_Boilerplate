@@ -1,0 +1,1023 @@
+
+>latex  \makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx"\HCode\def\HCode"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.{\g@addto@macro\@documentclasshook{\RequirePackage[#1,html]{tex4ht}}\let\HCode\documentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname tex4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{\HCode}{\documentstyle[tex4ht]}}}\makeatother\HCode "html,imgdir:images/,fn-in".a.b.c.\input  index.tex 
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9)
+entering extended mode
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+(C:\Users\B\Dropbox\syscarut\brain\index.tex
+\@input{common/packages.aux}
+(C:\Users\B\Dropbox\syscarut\brain\common/packages.tex
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\base\book.cls
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\base\bk12.clo))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\tex4ht.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\usepackage.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\xifthen\xifthen.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\misc\etex.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\tools\calc.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\base\ifthen.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\ifmtarg\ifmtarg.sty))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\amsmath\amsmath.sty
+For additional information on amsmath, use the `?' option.
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\amsmath\amstext.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\amsmath\amsgen.sty))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\amsmath\amsbsy.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\amsmath\amsopn.sty))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3packages\xparse\xparse.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\expl3.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3names.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3bootstrap.sty))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3basics.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3expan.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3tl.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3seq.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3int.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3quark.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3prg.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3clist.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3token.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3prop.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3msg.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3file.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3skip.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3keys.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3fp.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3box.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3coffins.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3color.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3luatex.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3candidates.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\oberdiek\ifpdf.sty)))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\graphicx.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\keyval.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\graphics.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\trig.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\00miktex\graphics.cfg)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\dvips.def)))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\caption\caption.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\caption\caption3.sty))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\was\gensymb.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\setspace\setspace.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\tools\multicol.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\datetime\datetime.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\fmtcount\fmtcount.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\etoolbox\etoolbox.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\fmtcount\fcprefix.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\fmtcount\fcnumparser.sty))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\fmtcount\fc-english.def)))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\hyperref\hyperref.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\oberdiek\hobsub-hyperref.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\oberdiek\hobsub-generic.sty))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\ifxetex\ifxetex.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\oberdiek\auxhook.sty
+
+Package auxhook Warning: Cannot patch \document,
+(auxhook)                using \AtBeginDocument instead.
+
+) (C:\Users\B\Software\Portable\MikTeX\tex\latex\oberdiek\kvoptions.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\hyperref\pd1enc.def)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\00miktex\hyperref.cfg)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\ltxmisc\url.sty)
+
+Package hyperref Message: Stopped early.
+
+)
+
+Package hyperref Message: Driver: htex4ht.
+
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\hyperref\htex4ht.def)
+
+Package hyperref Warning: Unexpected value for option `hidelinks'
+(hyperref)                is ignored on input line 131.
+
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\natbib\natbib.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\base\makeidx.sty)
+Writing index file index.idx
+)
+\@input{common/codes.aux}
+(C:\Users\B\Dropbox\syscarut\brain\common/codes.tex
+(C:\Users\B\Dropbox\syscarut\brain\code/misc.tex)
+(C:\Users\B\Dropbox\syscarut\brain\code/refs.tex)
+(C:\Users\B\Dropbox\syscarut\brain\code/figures.tex)
+(C:\Users\B\Dropbox\syscarut\brain\code/sections.tex)
+(C:\Users\B\Dropbox\syscarut\brain\code/index.tex)
+(C:\Users\B\Dropbox\syscarut\brain\code/css.tex))
+\@input{common/topcontent.aux}
+(C:\Users\B\Dropbox\syscarut\brain\common/topcontent.tex)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\tex4ht.4ht
+::::::::::::::::::::::::::::::::::::::::::
+ TeX4ht info is available in the log file 
+::::::::::::::::::::::::::::::::::::::::::
+) (C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\tex4ht.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\color.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\00miktex\color.cfg)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\dvipsnam.def))
+--- needs --- tex4ht index ---
+(C:\Users\B\Dropbox\syscarut\brain\index.tmp)
+(C:\Users\B\Dropbox\syscarut\brain\index.xref)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\latex.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\fontmath.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\book.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\ifthen.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\amsmath.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\amstext.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\amsbsy.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\amsopn.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\graphicx.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\graphics.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\dvips.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\caption.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\multicol.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\hyperref.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\hyperref\nameref.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\oberdiek\gettitlestring.sty))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\nameref.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\pd1enc.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\url.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\natbib.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\makeidx.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\color.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\dvipsnam.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\dvipsnam.def)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Dropbox\syscarut\brain\index.aux
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.14.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.09.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.06.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.04.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.30.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.29.aux
+
+LaTeX Warning: Label `fig:' multiply defined.
+
+
+LaTeX Warning: Label `fig:' multiply defined.
+
+) (C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.27.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.24.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.23.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.22.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.20.aux)
+(C:\Users\B\Dropbox\syscarut\brain\common/references.aux))
+
+Package caption Warning: \caption will not be redefined since it's already
+(caption)                redefined by a document class or package which is
+(caption)                unknown to the caption package.
+See the caption package documentation for explanation.
+
+
+Package gensymb Warning: Not defining \perthousand.
+
+
+Package gensymb Warning: Not defining \micro.
+
+[1] [2] (C:\Users\B\Software\Portable\MikTeX\tex\latex\base\omscmr.fd) [1]
+---------------------------------------------------------
+l.25 --- TeX4ht warning --- If not done so, the index is to be processed by 
+  tex '\def\filename{{index}{idx}{4dx}{ind}} \input  idxmake.4ht' 
+  makeindex -o index.ind index.4dx 
+instead of 
+  makeindex -o index.ind index.idx 
+On some platforms, the quotation marks ' should be 
+ replaced by double quotation marks " or eliminated. 
+---------------------------------------------------------  ---
+[1] (C:\Users\B\Dropbox\syscarut\brain\index.4ct [2]) [3]
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.14.tex [4] [5] [6]
+l.8 --- TeX4ht warning --- Cannot determine size of graphic in images/cost_per_
+megabase.jpg (no BoundingBox) ---
+[7]
+
+Package hyperref Warning: No autoref name for `likesection' on input line 10.
+
+[8] [9]
+l.12 --- TeX4ht warning --- Cannot determine size of graphic in images/molecula
+r_tickettape.jpg (no BoundingBox) ---
+[10] [11] [12]
+l.16 --- TeX4ht warning --- Cannot determine size of graphic in images/assembly
+_lines.png (no BoundingBox) ---
+[13]) [14] [15] (C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.09.tex
+[16]) [17] [18] [19] (C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.06.tex
+ [20] [21] [22]
+l.14 --- TeX4ht warning --- Cannot determine size of graphic in images/cost_of_
+disease.jpg (no BoundingBox) ---
+[23]) [24] [25] (C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.04.tex
+[26]) [27] [28] (C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.30.tex
+[29] [30]) [31] [32] (C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.29.tex
+ [33] [34] [35]
+l.17 --- TeX4ht warning --- Cannot determine size of graphic in images/science_
+fiction.jpg (no BoundingBox) ---
+[36] [37] [38]
+l.29 --- TeX4ht warning --- Cannot determine size of graphic in images/Cai_2010
+.jpg (no BoundingBox) ---
+[39] [40]) [41] [42] (C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.27.tex
+ [43] [44] [45]
+l.9 --- TeX4ht warning --- Cannot determine size of graphic in images/placozoa.
+jpg (no BoundingBox) ---
+[46]) [47] [48] (C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.24.tex
+[49] [50] [51]
+l.9 --- TeX4ht warning --- Cannot determine size of graphic in images/OFDMnetwo
+rk.jpg (no BoundingBox) ---
+[52] [53]) [54] [55] (C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.23.tex
+ [56] [57] [58]
+l.16 --- TeX4ht warning --- Cannot determine size of graphic in images/Stent197
+8.jpg (no BoundingBox) ---
+[59]) [60] [61] (C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.22.tex
+[62] [63] [64]
+l.15 --- TeX4ht warning --- Cannot determine size of graphic in images/CLARITY.
+jpg (no BoundingBox) ---
+[65] [66]) [67] [68] (C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.20.tex
+ [69]) [70] [71] (C:\Users\B\Dropbox\syscarut\brain\common/references.tex
+[72] (C:\Users\B\Dropbox\syscarut\brain\index.bbl [73] [74] [75] [76] [77]
+[78] [79] [80])) [81] (C:\Users\B\Dropbox\syscarut\brain\common/index.tex
+[82] (C:\Users\B\Dropbox\syscarut\brain\index.ind [83] [84] [85]))
+(C:\Users\B\Dropbox\syscarut\brain\common/footnote.tex [86]) [87]
+(C:\Users\B\Dropbox\syscarut\brain\index.aux
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.14.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.09.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.06.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.04.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.30.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.29.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.27.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.24.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.23.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.22.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.20.aux)
+(C:\Users\B\Dropbox\syscarut\brain\common/references.aux))
+
+LaTeX Warning: There were multiply-defined labels.
+
+ )
+(see the transcript file for additional information)
+Output written on index.dvi (90 pages, 146200 bytes).
+Transcript written on index.log.
+
+>latex  \makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx"\HCode\def\HCode"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.{\g@addto@macro\@documentclasshook{\RequirePackage[#1,html]{tex4ht}}\let\HCode\documentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname tex4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{\HCode}{\documentstyle[tex4ht]}}}\makeatother\HCode "html,imgdir:images/,fn-in".a.b.c.\input  index.tex 
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9)
+entering extended mode
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+(C:\Users\B\Dropbox\syscarut\brain\index.tex
+\@input{common/packages.aux}
+(C:\Users\B\Dropbox\syscarut\brain\common/packages.tex
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\base\book.cls
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\base\bk12.clo))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\tex4ht.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\usepackage.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\xifthen\xifthen.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\misc\etex.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\tools\calc.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\base\ifthen.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\ifmtarg\ifmtarg.sty))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\amsmath\amsmath.sty
+For additional information on amsmath, use the `?' option.
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\amsmath\amstext.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\amsmath\amsgen.sty))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\amsmath\amsbsy.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\amsmath\amsopn.sty))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3packages\xparse\xparse.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\expl3.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3names.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3bootstrap.sty))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3basics.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3expan.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3tl.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3seq.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3int.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3quark.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3prg.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3clist.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3token.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3prop.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3msg.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3file.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3skip.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3keys.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3fp.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3box.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3coffins.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3color.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3luatex.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3candidates.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\oberdiek\ifpdf.sty)))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\graphicx.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\keyval.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\graphics.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\trig.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\00miktex\graphics.cfg)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\dvips.def)))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\caption\caption.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\caption\caption3.sty))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\was\gensymb.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\setspace\setspace.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\tools\multicol.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\datetime\datetime.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\fmtcount\fmtcount.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\etoolbox\etoolbox.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\fmtcount\fcprefix.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\fmtcount\fcnumparser.sty))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\fmtcount\fc-english.def)))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\hyperref\hyperref.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\oberdiek\hobsub-hyperref.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\oberdiek\hobsub-generic.sty))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\ifxetex\ifxetex.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\oberdiek\auxhook.sty
+
+Package auxhook Warning: Cannot patch \document,
+(auxhook)                using \AtBeginDocument instead.
+
+) (C:\Users\B\Software\Portable\MikTeX\tex\latex\oberdiek\kvoptions.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\hyperref\pd1enc.def)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\00miktex\hyperref.cfg)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\ltxmisc\url.sty)
+
+Package hyperref Message: Stopped early.
+
+)
+
+Package hyperref Message: Driver: htex4ht.
+
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\hyperref\htex4ht.def)
+
+Package hyperref Warning: Unexpected value for option `hidelinks'
+(hyperref)                is ignored on input line 131.
+
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\natbib\natbib.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\base\makeidx.sty)
+Writing index file index.idx
+)
+\@input{common/codes.aux}
+(C:\Users\B\Dropbox\syscarut\brain\common/codes.tex
+(C:\Users\B\Dropbox\syscarut\brain\code/misc.tex)
+(C:\Users\B\Dropbox\syscarut\brain\code/refs.tex)
+(C:\Users\B\Dropbox\syscarut\brain\code/figures.tex)
+(C:\Users\B\Dropbox\syscarut\brain\code/sections.tex)
+(C:\Users\B\Dropbox\syscarut\brain\code/index.tex)
+(C:\Users\B\Dropbox\syscarut\brain\code/css.tex))
+\@input{common/topcontent.aux}
+(C:\Users\B\Dropbox\syscarut\brain\common/topcontent.tex)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\tex4ht.4ht
+::::::::::::::::::::::::::::::::::::::::::
+ TeX4ht info is available in the log file 
+::::::::::::::::::::::::::::::::::::::::::
+) (C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\tex4ht.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\color.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\00miktex\color.cfg)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\dvipsnam.def))
+--- needs --- tex4ht index ---
+(C:\Users\B\Dropbox\syscarut\brain\index.tmp)
+(C:\Users\B\Dropbox\syscarut\brain\index.xref)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\latex.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\fontmath.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\book.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\ifthen.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\amsmath.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\amstext.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\amsbsy.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\amsopn.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\graphicx.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\graphics.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\dvips.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\caption.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\multicol.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\hyperref.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\hyperref\nameref.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\oberdiek\gettitlestring.sty))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\nameref.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\pd1enc.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\url.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\natbib.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\makeidx.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\color.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\dvipsnam.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\dvipsnam.def)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Dropbox\syscarut\brain\index.aux
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.14.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.09.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.06.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.04.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.30.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.29.aux
+
+LaTeX Warning: Label `fig:' multiply defined.
+
+
+LaTeX Warning: Label `fig:' multiply defined.
+
+) (C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.27.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.24.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.23.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.22.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.20.aux)
+(C:\Users\B\Dropbox\syscarut\brain\common/references.aux))
+
+Package caption Warning: \caption will not be redefined since it's already
+(caption)                redefined by a document class or package which is
+(caption)                unknown to the caption package.
+See the caption package documentation for explanation.
+
+
+Package gensymb Warning: Not defining \perthousand.
+
+
+Package gensymb Warning: Not defining \micro.
+
+[1] [2] (C:\Users\B\Software\Portable\MikTeX\tex\latex\base\omscmr.fd) [1]
+---------------------------------------------------------
+l.25 --- TeX4ht warning --- If not done so, the index is to be processed by 
+  tex '\def\filename{{index}{idx}{4dx}{ind}} \input  idxmake.4ht' 
+  makeindex -o index.ind index.4dx 
+instead of 
+  makeindex -o index.ind index.idx 
+On some platforms, the quotation marks ' should be 
+ replaced by double quotation marks " or eliminated. 
+---------------------------------------------------------  ---
+[1] (C:\Users\B\Dropbox\syscarut\brain\index.4ct [2]) [3]
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.14.tex [4] [5] [6]
+l.8 --- TeX4ht warning --- Cannot determine size of graphic in images/cost_per_
+megabase.jpg (no BoundingBox) ---
+[7]
+
+Package hyperref Warning: No autoref name for `likesection' on input line 10.
+
+[8] [9]
+l.12 --- TeX4ht warning --- Cannot determine size of graphic in images/molecula
+r_tickettape.jpg (no BoundingBox) ---
+[10] [11] [12]
+l.16 --- TeX4ht warning --- Cannot determine size of graphic in images/assembly
+_lines.png (no BoundingBox) ---
+[13]) [14] [15] (C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.09.tex
+[16]) [17] [18] [19] (C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.06.tex
+ [20] [21] [22]
+l.14 --- TeX4ht warning --- Cannot determine size of graphic in images/cost_of_
+disease.jpg (no BoundingBox) ---
+[23]) [24] [25] (C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.04.tex
+[26]) [27] [28] (C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.30.tex
+[29] [30]) [31] [32] (C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.29.tex
+ [33] [34] [35]
+l.17 --- TeX4ht warning --- Cannot determine size of graphic in images/science_
+fiction.jpg (no BoundingBox) ---
+[36] [37] [38]
+l.29 --- TeX4ht warning --- Cannot determine size of graphic in images/Cai_2010
+.jpg (no BoundingBox) ---
+[39] [40]) [41] [42] (C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.27.tex
+ [43] [44] [45]
+l.9 --- TeX4ht warning --- Cannot determine size of graphic in images/placozoa.
+jpg (no BoundingBox) ---
+[46]) [47] [48] (C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.24.tex
+[49] [50] [51]
+l.9 --- TeX4ht warning --- Cannot determine size of graphic in images/OFDMnetwo
+rk.jpg (no BoundingBox) ---
+[52] [53]) [54] [55] (C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.23.tex
+ [56] [57] [58]
+l.16 --- TeX4ht warning --- Cannot determine size of graphic in images/Stent197
+8.jpg (no BoundingBox) ---
+[59]) [60] [61] (C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.22.tex
+[62] [63] [64]
+l.15 --- TeX4ht warning --- Cannot determine size of graphic in images/CLARITY.
+jpg (no BoundingBox) ---
+[65] [66]) [67] [68] (C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.20.tex
+ [69]) [70] [71] (C:\Users\B\Dropbox\syscarut\brain\common/references.tex
+[72] (C:\Users\B\Dropbox\syscarut\brain\index.bbl [73] [74] [75] [76] [77]
+[78] [79] [80])) [81] (C:\Users\B\Dropbox\syscarut\brain\common/index.tex
+[82] (C:\Users\B\Dropbox\syscarut\brain\index.ind [83] [84] [85]))
+(C:\Users\B\Dropbox\syscarut\brain\common/footnote.tex [86]) [87]
+(C:\Users\B\Dropbox\syscarut\brain\index.aux
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.14.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.09.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.06.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.04.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.30.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.29.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.27.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.24.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.23.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.22.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.20.aux)
+(C:\Users\B\Dropbox\syscarut\brain\common/references.aux))
+
+LaTeX Warning: There were multiply-defined labels.
+
+ )
+(see the transcript file for additional information)
+Output written on index.dvi (90 pages, 146200 bytes).
+Transcript written on index.log.
+
+>latex  \makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx"\HCode\def\HCode"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.{\g@addto@macro\@documentclasshook{\RequirePackage[#1,html]{tex4ht}}\let\HCode\documentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname tex4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{\HCode}{\documentstyle[tex4ht]}}}\makeatother\HCode "html,imgdir:images/,fn-in".a.b.c.\input  index.tex 
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9)
+entering extended mode
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+(C:\Users\B\Dropbox\syscarut\brain\index.tex
+\@input{common/packages.aux}
+(C:\Users\B\Dropbox\syscarut\brain\common/packages.tex
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\base\book.cls
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\base\bk12.clo))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\tex4ht.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\usepackage.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\xifthen\xifthen.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\misc\etex.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\tools\calc.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\base\ifthen.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\ifmtarg\ifmtarg.sty))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\amsmath\amsmath.sty
+For additional information on amsmath, use the `?' option.
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\amsmath\amstext.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\amsmath\amsgen.sty))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\amsmath\amsbsy.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\amsmath\amsopn.sty))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3packages\xparse\xparse.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\expl3.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3names.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3bootstrap.sty))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3basics.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3expan.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3tl.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3seq.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3int.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3quark.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3prg.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3clist.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3token.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3prop.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3msg.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3file.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3skip.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3keys.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3fp.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3box.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3coffins.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3color.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3luatex.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3candidates.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\oberdiek\ifpdf.sty)))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\graphicx.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\keyval.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\graphics.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\trig.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\00miktex\graphics.cfg)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\dvips.def)))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\caption\caption.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\caption\caption3.sty))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\was\gensymb.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\setspace\setspace.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\tools\multicol.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\datetime\datetime.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\fmtcount\fmtcount.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\etoolbox\etoolbox.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\fmtcount\fcprefix.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\fmtcount\fcnumparser.sty))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\fmtcount\fc-english.def)))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\hyperref\hyperref.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\oberdiek\hobsub-hyperref.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\oberdiek\hobsub-generic.sty))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\ifxetex\ifxetex.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\oberdiek\auxhook.sty
+
+Package auxhook Warning: Cannot patch \document,
+(auxhook)                using \AtBeginDocument instead.
+
+) (C:\Users\B\Software\Portable\MikTeX\tex\latex\oberdiek\kvoptions.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\hyperref\pd1enc.def)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\00miktex\hyperref.cfg)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\ltxmisc\url.sty)
+
+Package hyperref Message: Stopped early.
+
+)
+
+Package hyperref Message: Driver: htex4ht.
+
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\hyperref\htex4ht.def)
+
+Package hyperref Warning: Unexpected value for option `hidelinks'
+(hyperref)                is ignored on input line 131.
+
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\natbib\natbib.sty)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\base\makeidx.sty)
+Writing index file index.idx
+)
+\@input{common/codes.aux}
+(C:\Users\B\Dropbox\syscarut\brain\common/codes.tex
+(C:\Users\B\Dropbox\syscarut\brain\code/misc.tex)
+(C:\Users\B\Dropbox\syscarut\brain\code/refs.tex)
+(C:\Users\B\Dropbox\syscarut\brain\code/figures.tex)
+(C:\Users\B\Dropbox\syscarut\brain\code/sections.tex)
+(C:\Users\B\Dropbox\syscarut\brain\code/index.tex)
+(C:\Users\B\Dropbox\syscarut\brain\code/css.tex))
+\@input{common/topcontent.aux}
+(C:\Users\B\Dropbox\syscarut\brain\common/topcontent.tex)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\tex4ht.4ht
+::::::::::::::::::::::::::::::::::::::::::
+ TeX4ht info is available in the log file 
+::::::::::::::::::::::::::::::::::::::::::
+) (C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\tex4ht.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\color.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\00miktex\color.cfg)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\dvipsnam.def))
+--- needs --- tex4ht index ---
+(C:\Users\B\Dropbox\syscarut\brain\index.tmp)
+(C:\Users\B\Dropbox\syscarut\brain\index.xref)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\latex.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\fontmath.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\book.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\ifthen.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\amsmath.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\amstext.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\amsbsy.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\amsopn.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\graphicx.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\graphics.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\dvips.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\caption.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\multicol.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\hyperref.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\hyperref\nameref.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\oberdiek\gettitlestring.sty))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\nameref.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\pd1enc.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\url.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\natbib.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\makeidx.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\color.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\dvipsnam.4ht
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\dvipsnam.def)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht))
+(C:\Users\B\Dropbox\syscarut\brain\index.aux
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.14.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.09.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.06.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.04.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.30.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.29.aux
+
+LaTeX Warning: Label `fig:' multiply defined.
+
+
+LaTeX Warning: Label `fig:' multiply defined.
+
+) (C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.27.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.24.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.23.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.22.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.20.aux)
+(C:\Users\B\Dropbox\syscarut\brain\common/references.aux))
+
+Package caption Warning: \caption will not be redefined since it's already
+(caption)                redefined by a document class or package which is
+(caption)                unknown to the caption package.
+See the caption package documentation for explanation.
+
+
+Package gensymb Warning: Not defining \perthousand.
+
+
+Package gensymb Warning: Not defining \micro.
+
+[1] [2] (C:\Users\B\Software\Portable\MikTeX\tex\latex\base\omscmr.fd) [1]
+---------------------------------------------------------
+l.25 --- TeX4ht warning --- If not done so, the index is to be processed by 
+  tex '\def\filename{{index}{idx}{4dx}{ind}} \input  idxmake.4ht' 
+  makeindex -o index.ind index.4dx 
+instead of 
+  makeindex -o index.ind index.idx 
+On some platforms, the quotation marks ' should be 
+ replaced by double quotation marks " or eliminated. 
+---------------------------------------------------------  ---
+[1] (C:\Users\B\Dropbox\syscarut\brain\index.4ct [2]) [3]
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.14.tex [4] [5] [6]
+l.8 --- TeX4ht warning --- Cannot determine size of graphic in images/cost_per_
+megabase.jpg (no BoundingBox) ---
+[7]
+
+Package hyperref Warning: No autoref name for `likesection' on input line 10.
+
+[8] [9]
+l.12 --- TeX4ht warning --- Cannot determine size of graphic in images/molecula
+r_tickettape.jpg (no BoundingBox) ---
+[10] [11] [12]
+l.16 --- TeX4ht warning --- Cannot determine size of graphic in images/assembly
+_lines.png (no BoundingBox) ---
+[13]) [14] [15] (C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.09.tex
+[16]) [17] [18] [19] (C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.06.tex
+ [20] [21] [22]
+l.14 --- TeX4ht warning --- Cannot determine size of graphic in images/cost_of_
+disease.jpg (no BoundingBox) ---
+[23]) [24] [25] (C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.04.tex
+[26]) [27] [28] (C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.30.tex
+[29] [30]) [31] [32] (C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.29.tex
+ [33] [34] [35]
+l.17 --- TeX4ht warning --- Cannot determine size of graphic in images/science_
+fiction.jpg (no BoundingBox) ---
+[36] [37] [38]
+l.29 --- TeX4ht warning --- Cannot determine size of graphic in images/Cai_2010
+.jpg (no BoundingBox) ---
+[39] [40]) [41] [42] (C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.27.tex
+ [43] [44] [45]
+l.9 --- TeX4ht warning --- Cannot determine size of graphic in images/placozoa.
+jpg (no BoundingBox) ---
+[46]) [47] [48] (C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.24.tex
+[49] [50] [51]
+l.9 --- TeX4ht warning --- Cannot determine size of graphic in images/OFDMnetwo
+rk.jpg (no BoundingBox) ---
+[52] [53]) [54] [55] (C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.23.tex
+ [56] [57] [58]
+l.16 --- TeX4ht warning --- Cannot determine size of graphic in images/Stent197
+8.jpg (no BoundingBox) ---
+[59]) [60] [61] (C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.22.tex
+[62] [63] [64]
+l.15 --- TeX4ht warning --- Cannot determine size of graphic in images/CLARITY.
+jpg (no BoundingBox) ---
+[65] [66]) [67] [68] (C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.20.tex
+ [69]) [70] [71] (C:\Users\B\Dropbox\syscarut\brain\common/references.tex
+[72] (C:\Users\B\Dropbox\syscarut\brain\index.bbl [73] [74] [75] [76] [77]
+[78] [79] [80])) [81] (C:\Users\B\Dropbox\syscarut\brain\common/index.tex
+[82] (C:\Users\B\Dropbox\syscarut\brain\index.ind [83] [84] [85]))
+(C:\Users\B\Dropbox\syscarut\brain\common/footnote.tex [86]) [87]
+(C:\Users\B\Dropbox\syscarut\brain\index.aux
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.14.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.09.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.06.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.06.04.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.30.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.29.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.27.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.24.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.23.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.22.aux)
+(C:\Users\B\Dropbox\syscarut\brain\chapters/2013.05.20.aux)
+(C:\Users\B\Dropbox\syscarut\brain\common/references.aux))
+
+LaTeX Warning: There were multiply-defined labels.
+
+ )
+(see the transcript file for additional information)
+Output written on index.dvi (90 pages, 146200 bytes).
+Transcript written on index.log.
+
+>tex4ht index.tex  -i/tex4ht/ht-fonts/"" -ewin32/tex4ht.env 
+----------------------------
+tex4ht.c (2010-12-16-08:39 Windows MiKTeX)
+tex4ht index.tex 
+  -i/tex4ht/ht-fonts/ 
+  -ewin32/tex4ht.env 
+(C:/Users/B/Software/Portable/MikTeX/tex4ht/base/win32/tex4ht.env)
+(C:/Users/B/Software/Portable/MikTeX/tex4ht/ht-fonts/iso8859/1/charset/uni/unicode.4hf)
+(C:/Users/B/Software/Portable/MikTeX/fonts/tfm/public/cm/cmti10.tfm)
+(C:/Users/B/Software/Portable/MikTeX/tex4ht/ht-fonts/unicode/cm/cmti.htf)
+(C:/Users/B/Software/Portable/MikTeX/fonts/tfm/public/cm/cmr10.tfm)
+(C:/Users/B/Software/Portable/MikTeX/tex4ht/ht-fonts/alias/lm/lm-rep-cmrm/cmr.htf)
+Searching `lm-rep-cmrm.htf' for `cmr10.htf'
+(C:/Users/B/Software/Portable/MikTeX/tex4ht/ht-fonts/unicode/lm/lm-rep-cmrm.htf)
+(C:/Users/B/Software/Portable/MikTeX/fonts/tfm/public/cm/cmex10.tfm)
+(C:/Users/B/Software/Portable/MikTeX/tex4ht/ht-fonts/unicode/cm/cmex.htf)
+(C:/Users/B/Software/Portable/MikTeX/fonts/tfm/public/cm/cmsy10.tfm)
+(C:/Users/B/Software/Portable/MikTeX/tex4ht/ht-fonts/unicode/cm/cmsy.htf)
+(C:/Users/B/Software/Portable/MikTeX/fonts/tfm/public/cm/cmmi8.tfm)
+(C:/Users/B/Software/Portable/MikTeX/tex4ht/ht-fonts/unicode/cm/cmmi.htf)
+(C:/Users/B/Software/Portable/MikTeX/fonts/tfm/public/cm/cmmi12.tfm)
+(C:/Users/B/Software/Portable/MikTeX/tex4ht/ht-fonts/unicode/cm/cmmi.htf)
+(C:/Users/B/Software/Portable/MikTeX/fonts/tfm/public/cm/cmr8.tfm)
+(C:/Users/B/Software/Portable/MikTeX/tex4ht/ht-fonts/alias/lm/lm-rep-cmrm/cmr.htf)
+Searching `lm-rep-cmrm.htf' for `cmr8.htf'
+(C:/Users/B/Software/Portable/MikTeX/tex4ht/ht-fonts/unicode/lm/lm-rep-cmrm.htf)
+(C:/Users/B/Software/Portable/MikTeX/fonts/tfm/public/cm/cmti12.tfm)
+(C:/Users/B/Software/Portable/MikTeX/tex4ht/ht-fonts/unicode/cm/cmti.htf)
+(C:/Users/B/Software/Portable/MikTeX/fonts/tfm/public/cm/cmtt12.tfm)
+(C:/Users/B/Software/Portable/MikTeX/tex4ht/ht-fonts/alias/cm/cmtt.htf)
+Searching `lm-rep-cmtt.htf' for `cmtt12.htf'
+(C:/Users/B/Software/Portable/MikTeX/tex4ht/ht-fonts/unicode/lm/lm-rep-cmtt.htf)
+(C:/Users/B/Software/Portable/MikTeX/fonts/tfm/public/cm/cmbx12.tfm)
+(C:/Users/B/Software/Portable/MikTeX/tex4ht/ht-fonts/alias/cm/cmbx.htf)
+Searching `lm-rep-cmrm.htf' for `cmbx12.htf'
+(C:/Users/B/Software/Portable/MikTeX/tex4ht/ht-fonts/unicode/lm/lm-rep-cmrm.htf)
+(C:/Users/B/Software/Portable/MikTeX/fonts/tfm/public/cm/cmbx12.tfm)
+(C:/Users/B/Software/Portable/MikTeX/tex4ht/ht-fonts/alias/cm/cmbx.htf)
+Searching `lm-rep-cmrm.htf' for `cmbx12.htf'
+(C:/Users/B/Software/Portable/MikTeX/tex4ht/ht-fonts/unicode/lm/lm-rep-cmrm.htf)
+(C:/Users/B/Software/Portable/MikTeX/fonts/tfm/public/cm/cmsy10.tfm)
+(C:/Users/B/Software/Portable/MikTeX/tex4ht/ht-fonts/unicode/cm/cmsy.htf)
+(C:/Users/B/Software/Portable/MikTeX/fonts/tfm/public/cm/cmr12.tfm)
+(C:/Users/B/Software/Portable/MikTeX/tex4ht/ht-fonts/alias/lm/lm-rep-cmrm/cmr.htf)
+Searching `lm-rep-cmrm.htf' for `cmr12.htf'
+(C:/Users/B/Software/Portable/MikTeX/tex4ht/ht-fonts/unicode/lm/lm-rep-cmrm.htf)
+(C:/Users/B/Software/Portable/MikTeX/fonts/tfm/public/cm/cmr17.tfm)
+(C:/Users/B/Software/Portable/MikTeX/tex4ht/ht-fonts/alias/lm/lm-rep-cmrm/cmr.htf)
+Searching `lm-rep-cmrm.htf' for `cmr17.htf'
+(C:/Users/B/Software/Portable/MikTeX/tex4ht/ht-fonts/unicode/lm/lm-rep-cmrm.htf)
+(C:/Users/B/Software/Portable/MikTeX/fonts/tfm/public/cm/cmr12.tfm)
+(C:/Users/B/Software/Portable/MikTeX/tex4ht/ht-fonts/alias/lm/lm-rep-cmrm/cmr.htf)
+Searching `lm-rep-cmrm.htf' for `cmr12.htf'
+(C:/Users/B/Software/Portable/MikTeX/tex4ht/ht-fonts/unicode/lm/lm-rep-cmrm.htf)
+(C:/Users/B/Software/Portable/MikTeX/fonts/tfm/public/cm/cmr10.tfm)
+(C:/Users/B/Software/Portable/MikTeX/tex4ht/ht-fonts/alias/lm/lm-rep-cmrm/cmr.htf)
+Searching `lm-rep-cmrm.htf' for `cmr10.htf'
+(C:/Users/B/Software/Portable/MikTeX/tex4ht/ht-fonts/unicode/lm/lm-rep-cmrm.htf)
+[1 file index.html
+ file index.css
+ file index.tmp
+] [2] [3] [4] [5] [6] [7] [8] [9] [10]
+[11] [12] [13] [14] [15] [16] [17] [18] [19] [20]
+[21] [22] [23] [24] [25] [26] [27] [28] [29] [30]
+[31] [32] [33] [34] [35] [36] [37] [38] [39] [40]
+[41] [42] [43] [44] [45] [46] [47] [48] [49] [50]
+[51] [52] [53] [54] [55] [56] [57] [58] [59] [60]
+[61] [62] [63] [64] [65] [66] [67] [68] [69] [70]
+[71] [72] [73] [74] [75] [76] [77] [78] [79] [80]
+[81] [82] [83] [84] [85] [86] [87] [88] [89] [90]
+Execute script `index.lg'
+
+>t4ht index.tex  -ewin32/tex4ht.env 
+This is dvipng 1.13 Copyright 2002-2010 Jan-Ake Larsson
+[2] 
+This is dvipng 1.13 Copyright 2002-2010 Jan-Ake Larsson
+[4] 
+----------------------------
+t4ht.c (2010-12-16-08:47 MiKTeX)
+t4ht index.tex 
+  -ewin32/tex4ht.env 
+(C:/Users/B/Software/Portable/MikTeX/tex4ht/base/win32/tex4ht.env)
+Entering index.lg
+System call: dvipng -T tight -x 1400 -D 150 -bg Transparent -pp 2:2 index.idv -o index0x.png
+System return: 0
+System call: dvipng -T tight -x 1400 -D 150 -bg Transparent -pp 4:4 index.idv -o index1x.png
+System return: 0
+Entering index.css
+Entering index.tmp

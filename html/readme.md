@@ -9,7 +9,7 @@
 * Functional LaTeX project, download and start typesetting right away. Tested and works with MiKTeX.
 * Automated compiling via scripts for Windows (`build.bat`) and Unix (`build.sh`) users.
 * Fully commented with explanations for more difficult to understand elements.
-* Various new commands to allow standardization of figure style and other common formatting.
+* Various new commands to allow standardization of figure style and other common formatting. 
 	* Functional \newcommand example implemented with `pgfkeys`.
 * BibTex example file and example citation usage inside main text.
 * Index implemented with example indices implemented in text (i.e. `\index{}`)
@@ -31,7 +31,7 @@ Go to your personal LaTeX projects directory (or wherever) and clone the reposit
 
 ### Dependencies
 
-* LaTeX (e.g. [MikTeX](http://miktex.org/)).
+* LaTeX (e.g. [MikTeX](http://miktex.org/)). 
 	* Make sure to have all packages updated.
 * [Pandoc](http://johnmacfarlane.net/pandoc/installing.html) for conversion of files if need be
 
@@ -42,11 +42,11 @@ Go to your personal LaTeX projects directory (or wherever) and clone the reposit
 ### Linux
 
 * Install [MikTeX](https://help.ubuntu.com/community/MiktexPackageManager) or another LaTeX distribution.
-* `pdflatex`, `bibtex`, `makeindex` and `xelatex` should be callable from command-line automatically.
+* `pdflatex.exe`, `bibtex.exe`, `makeindex` and `xelatex.exe` should be callable from command-line automatically.
 
 ## xelatex, pdflatex, and htlatex
 
-* The option to compile between `xelatex`, `pdflatex`, and `htlatex` is given in `build.(bat/sh)`. `xelatex` and `pdflatex` will both give a PDF output while `htlatex` will produce a html webpage. `xelatex` is best for non-standard fonts.
+* The option to compile between `xelatex`, `pdflatex`, and `htlatex` is given in `build.(bat/sh)`. `xelatex` and `pdflatex` will both give a PDF output while `htlatex` will produce a html webpage. `xelatex` is mainly when using non-standard fonts.
 
 ###xelatex
 
@@ -60,11 +60,6 @@ Go to your personal LaTeX projects directory (or wherever) and clone the reposit
 
 * See `pdflatex`. In addition, may need to remove figures or other special floats if errors occur.
 
-####tex4ht.env
-
-* This file should be changed to improve the equation image quality output.
-* Add a space in front of `<dvipng>` and `<\dvipng>` and change `-D 72` to `-D 150` to get higher quality image. Then remove space from in front of `<convert>` and `</convert>` so it is not used.
-
 ## Instructions
 
 ###Overview
@@ -76,7 +71,7 @@ Go to your personal LaTeX projects directory (or wherever) and clone the reposit
 
 * User is prompted to choose whether you want output; suppressed using `-interaction=batchmode` for (xe)latex or `--quiet` for bibtex.
 * Removes .aux and other files then builds with (xe)latex and bibtex. Opens .pdf afterwards.
-* Windows: double-click `build.bat`.
+* Windows: double-click `build.bat`. 
 * Unix: open Terminal, cd to directory, and type `bash build.sh`.
 
 ###Shortcuts
@@ -93,9 +88,9 @@ Go to your personal LaTeX projects directory (or wherever) and clone the reposit
 * These files are loaded before `\begin{document}`.
 * `common\packages.tex` contains all the packages to be loaded.
 * `common\header.tex` contains fancyhdr and other header/footer specifiers.
-* `common\codes.tex` contains the new commands.
+* `common\codes.tex` contains the new commands. 
 	* All commands are documented and also used within the example files (e.g. `chapters\chapter1.tex`).
-	* `pgfkeys` is used to circumvent the 9-argument problem with \newcommand.
+	* `pgfkeys` is used to circumvent the 9-argument problem with \newcommand. 
 * `common\thanks.tex` is for copyright, thanks and update date tracking.
 
 ###Main Body
@@ -137,12 +132,6 @@ Go to your personal LaTeX projects directory (or wherever) and clone the reposit
 <!-- * TODO Improved organization of  -->
 <!-- * TODO Added working example of latex conversion with pandoc -->
 <!-- * Updated `build.sh` to be at same functional level as `build.bat`.  -->
-* Updated `build.sh` to bring it in line with `build.bat` (actually, its technically a couple steps ahead...but bash>>>batch, so no surprise). They should be updated concurrently going forward. (2013.06.19)
-* Major update: separated code into html and pdf branches. Tried to maintain them in a single code base, but that proved difficult and they each have their own advantages (esp. the need to greater simplicity in the html code). These will likely be merged once i simplify the pdf codebase. The html version has been tested with `htlatex` only, tex2page and others will be implemented in the future. `build.bat` has been updated to reflect this change, asking for the directory and automatically switching to the correct TeX version (htlatex for html and xelatex for pdf). At the moment, the html branch is based on a personal project and will be scrubbed/generalized in the future. (2013.06.19)
-* Fixed problem with setting output to display with `bibtex`, updated `lbpindex` references to `lidx`, moved `xcolor` package around to avoid problems of setting it with table, changed `\includecode` to remove caption errors. (2013.06.19)
-* Removed reliance on `simplemargins.sty` and switched fully to `geometry` package for handling margins and text layout. (2013.06.10)
-* Added example of directly importing tables into file using `csvsimple`. See `appendix/table.tex` for example. (2013.05.29)
-* `build.bat` improved so re-run correctly conserves previous runs variables, htlatex (for html output) pipeline re-done to allow correct index/bibliography creation. (2013.05.27)
 * Height and width of text is now independent in the code, still relative. See `header.tex` for more. (2013.05.19)
 * Separated different types of commands into individual .tex files, centrally imported in `common\codes.tex` and located in `\common\code`. Added watermark to the `\lbptitle` command. Organization of files made more logical. (2013.04.30)
 * Now an option in `build.bat` to compile with htlatex along with example output. Comment out `fontspec` package in `package.tex` to avoid errors. Added `\watermarkpic` command to allow insertion of full height or width watermarks on pages (vertically centered by default). In addition, cleaned up the code for removing files after each run in `build.bat`. (2013.04.29)

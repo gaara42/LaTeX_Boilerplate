@@ -1,0 +1,27 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-1}{Contents}}{2}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-2}{2013.05.20}}{4}\relax 
+\doTocEntry\tocchapter{}{\csname a:TocLink\endcsname{1}{Q1-1-3}{}{\textbf  {2013.05.20}}}{4}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-3000}{QQ2-1-4}{analyzing OPIDs for brain readout}}{4}\relax 
+\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{Q1-1-5}{}{analyzing OPIDs for brain readout}}{4}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-4000}{QQ2-1-6}{2013.05.22}}{5}\relax 
+\doTocEntry\tocchapter{}{\csname a:TocLink\endcsname{1}{Q1-1-7}{}{\textbf  {2013.05.22}}}{5}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-5000}{QQ2-1-8}{mining the visual system for algorithms}}{5}\relax 
+\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{Q1-1-9}{}{mining the visual system for algorithms}}{5}\relax 
+\doTocEntry\toclof{1}{\csname a:TocLink\endcsname{1}{x1-50091}{}{\ignorespaces Example of the CLARITY technique in action, it allows viewing of stains in the brain without the need to slice it into many sections, potentially allowing for better localization of proteins, etc.}}{figure}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-6000}{QQ2-1-11}{simulating neural systems}}{8}\relax 
+\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{Q1-1-12}{}{simulating neural systems}}{8}\relax 
+\doTocEntry\toclof{2}{\csname a:TocLink\endcsname{1}{x1-60012}{}{\ignorespaces Modeling leech movement circa 70s}}{figure}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-7000}{QQ2-1-14}{2013.05.24 [draft]}}{12}\relax 
+\doTocEntry\tocchapter{}{\csname a:TocLink\endcsname{1}{Q1-1-15}{}{\textbf  {2013.05.24 [draft]}}}{12}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-8000}{QQ2-1-16}{optical readout of brain data}}{12}\relax 
+\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{Q1-1-17}{}{optical readout of brain data}}{12}\relax 
+\doTocEntry\toclof{3}{\csname a:TocLink\endcsname{1}{x1-80043}{}{\ignorespaces Example OFDM circuit}}{figure}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-9000}{QQ2-1-19}{equation test}}{15}\relax 
+\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{Q1-1-20}{}{equation test}}{15}\relax 
+\doTocEntry\tocchapter{}{\csname a:TocLink\endcsname{1}{Q1-1-21}{}{References}}{18}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-10000}{QQ2-1-22}{References}}{19}\relax 
+\doTocEntry\tocchapter{}{\csname a:TocLink\endcsname{1}{Q1-1-23}{}{Index}}{21}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-11000}{QQ2-1-24}{Index}}{22}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-12000}{QQ2-1-25}{Footnotes}}{24}\relax 
+\doTocEntry\tocchapter{}{\csname a:TocLink\endcsname{1}{Q1-1-26}{}{Footnotes}}{24}\relax 

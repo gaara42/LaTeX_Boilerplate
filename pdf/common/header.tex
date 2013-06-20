@@ -1,0 +1,50 @@
+%biafra ahanonu
+%LaTeX Boilerplate
+%updated: 2013.06.19
+%Modify headers
+\usepackage{fancyhdr}
+%________________________________________________________
+%PAGE SIZE
+% \usepackage[paperwidth=13.33in,paperheight=7.5in]{geometry}
+%________________________________________________________
+%TEXT SIZE
+% Size of text as a percent of page dimensions
+\def\pctsizeH{.8}
+\def\pctsizeW{.8}
+% Set text height/width
+\textwidth=\pctsizeW\dimexpr\paperwidth
+\textheight=\pctsizeH\dimexpr\paperheight
+% Set text dimensions
+\usepackage[textwidth=\textwidth,textheight=\textheight]{geometry}
+
+%________________________________________________________
+%HEADINGS
+%\leftmark = chapter title
+%\rightmark = section title
+%\thepage = page number
+\fancyhead[HL]{}
+\fancyhead[HC]{}
+\fancyhead[HR]{}
+\fancyfoot[FL]{}
+\fancyfoot[FC]{}
+\fancyfoot[FR]{{\color{red}\leftmark} \textbar\ \rightmark\ \textbar\ \thepage}
+\fancyheadoffset[L, RO]{0cm}
+\fancyfootoffset[L, RO]{0cm}
+%\headheight = 6.5pt	
+%\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+%\renewcommand{\sectionmark}[1]{\markboth{#1}{}}
+%________________________________________________________
+%HEADER RULERS
+%Change header/footer line size
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{.5pt}
+\linespread{.956}
+%________________________________________________________
+%Redefine the plain style:
+\fancypagestyle{plain}{%
+\fancyhf{} % clear all header and footer fields
+\renewcommand{\leftmark}{References}
+\fancyfoot[FR]{\leftmark \textbar\ \rightmark\ \textbar\ \thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{.5pt}}
+

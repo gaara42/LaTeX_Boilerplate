@@ -1,0 +1,31 @@
+% biafra ahanonu
+% latex_boilerplate
+% updated: 2013.04.30
+%_______CHAPTERS_______
+% % redefine chapter/section
+% remove chapter numbering
+\renewcommand{\chaptername}{}
+\renewcommand{\thechapter}{}
+
+\newcommand{\lchapter}[1]{
+	\lbpsepline
+	\chapter*{#1}
+	\addcontentsline{toc}{chapter}{\textbf{#1}}
+}
+% \makeatletter
+% \let\oldchapter=\chapter
+% \renewcommand{\chapter}[1]{
+% 	\oldchapter{#1}
+% 	% \phantomsection
+% 	\addcontentsline{toc}{chapter}{#1}
+% }
+% \makeatother
+
+\makeatletter
+\let\oldsection=\section
+\renewcommand{\section}[1]{
+	\oldsection*{#1}
+	% \phantomsection
+	\addcontentsline{toc}{section}{#1}
+}
+\makeatother

@@ -1,0 +1,40 @@
+% biafra ahanonu
+% latex_boilerplate
+% updated: 2013.04.30
+%_______EQUATION_______
+\newcommand{\lbpeq}[3]{
+	\begin{equation}
+		\label{eq:#2}
+		#1
+	\end{equation}
+}
+%_______LIST_______
+% Automatic list creation!
+\NewDocumentCommand \lbpitemize {> { \SplitList { , } } m }{%
+	\begin{itemize}
+	{\footnotesize
+		\ProcessList {#1} {\myref }
+	}
+	\end{itemize}
+ }
+\NewDocumentCommand{\myref}{m}{
+	\item \llidx{#1}{}
+}
+%_______SEPARATING_LINE_______
+%Make a line for separating in-text sections
+\newcommand*\lbpsepline{
+	\HCode{<hr class='headingsep'>}
+	% \begin{center}
+	% 	\rule[1ex]{.5\textwidth}{.5pt}
+	% \end{center}
+}
+%_______LINK_______
+% add links to the index
+\makeatletter
+\let\oldhref=\href
+\renewcommand{\href}[2]{
+	\HCode{<a href='#1' target='_blank'>#2</a>}
+	% \protect\oldhref{#1}{#2}
+	\index{#2}
+}
+\makeatother

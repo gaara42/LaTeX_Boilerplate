@@ -1,0 +1,22 @@
+% biafra ahanonu
+% latex_boilerplate
+% updated: 2013.04.30
+%_______FIGURE_______
+\newcommand{\fig}[3]{
+	\begin{figure}
+		\begin{centering}
+			\HCode{<a href='#1' style='text-decoration:none;' target='_blank'>}
+			\includegraphics{#1}
+			\HCode{</a>}
+			\captionsetup{labelformat=empty}
+			\caption{#2%
+			 % \HCode{<a href='#1' target='_blank'>link to image</a>}%
+			 }
+			% \textbf{{\color{red}Figure \ref{fig:OFDMnetwork}} |  OFDM network}\\ Fancy stuff!
+			\label{fig:#3}
+		\end{centering}
+	\end{figure}
+}
+%_______PICTURE_______
+\newcommand{\Picture}[1]{	
+}

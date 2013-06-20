@@ -1,0 +1,85 @@
+%biafra ahanonu
+%LaTeX_Boilerplate
+%updated: 2012.12.23
+%Basic LaTeX project. Features: build script, useful packages, new commands, bibliography, indexing, figures, tables and other components.
+%Fully commented and modular, should make debug and adding easier.
+
+%_______PREAMBLE_______
+%Include packages
+\include{common/packages}
+%Include packages
+\include{common/header}
+%Get macro commands
+\include{common/codes}
+%Meta information to put in PDF
+\hypersetup{pdfauthor={Author},pdftitle={Title},pdfsubject={Space},pdfkeywords={Space}}
+
+%_______DOCUMENT_______
+\begin{document}
+	%Change font size and line spacing
+	%12pt font with 15pt spacing default
+	\fontsize{12}{15}\leading{15pt}
+
+	%_______TITLE_______
+	\include{common/titlepage}
+	% \begin{titlepage}
+		% \lbptitle{Alternative Title}{Subtitle}{Author}{images/title2.png}
+	% \end{titlepage}
+	\pagenumbering{roman}
+
+	%_______MISC_______
+	%Copyright and Thanks
+	\include{common/thanks}
+
+	%_______TABLE_OF_CONTENTS_______
+	\tableofcontents
+	\listoffigures
+	\listoftables
+	%Change to 1,2,3...
+	\pagenumbering{arabic}
+
+	%_______MAIN_TEXT_______
+	%Put all your main texts here
+	%USE \include, compartmentalize
+
+	%If you want double spacing
+	%\doublespacing
+
+	%Change font spacing
+	% \begin{spacing}{1.18}
+	% \end{spacing}
+
+	%If you want multiple columns
+	% \begin{multicols}{2}
+	% \end{multicols}
+
+	%Part of book
+	\lbppart{Part I}{Subtitle}
+		%Include section page
+		\lbpsection{Intro Examples}
+			%Include introduction
+			\include{chapters/citations}
+			\include{chapters/lists}
+			\include{chapters/code}
+			\include{chapters/fasta}
+			\include{chapters/problems}
+			\include{chapters/equations}
+			%Direct code insert, no new page
+			% \input{chapters/chapter1}
+	%The end section page
+	% \lbpendsection{End of Preview}{We've only just begun\dots}
+
+	%Appendix
+	\include{common/appendix}
+		%Input will insert to code directly, no new page
+		\input{chapters/table}
+		\input{chapters/figures}
+
+	%_______BIBLIOGRAPHY_______
+	\include{citations/references}
+
+	%_______INDEX_______
+	\input{citations/index}
+
+%_______
+\end{document}

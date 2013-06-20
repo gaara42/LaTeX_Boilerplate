@@ -1,0 +1,1172 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=latex 2013.5.27)  20 JUN 2013 08:42
+entering extended mode
+**\makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx\HCode\def\HCod
+e##1{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.{\g
+@addto@macro\@documentclasshook{\RequirePackage[#1,html]{tex4ht}}\let\HCode\doc
+umentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname te
+x4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{\HC
+ode}{\documentstyle[tex4ht]}}}\makeatother\HCode html.a.b.c.\input  index.tex
+(C:\Users\B\Dropbox\github\latex_boilerplate\html\index.tex
+\@input{common/packages.aux}
+(C:\Users\B\Dropbox\github\latex_boilerplate\html\common/packages.tex
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\base\book.cls
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\base\bk12.clo
+File: bk12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\tex4ht.sty
+version 2008-10-27-17:23
+Package: tex4ht 
+--------------------------------------
+--- Note --- for _ at preamble, use the command line option `early_'
+--------------------------------------
+--------------------------------------
+--- Note --- for ^ at preamble, use the command line option `early^'
+--------------------------------------
+\tmp:toks=\toks14
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\usepackage.4ht
+version 2009-05-21-09:32
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\xifthen\xifthen.sty
+Package: xifthen 2009/04/17 v1.3 Extended ifthen features
+
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\misc\etex.sty
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count88
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\tools\calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count89
+\calc@Bcount=\count90
+\calc@Adimen=\dimen103
+\calc@Bdimen=\dimen104
+\calc@Askip=\skip43
+\calc@Bskip=\skip44
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count91
+\calc@Cskip=\skip45
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\base\ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\ifmtarg\ifmtarg.sty
+Package: ifmtarg 2009/09/02 v1.2a check for an empty argument
+))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\amsmath\amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip46
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\amsmath\amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks15
+\ex@=\dimen105
+))
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen106
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\amsmath\amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count92
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count93
+\leftroot@=\count94
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count95
+\DOTSCASE@=\count96
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen107
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count97
+\c@MaxMatrixCols=\count98
+\dotsspace@=\muskip10
+\c@parentequation=\count99
+\dspbrk@lvl=\count100
+\tag@help=\toks16
+\row@=\count101
+\column@=\count102
+\maxfields@=\count103
+\andhelp@=\toks17
+\eqnshift@=\dimen108
+\alignsep@=\dimen109
+\tagshift@=\dimen110
+\tagwidth@=\dimen111
+\totwidth@=\dimen112
+\lineht@=\dimen113
+\@envbody=\toks18
+\multlinegap=\skip47
+\multlinetaggap=\skip48
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3packages\xparse\xparse.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\expl3.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3names.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3bootstrap.sty
+Package: l3bootstrap 2013/01/08 v4420 L3 Experimental bootstrap code
+)
+Package: l3names 2012/12/07 v4346 L3 Namespace for primitives
+)
+Package: expl3 2013/03/14 v4469 L3 Experimental code bundle wrapper
+
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3basics.sty
+Package: l3basics 2013/01/10 v4428 L3 Basic definitions
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3expan.sty
+Package: l3expan 2013/02/03 v4458 L3 Argument expansion
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3tl.sty
+Package: l3tl 2013/01/08 v4415 L3 Token lists
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3seq.sty
+Package: l3seq 2013/01/12 v4434 L3 Sequences and stacks
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3int.sty
+Package: l3int 2013/01/13 v4444 L3 Integers
+\c_max_int=\count104
+\l_tmpa_int=\count105
+\l_tmpb_int=\count106
+\g_tmpa_int=\count107
+\g_tmpb_int=\count108
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3quark.sty
+Package: l3quark 2012/11/04 v4268 L3 Quarks
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3prg.sty
+Package: l3prg 2013/02/13 v4459 L3 Control structures
+\g__prg_map_int=\count109
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3clist.sty
+Package: l3clist 2013/01/08 v4414 L3 Comma separated lists
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3token.sty
+Package: l3token 2013/01/10 v4428 L3 Experimental token manipulation
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3prop.sty
+Package: l3prop 2013/01/09 v4423 L3 Property lists
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3msg.sty
+Package: l3msg 2013/01/08 v4412 L3 Messages
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3file.sty
+Package: l3file 2013/01/14 v4446 L3 File and I/O operations
+\l_iow_line_count_int=\count110
+\l__iow_target_count_int=\count111
+\l__iow_current_line_int=\count112
+\l__iow_current_word_int=\count113
+\l__iow_current_indentation_int=\count114
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3skip.sty
+Package: l3skip 2013/01/13 v4444 L3 Dimensions and skips
+\c_zero_dim=\dimen114
+\c_max_dim=\dimen115
+\l_tmpa_dim=\dimen116
+\l_tmpb_dim=\dimen117
+\g_tmpa_dim=\dimen118
+\g_tmpb_dim=\dimen119
+\c_zero_skip=\skip49
+\c_max_skip=\skip50
+\l_tmpa_skip=\skip51
+\l_tmpb_skip=\skip52
+\g_tmpa_skip=\skip53
+\g_tmpb_skip=\skip54
+\c_zero_muskip=\muskip11
+\c_max_muskip=\muskip12
+\l_tmpa_muskip=\muskip13
+\l_tmpb_muskip=\muskip14
+\g_tmpa_muskip=\muskip15
+\g_tmpb_muskip=\muskip16
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3keys.sty
+Package: l3keys 2013/02/24 v4461 L3 Experimental key-value interfaces
+\g__keyval_level_int=\count115
+\l_keys_choice_int=\count116
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3fp.sty
+Package: l3fp 2013/01/19 v4449 L3 Floating points
+\c__fp_leading_shift_int=\count117
+\c__fp_middle_shift_int=\count118
+\c__fp_trailing_shift_int=\count119
+\c__fp_big_leading_shift_int=\count120
+\c__fp_big_middle_shift_int=\count121
+\c__fp_big_trailing_shift_int=\count122
+\c__fp_Bigg_leading_shift_int=\count123
+\c__fp_Bigg_middle_shift_int=\count124
+\c__fp_Bigg_trailing_shift_int=\count125
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3box.sty
+Package: l3box 2013/01/08 v4411 L3 Experimental boxes
+\c_empty_box=\box28
+\l_tmpa_box=\box29
+\l_tmpb_box=\box30
+\g_tmpa_box=\box31
+\g_tmpb_box=\box32
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3coffins.sty
+Package: l3coffins 2012/09/09 v4212 L3 Coffin code layer
+\l__coffin_internal_box=\box33
+\l__coffin_internal_dim=\dimen120
+\l__coffin_offset_x_dim=\dimen121
+\l__coffin_offset_y_dim=\dimen122
+\l__coffin_x_dim=\dimen123
+\l__coffin_y_dim=\dimen124
+\l__coffin_x_prime_dim=\dimen125
+\l__coffin_y_prime_dim=\dimen126
+\c_empty_coffin=\box34
+\l__coffin_aligned_coffin=\box35
+\l__coffin_aligned_internal_coffin=\box36
+\l_tmpa_coffin=\box37
+\l_tmpb_coffin=\box38
+\l__coffin_display_coffin=\box39
+\l__coffin_display_coord_coffin=\box40
+\l__coffin_display_pole_coffin=\box41
+\l__coffin_display_offset_dim=\dimen127
+\l__coffin_display_x_dim=\dimen128
+\l__coffin_display_y_dim=\dimen129
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3color.sty
+Package: l3color 2012/08/29 v4156 L3 Experimental color support
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3luatex.sty
+Package: l3luatex 2012/08/03 v4049 L3 Experimental LuaTeX-specific functions
+\g__cctab_allocate_int=\count126
+\g__cctab_stack_int=\count127
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\l3kernel\l3candidates.sty
+Package: l3candidates 2013/03/14 v4468 L3 Experimental additions to l3kernel
+\l__box_top_dim=\dimen130
+\l__box_bottom_dim=\dimen131
+\l__box_left_dim=\dimen132
+\l__box_right_dim=\dimen133
+\l__box_top_new_dim=\dimen134
+\l__box_bottom_new_dim=\dimen135
+\l__box_left_new_dim=\dimen136
+\l__box_right_new_dim=\dimen137
+\l__box_internal_box=\box42
+\l__coffin_bounding_shift_dim=\dimen138
+\l__coffin_left_corner_dim=\dimen139
+\l__coffin_right_corner_dim=\dimen140
+\l__coffin_bottom_corner_dim=\dimen141
+\l__coffin_top_corner_dim=\dimen142
+\l__coffin_scaled_total_height_dim=\dimen143
+\l__coffin_scaled_width_dim=\dimen144
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\oberdiek\ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
+))
+Package: xparse 2013/03/12 v4467 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count128
+\l__xparse_m_args_int=\count129
+\l__xparse_mandatory_args_int=\count130
+\l__xparse_processor_int=\count131
+\l__xparse_v_nesting_int=\count132
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks20
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\00miktex\graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen145
+\Gin@req@width=\dimen146
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\caption\caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\caption\caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen147
+\captionmargin@=\dimen148
+\captionwidth=\dimen149
+\caption@tempdima=\dimen150
+\caption@indent=\dimen151
+\caption@parindent=\dimen152
+\caption@hangindent=\dimen153
+)
+\c@ContinuedFloat=\count133
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\was\gensymb.sty
+Package: gensymb 2003/07/02 v1.0 (WaS)
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\setspace\setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\tools\multicol.sty
+Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
+\c@tracingmulticols=\count134
+\mult@box=\box43
+\multicol@leftmargin=\dimen154
+\c@unbalance=\count135
+\c@collectmore=\count136
+\doublecol@number=\count137
+\multicoltolerance=\count138
+\multicolpretolerance=\count139
+\full@width=\dimen155
+\page@free=\dimen156
+\premulticols=\dimen157
+\postmulticols=\dimen158
+\multicolsep=\skip55
+\multicolbaselineskip=\skip56
+\partial@page=\box44
+\last@line=\box45
+\mult@rightbox=\box46
+\mult@grightbox=\box47
+\mult@gfirstbox=\box48
+\mult@firstbox=\box49
+\@tempa=\box50
+\@tempa=\box51
+\@tempa=\box52
+\@tempa=\box53
+\@tempa=\box54
+\@tempa=\box55
+\@tempa=\box56
+\@tempa=\box57
+\@tempa=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\c@columnbadness=\count140
+\c@finalcolumnbadness=\count141
+\last@try=\dimen159
+\multicolovershoot=\dimen160
+\multicolundershoot=\dimen161
+\mult@nat@firstbox=\box67
+\colbreak@box=\box68
+\multicol@sort@counter=\count142
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\datetime\datetime.sty
+Package: datetime 2010/09/21 v2.58 Date Time Package
+
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\fmtcount\fmtcount.sty
+Package: fmtcount 2012/10/24 v2.02
+
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\etoolbox\etoolbox.sty
+Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
+\etb@tempcnta=\count143
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\fmtcount\fcprefix.sty
+Package: fcprefix 2012/09/28
+
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\fmtcount\fcnumparser.sty
+Package: fcnumparser 2012/09/28
+\fc@digit@counter=\count144
+))
+\c@padzeroesN=\count145
+\fc@tmpcatcode=\count146
+\@DT@modctr=\count147
+\@ordinalctr=\count148
+\@orgargctr=\count149
+\@strctr=\count150
+\@tmpstrctr=\count151
+\@DT@loopN=\count152
+\@DT@X=\count153
+
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\fmtcount\fc-english.def
+File: fc-english.def 2012/06/18
+))
+\@day=\count154
+\@month=\count155
+\@year=\count156
+\c@HOUR=\count157
+\c@HOURXII=\count158
+\c@MINUTE=\count159
+\c@TOHOUR=\count160
+\c@TOMINUTE=\count161
+\c@SECOND=\count162
+\currenthour=\count163
+\currentminute=\count164
+\currentsecond=\count165
+Package datetime Info: No datetime.cfg file found, using default settings on in
+put line 292.
+\@dtctr=\count166
+\dayofyear=\count167
+\dayofweek=\count168
+LaTeX Info: Redefining \today on input line 724.
+\dt@a=\toks21
+\dt@b=\toks22
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\hyperref\hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\oberdiek\hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
+
+
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\oberdiek\hobsub-generic.sty
+Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2011/06/24 v1.1 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\ifxetex\ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\oberdiek\auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+
+
+Package auxhook Warning: Cannot patch \document,
+(auxhook)                using \AtBeginDocument instead.
+
+) (C:\Users\B\Software\Portable\MikTeX\tex\latex\oberdiek\kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen162
+\Hy@linkcounter=\count169
+\Hy@pagecounter=\count170
+
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\hyperref\pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count171
+
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\00miktex\hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4319.
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count172
+
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\ltxmisc\url.sty
+\Urlmuskip=\muskip17
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen163
+\Fld@menulength=\count173
+\Field@Width=\dimen164
+\Fld@charsize=\dimen165
+\Field@toks=\toks23
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring ON on input line 6313.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count174
+
+
+Package hyperref Message: Stopped early.
+
+)
+
+Package hyperref Message: Driver: htex4ht.
+
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\hyperref\htex4ht.def
+File: htex4ht.def 2012/11/06 v6.83m Hyperref driver for TeX4ht
+Package hyperref Info: tex4ht is already loaded.
+)
+
+Package hyperref Warning: Unexpected value for option `hidelinks'
+(hyperref)                is ignored on input line 131.
+
+Package hyperref Info: Option `colorlinks' set `true' on input line 131.
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip57
+\bibsep=\skip58
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count175
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\base\makeidx.sty
+Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
+)
+\@indexfile=\write3
+
+Writing index file index.idx
+)
+\@input{common/codes.aux}
+(C:\Users\B\Dropbox\github\latex_boilerplate\html\common/codes.tex
+(C:\Users\B\Dropbox\github\latex_boilerplate\html\code/misc.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \lbpitemize with arg. spec. '> { \SplitList { , }
+. } m ' on line 19.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining document command \myref with arg. spec. 'm' on line 22.
+.................................................
+)
+(C:\Users\B\Dropbox\github\latex_boilerplate\html\code/refs.tex)
+(C:\Users\B\Dropbox\github\latex_boilerplate\html\code/figures.tex)
+(C:\Users\B\Dropbox\github\latex_boilerplate\html\code/sections.tex)
+(C:\Users\B\Dropbox\github\latex_boilerplate\html\code/index.tex)
+(C:\Users\B\Dropbox\github\latex_boilerplate\html\code/css.tex))
+\@input{common/topcontent.aux}
+(C:\Users\B\Dropbox\github\latex_boilerplate\html\common/topcontent.tex)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\tex4ht.4ht
+version 2009-01-07-07:11
+--------------------------------------
+--- Note --- for additional information, use the command line option `info'
+--------------------------------------
+
+::::::::::::::::::::::::::::::::::::::::::
+ TeX4ht info is available in the log file 
+::::::::::::::::::::::::::::::::::::::::::
+) (C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\tex4ht.sty
+version 2008-10-27-17:23
+
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\00miktex\color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: dvips.def on input line 130.
+
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+--- needs --- tex4ht index ---
+\tmp:cnt=\count176
+(C:\Users\B\Dropbox\github\latex_boilerplate\html\index.tmp)
+\tmp:dim=\skip59
+--------------------------------------
+--- Note --- for XML code, use the command line option `xml' or `xhtml'
+--------------------------------------
+
+(C:\Users\B\Dropbox\github\latex_boilerplate\html\index.xref)
+\:refout=\write4
+
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht
+version 2009-05-18-23:01
+--------------------------------------
+--- Note --- to remove the <?xml version=...?> processing instruction use the c
+ommand line option `no-VERSION'
+--------------------------------------
+--------------------------------------
+--- Note --- to remove the DOCTYPE declaration use the command line option `no-
+DOCTYPE'
+--------------------------------------
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht
+version 2009-05-18-23:01
+)
+--------------------------------------
+--- Note --- for marking of the base font, use the command line option `fonts+'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for non active _, use the command line option `no_'
+--------------------------------------
+--------------------------------------
+--- Note --- for _ of catcode 13, use the command line option `_13'
+--------------------------------------
+--------------------------------------
+--- Note --- for non active ^, use the command line option `no^'
+--------------------------------------
+--------------------------------------
+--- Note --- for ^ of catcode 13, use the command line option `^13'
+--------------------------------------
+
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht
+version 2009-05-18-23:01
+--------------------------------------
+--- Note --- for alternative charset, use the command line option `charset=...'
+
+--------------------------------------
+--------------------------------------
+--- Note --- to ignore CSS font decoration, use the `NoFonts' command line opti
+on
+--------------------------------------
+--------------------------------------
+--- Note --- for jpg bitmaps of pictures, use the `jpg' command line option. (C
+haracter bitmaps are controled only by `g' records of tex4ht.env and `-g' switc
+hes of tex4ht.c) 
+--------------------------------------
+--------------------------------------
+--- Note --- for gif bitmaps of pictures, use the `gif' command line option. (C
+haracter bitmaps are controled only by `g' records of tex4ht.env and `-g' switc
+hes of tex4ht.c) 
+--------------------------------------
+--------------------------------------
+--- Note --- for content and toc in 2 frames, use the command line option `fram
+es'
+--------------------------------------
+--------------------------------------
+--- Note --- for content, toc, and footnotes in 3 frames, use the command line 
+option `frames-fn'
+--------------------------------------
+--------------------------------------
+--- Note --- for pop ups on mouse over, use the command line option `mouseover'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for addressing images in a subdirectory, use the command line opti
+on `imgdir:.../'
+--------------------------------------
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht
+version 2009-05-18-23:01
+)
+\:tokwrite=\toks24
+\:tokpage=\toks25
+--------------------------------------
+--- Note --- for back links to toc, use the command line option `sections+'
+--------------------------------------
+--------------------------------------
+--- Note --- for linear crosslinks of pages, use the command line option `next'
+
+--------------------------------------
+\:tocout=\write5
+
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht
+version 2009-05-18-23:01
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht
+version 2009-05-18-23:01
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\latex.4ht
+version 2009-05-21-09:32
+--------------------------------------
+--- Note --- for links into captions, instead of float heads, use the command l
+ine option `refcaption'
+--------------------------------------
+
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht
+version 2009-05-18-23:01
+--------------------------------------
+--- Note --- For mini tocs immediately aftter the header use the command line o
+ption `minitoc<'
+--------------------------------------
+--------------------------------------
+--- Note --- for enumerated list elements with valued data, use the command lin
+e option `enumerate+'
+--------------------------------------
+--------------------------------------
+--- Note --- for enumerated list elements li's with value attributes, use the c
+ommand line option `enumerate-'
+--------------------------------------
+--------------------------------------
+--- Note --- for CSS2 code, use the command line option `css2'
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial tabular, use the command line option `pic-tabular'
+--------------------------------------
+--------------------------------------
+--- Note --- for bitmap fbox'es, use the command line option `pic-fbox'
+--------------------------------------
+--------------------------------------
+--- Note --- for bitmap framebox'es, use the command line option `pic-framebox'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for inline footnotes use command line option `fn-in'
+--------------------------------------
+--------------------------------------
+--- Note --- for tracing of latex font commands, use the command line option `f
+onts'
+--------------------------------------
+--------------------------------------
+--- Note --- for width specifications of tabular p entries, use the `p-width' c
+ommand line option or a configuration similar to \Configure{HColWidth}{\HCode{ 
+style="width:\HColWidth"}}
+--------------------------------------
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht
+version 2009-05-18-23:01
+--------------------------------------
+--- Note --- for pictorial eqnarray, use the command line option `pic-eqnarray'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial $...$ environments, use the command line option `pic
+-m' (not recommended!!)
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial $...$ and $$...$$ environments with latex alt, use t
+he command line option `pic-m+' (not safe!!)
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\fontmath.4ht
+version 2009-05-21-09:32
+
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht
+version 2009-05-18-23:01
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht
+version 2009-05-18-23:01
+))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\book.4ht
+version 2009-05-21-09:32
+
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht
+version 2009-05-18-23:01
+--------------------------------------
+--- Note --- for automatic sectioning pagination, use the command line option `
+1', `2', `3', '4', '5', '6', or '7'
+--------------------------------------
+--------------------------------------
+--- Note --- for files named derived from section titles, use the command line 
+option `sec-filename'
+--------------------------------------
+--------------------------------------
+--- Note --- for i-columns index, use the command line option `index=i' (e.g., 
+index=2)
+--------------------------------------
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht
+version 2009-05-18-23:01
+))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\ifthen.4ht
+version 2009-05-21-09:32
+
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht
+version 2009-05-18-23:01
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht
+version 2009-05-18-23:01
+))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\amsmath.4ht
+version 2009-05-21-09:32
+\tmp:muskip=\muskip18
+
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht
+version 2009-05-18-23:01
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht
+version 2009-05-18-23:01
+))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\amstext.4ht
+version 2009-05-21-09:32
+
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht
+version 2009-05-18-23:01
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht
+version 2009-05-18-23:01
+))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\amsbsy.4ht
+version 2009-05-21-09:32
+
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht
+version 2009-05-18-23:01
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht
+version 2009-05-18-23:01
+))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\amsopn.4ht
+version 2009-05-21-09:32
+
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht
+version 2009-05-18-23:01
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht
+version 2009-05-18-23:01
+))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\graphicx.4ht
+version 2009-05-21-09:32
+
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht
+version 2009-05-18-23:01
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht
+version 2009-05-18-23:01
+))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\graphics.4ht
+version 2009-05-21-09:32
+
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht
+version 2009-05-18-23:01
+--------------------------------------
+--- Note --- if included graphics are of degraded quality, try the command line
+ options `graphics-num' or `graphics-'. The `num' should provide the density of
+ pixels in the bitmaps (e.g., 110). 
+--------------------------------------
+--------------------------------------
+--- Note --- for key dimensions try the option `Gin-dim'; for key dimensions wh
+en bounding box is unavailable try `Gin-dim+'; neither is recommended
+--------------------------------------
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht
+version 2009-05-18-23:01
+))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\dvips.4ht
+version 2009-05-21-09:32
+
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht
+version 2009-05-18-23:01
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht
+version 2009-05-18-23:01
+))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\caption.4ht
+version 2009-05-21-09:32
+
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht
+version 2009-05-18-23:01
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht
+version 2009-05-18-23:01
+))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\multicol.4ht
+version 2009-05-21-09:32
+
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht
+version 2009-05-18-23:01
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht
+version 2009-05-18-23:01
+))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\hyperref.4ht
+version 2011-01-30-16:01
+
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\hyperref\nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\oberdiek\gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count177
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\nameref.4ht
+version 2010-09-04-21:02
+
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht
+version 2009-05-18-23:01
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht
+version 2009-05-18-23:01
+))
+LaTeX Info: Redefining \autoref on input line 100.
+\Hy@SectionHShift=\skip60
+
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht
+version 2009-05-18-23:01
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht
+version 2009-05-18-23:01
+))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\pd1enc.4ht
+version 2009-05-21-09:32
+
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht
+version 2009-05-18-23:01
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht
+version 2009-05-18-23:01
+))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\url.4ht
+version 2009-05-21-09:32
+
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht
+version 2009-05-18-23:01
+--------------------------------------
+--- Note --- for URL encoding within href use the command line option `url-enc'
+
+--------------------------------------
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht
+version 2009-05-18-23:01
+))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\natbib.4ht
+version 2009-05-21-09:32
+
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht
+version 2009-05-18-23:01
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht
+version 2009-05-18-23:01
+))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\makeidx.4ht
+version 2009-05-21-09:32
+
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht
+version 2009-05-18-23:01
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht
+version 2009-05-18-23:01
+))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\color.4ht
+version 2009-05-21-09:32
+
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht
+version 2009-05-18-23:01
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht
+version 2009-05-18-23:01
+))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\dvipsnam.4ht
+version 2009-05-21-09:32
+
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\dvipsnam.def)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht
+version 2009-05-18-23:01
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht
+version 2009-05-18-23:01
+))
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4.4ht
+version 2009-05-18-23:01
+)
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht
+version 2009-05-18-23:01
+))
+(C:\Users\B\Dropbox\github\latex_boilerplate\html\index.aux
+(C:\Users\B\Dropbox\github\latex_boilerplate\html\chapters/example.aux)
+(C:\Users\B\Dropbox\github\latex_boilerplate\html\common/references.aux))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: Incompatible package detected (regarding \caption).
+(caption)             \caption = macro:->\SkipRefstepAnchor \ifx \@captype \@un
+defined \@latex@error {\noexpand \caption outside float}\@ehd \expandafter \@go
+bble \else \refstepcounter \@captype \expandafter \@firstofone \fi {\@dblarg {\
+@caption \@captype }}.
+Package caption Info: Incompatible package detected (regarding \@caption).
+(caption)             \@caption = macro:->\ifx \EndPicture \:UnDef \expandafter
+ \n:@caption: \else \expandafter \o:@caption: \fi .
+
+
+Package caption Warning: \caption will not be redefined since it's already
+(caption)                redefined by a document class or package which is
+(caption)                unknown to the caption package.
+See the caption package documentation for explanation.
+
+Package caption Info: hyperref package is loaded.
+Package caption Info: Hyperref support is turned off
+(caption)             because hyperref has stopped early.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Info: Redefining \celsius on input line 17.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 17.
+
+
+Package gensymb Warning: Not defining \perthousand.
+
+LaTeX Info: Redefining \ohm on input line 17.
+Package gensymb Info: Using \Omega for \ohm on input line 17.
+
+Package gensymb Warning: Not defining \micro.
+
+\AtBeginShipoutBox=\box69
+Package hyperref Info: Link coloring ON on input line 17.
+LaTeX Info: Redefining \ref on input line 17.
+LaTeX Info: Redefining \pageref on input line 17.
+LaTeX Info: Redefining \nameref on input line 17.
+--- file index.css ---
+[1
+
+
+
+
+
+
+
+] [2
+
+]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 18.
+ (C:\Users\B\Software\Portable\MikTeX\tex\latex\base\omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 18.
+ [1]
+---------------------------------------------------------
+l.25 --- TeX4ht warning --- If not done so, the index is to be processed by 
+  tex '\def\filename{{index}{idx}{4dx}{ind}} \input  idxmake.4ht' 
+  makeindex -o index.ind index.4dx 
+instead of 
+  makeindex -o index.ind index.idx 
+On some platforms, the quotation marks ' should be 
+ replaced by double quotation marks " or eliminated. 
+---------------------------------------------------------  ---
+[1] (C:\Users\B\Dropbox\github\latex_boilerplate\html\index.4ct) [2
+
+]
+(C:\Users\B\Dropbox\github\latex_boilerplate\html\chapters/example.tex [3
+
+]
+Missing character: There is no Î in font cmti12!
+Missing character: There is no ¼ in font cmti12!
+
+[4
+
+] [5
+
+] [6
+
+]
+l.31 --- TeX4ht warning --- Cannot determine size of graphic in images/CLARITY.
+jpg (no BoundingBox) ---
+l. 31 --- needs --- images/CLARITY.jpg ---
+[7
+
+] [8
+
+] [9
+
+]
+l.36 --- TeX4ht warning --- Cannot determine size of graphic in images/Stent197
+8.jpg (no BoundingBox) ---
+l. 36 --- needs --- images/Stent1978.jpg ---
+[10
+
+] [11
+
+] [12
+
+] [13
+
+]
+l.44 --- TeX4ht warning --- Cannot determine size of graphic in images/OFDMnetw
+ork.jpg (no BoundingBox) ---
+l. 44 --- needs --- images/OFDMnetwork.jpg ---
+[14
+
+]
+l. 47 Writing index.idv[1] (index0x.png)
+l. 48 Writing index.idv[2] (index1x.png)
+) [15
+
+] [16
+
+]
+(C:\Users\B\Dropbox\github\latex_boilerplate\html\common/references.tex
+[17
+
+] (C:\Users\B\Dropbox\github\latex_boilerplate\html\index.bbl [18]))
+[19
+
+] (C:\Users\B\Dropbox\github\latex_boilerplate\html\common/index.tex
+[20
+
+] (C:\Users\B\Dropbox\github\latex_boilerplate\html\index.ind [21
+
+] [22
+
+]))
+(C:\Users\B\Dropbox\github\latex_boilerplate\html\common/footnote.tex [23])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 49.
+
+[24
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
+ (C:\Users\B\Dropbox\github\latex_boilerplate\html\index.aux
+(C:\Users\B\Dropbox\github\latex_boilerplate\html\chapters/example.aux)
+(C:\Users\B\Dropbox\github\latex_boilerplate\html\common/references.aux))
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 49.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 49.
+ ) 
+Here is how much of TeX's memory you used:
+ 17367 strings out of 493922
+ 272475 string characters out of 3144115
+ 478409 words of memory out of 3000000
+ 20259 multiletter control sequences out of 15000+200000
+ 11701 words of font info for 42 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 44i,6n,46p,5202b,556s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on index.dvi (27 pages, 42428 bytes).

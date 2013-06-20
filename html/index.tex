@@ -1,0 +1,49 @@
+%biafra ahanonu
+%latex_boilerplate
+%updated: 2013.05.26
+%basic latex project. features: build script, useful packages, new commands, bibliography, indexing, figures, tables and other components.
+%fully commented and modular, should make debug and adding easier.
+
+%_______PREAMBLE_______
+%Include packages
+\include{common/packages}
+%Include packages
+% \include{common/header}
+%Get macro commands
+\include{common/codes}
+% top content (title, etc.)
+\include{common/topcontent}
+%_______DOCUMENT_______
+\begin{document}
+	\maketitle
+	\cssoutput
+	\googleanalytics
+	\HCode{<div class='brainText' id='brainID'>}
+		%_______TABLE_OF_CONTENTS_______
+			% \lchapter{brain initiative notes}
+			\lbpsepline
+			collection of ideas, findings, and other tidbits related to the recent \href{http://www.nih.gov/science/brain/}{BRAIN initiative} announcement, neuroscience in general, and promising (bio)technologies.
+
+			entries labeled \textbf{[draft]} are not completed but presented here as food-for-thought and will be revised later.
+
+			this is an exciting time in neuroscience, i hope to convey that here!
+			\lbpsepline
+			% \begin{multicols}{2}
+			\tableofcontents
+			% \end{multicols}
+			% \listoffigures
+			% \listoftables
+		%_______MAIN_TEXT_______
+			%Part of book
+			\include{chapters/example}
+			\lbpsepline
+		%_______BIBLIOGRAPHY_______
+			\include{common/references}
+			\lbpsepline
+		%_______INDEX_______
+			\input{common/index}
+			\lbpsepline
+		%_______FOOTNOTES_______
+			\input{common/footnote}
+	\HCode{</div>}
+\end{document}

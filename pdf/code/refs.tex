@@ -1,0 +1,115 @@
+% biafra ahanonu
+% latex_boilerplate
+% updated: 2013.04.30
+%_______CITE_______
+% Code citation cmd
+\newcommand{\codecite}[2]{{\color{red}\autoref{code:#1}#2}}
+% Figure citation cmd
+\newcommand{\figcite}[2]{{\color{red}\autoref{fig:#1}#2}}
+% Table citation cmd
+\newcommand{\tabcite}[2]{{\color{red}\autoref{table:#1}#2}}
+% Equations
+\newcommand{\eqcite}[2]{{\color{red}\autoref{eq:#1}#2}}
+%_______TABLE_OF_CONTENTS_______
+%Alter TOC layout here
+\let\oldtableofcontents\tableofcontents%remember the definition
+\renewcommand\tableofcontents{
+  		\oldtableofcontents\thispagestyle{empty}%use the standard toc
+}
+\makeatletter 
+%Change the TOC command
+\renewcommand\tableofcontents{
+	%TOC title
+	\begin{spacing}{0}
+		\begin{flushright}
+			\textbf{\Huge Table of Contents}
+			\rule{\textwidth}{.5pt}
+		\end{flushright}	
+	\end{spacing}	
+	\vspace{1em}
+	\thispagestyle{empty}
+	% \pagestyle{empty} 
+	%Start the TOC
+	\@starttoc{toc}
+} 
+\makeatother 
+%_____________________
+%BIBLIOGRAPHY
+%Redefine the bibliography layout. 
+%\bibname is the name of the bibliography, you can wrap it in \chapter{} or \section{} if you desire those types of layouts
+\makeatletter
+\renewenvironment{thebibliography}[1]
+    {
+	\begin{spacing}{0}
+		\begin{flushright}
+			\textbf{\Huge \bibname}
+			\rule{\textwidth}{.5pt}
+		\end{flushright}	
+	\end{spacing}
+	\renewcommand{\rightmark}{References}
+	\renewcommand{\leftmark}{}
+	\vspace{1em}
+      \@mkboth{\MakeUppercase\bibname}{\MakeUppercase\bibname}%
+      \list{\@biblabel{\@arabic\c@enumiv}}%
+           {\settowidth\labelwidth{\@biblabel{#1}}%
+            \leftmargin\labelwidth
+            \advance\leftmargin\labelsep
+            \@openbib@code
+            \usecounter{enumiv}%
+            \let\p@enumiv\@empty
+            \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+      \sloppy
+      \clubpenalty4000
+      \@clubpenalty \clubpenalty
+      \widowpenalty4000%
+      \sfcode`\.\@m}
+     {\def\@noitemerr
+       {\@latex@warning{Empty `thebibliography' environment}}%
+      \endlist}
+\makeatother
+%_____________________
+%LIST OF FIGURES
+\let\oldlistoffigures\listoffigures%remember the definition
+\renewcommand\listoffigures{
+  		\oldlistoffigures\thispagestyle{empty}%use the standard toc
+}
+\makeatletter 
+%Change the LOF command
+\renewcommand\listoffigures{
+	%LOF title
+	\begin{spacing}{0}
+		\begin{flushright}
+			\textbf{\Huge Figures}\\
+			\rule{\textwidth}{.5pt}
+		\end{flushright}	
+	\end{spacing}	
+	\thispagestyle{empty}
+	% \pagestyle{empty} 
+	%Start the LOF
+	\vspace{1em}
+	\@starttoc{lof}
+} 
+\makeatother 
+%_____________________
+%LIST OF Tables
+\let\oldlistoftables\listoftables%remember the definition
+\renewcommand\listoftables{
+  		\oldlistoftables\thispagestyle{empty}%use the standard toc
+}
+\makeatletter 
+%Change the LOT command
+\renewcommand\listoftables{
+	%LOT title
+	\begin{spacing}{0}
+		\begin{flushright}
+			\textbf{\Huge Tables}\\
+			\rule{\textwidth}{.5pt}
+		\end{flushright}	
+	\end{spacing}	
+	\thispagestyle{empty}
+	% \pagestyle{empty} 
+	%Start the LOT
+	\vspace{1em}
+	\@starttoc{lot}
+} 
+\makeatother 

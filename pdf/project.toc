@@ -1,0 +1,22 @@
+\contentsline {chapter}{Part I}{2}{section*.1}
+\contentsline {chapter}{Intro Examples}{3}{section*.2}
+\contentsline {section}{Citations}{4}{section*.3}
+\contentsline {subsection}{El mundo real}{4}{section*.4}
+\contentsline {section}{Lists}{5}{section*.5}
+\contentsline {subsection}{Lists}{5}{section*.6}
+\contentsline {subsection}{Terms}{5}{section*.7}
+\contentsline {section}{Code}{6}{section*.8}
+\contentsline {subsection}{R}{6}{section*.9}
+\contentsline {subsection}{Python}{6}{section*.10}
+\contentsline {subsection}{bash}{7}{section*.11}
+\contentsline {section}{FASTA}{9}{section*.12}
+\contentsline {subsection}{FASTA}{9}{section*.13}
+\contentsline {section}{Problems}{10}{section*.14}
+\contentsline {subsection}{Problems}{10}{section*.15}
+\contentsline {section}{Equations}{11}{section*.16}
+\contentsline {subsection}{Equations}{11}{section*.17}
+\contentsline {chapter}{Appendix}{12}{section*.18}
+\contentsline {section}{Table}{13}{section*.19}
+\contentsline {section}{Figures}{14}{section*.21}
+\contentsline {chapter}{References}{16}{section*.24}
+\contentsline {chapter}{Index}{17}{section*.24}

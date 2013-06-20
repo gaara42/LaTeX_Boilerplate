@@ -1,0 +1,28 @@
+%biafra ahanonu
+%LaTeX_Boilerplate
+%updated: 2012.12.23
+%References
+
+%Get .bib citations from web or management software
+\newpage
+%Change font-size, line spacing and leading
+% \fontsize{10}{12}\leading{12pt}
+% Bib style, default: citations/ChicagoReedweb
+\bibliographystyle{plain}
+% \renewcommand{\rightmark}{Appendix}
+% \renewcommand{\leftmark}{References}
+\phantomsection
+\addcontentsline{toc}{chapter}{References}
+%Citations located in Cited.bib
+\bibliography{%
+citations/neuro.misc,%
+citations/bio.marine,%
+citations/neuro.tech,%
+citations/bio.chem,%
+citations/seq.misc,%
+citations/seq.polymerases,%
+citations/seq.activity,%
+citations/seq.connectome,%
+citations/seq.sequencing,%
+citations/seq.readout%
+} 

@@ -1,5 +1,5 @@
 ::biafra ahanonu
-::updated: 2013.06.19
+::update: 2013.03.17
 ::latex_boilerplate
 
 ::turn off echoing of commands
@@ -10,16 +10,6 @@ setlocal enabledelayedexpansion
 ::welcome
 echo latex_boilerplate builder v1.0
 echo biafra ahanonu
-::ask user for directory
-if not defined texType (
-	set /p texType=html or pdf?
-)
-::change tex based on directory
-if %texType%==html set tex=htlatex
-if %texType%==pdf set tex=xelatex
-::move to directory
-set /p usrDir=directory?
-cd %usrDir%
 ::display current directory and title
 pwd
 title %cd%
@@ -27,13 +17,13 @@ echo _____________________
 
 ::defaults
 if not defined renewdefaults (
-	::set tex=xelatex
+	set tex=xelatex
 	set output="-interaction=batchmode"
 	set boutput="--quiet"
 	set rerun=1
-	set viewpdf=0
+	set dpdf=0
 	set dcheck=1
-	set checkout=0
+	set checkout=1
 	set savefiles="tex html pdf log png bbl dvi css"
 	::get name of project tex file from root
 	::for /f "delims=" %a in ('dir /b *.tex') do @set project=%a
@@ -50,7 +40,7 @@ echo latex compiler: %tex%
 echo latex output? %output%
 echo bibtex output? %boutput%
 echo rerun batch? %rerun%
-echo show pdf? %viewpdf%
+echo show pdf? %dpdf%
 echo project file: %projectt%
 ::remove extension
 set project=%projectt:~0,-4%
@@ -60,7 +50,7 @@ set /p dcheck="settings work? yes[1] or no[0]: "
 ::prompt user for input, new settings
 if %dcheck% equ 0 (
 	::ask user for name of project file
-	set /p projectt=name of tex file to compile?
+	set /p projectt=name of tex file to compile? 
 	::remove extension
 	set project=%projectt:~0,-4%
 
@@ -70,13 +60,12 @@ if %dcheck% equ 0 (
 	if !tex! equ 2 set tex=pdflatex
 	if !tex! equ 3 set tex=htlatex
 	set /p checkout="output? yes[1] or no[0]: "
-	if !checkout! equ 1 set output=
-	if !checkout! equ 1 set boutput=
+	if !checkout! equ 1 set output=""
+	if !checkout! equ 1 set boutput=""
 	if !checkout! equ 0 set output="-interaction=batchmode"
 	if !checkout! equ 0 set boutput="--quiet"
-	set /p viewpdf="display pdf? yes[1] or no[0]: "
+	set /p dpdf="display pdf? yes[1] or no[0]: "
 
-	::clear screen and re-display settings
 	cls
 	goto settings
 )
@@ -100,7 +89,6 @@ if %tex%==xelatex goto pdfloop
 	bibtex %boutput% %project%
 	latex %output% %project%
 	bibtex %boutput% %project%
-	::set some options for htlatex
 	SET htmlops="html,imgdir:images/,fn-in"
 	SET htmlops2=""
 	::"xhtml,fn-in,imgdir:images/"" -cunihtf -utf8"
@@ -114,7 +102,7 @@ if %tex%==xelatex goto pdfloop
 			del zindex.*
 			makeindex -o %project%.ind %project%.4dx
 		)
-		if %checkout% equ 1 %tex% %project%.tex %htmlops% %htmlops2%
+		if %checkout% equ 1 %tex% %project%.tex %htmlops% %htmlops2% 
 		if %checkout% equ 0 %tex% %project%.tex %htmlops% %htmlops2% > %project%.logs
 		set /a build=%build%+1
 	goto loophtml
@@ -126,9 +114,7 @@ if %tex%==xelatex goto pdfloop
 	echo _____________________
 	echo build #%build%
 	%tex% --enable-installer %output% %project%.tex /wait
-	echo +++++++
 	bibtex %boutput% %project%
-	echo +++++++
 	makeindex %project%.idx
 	set /a build=%build%+1
 goto pdfloop
@@ -148,18 +134,24 @@ echo cleaning up and deleting files...
 
 ::open project file
 echo _____________________
-if %viewpdf%==1 (
+if %dpdf%==1 (
 	echo opening %project%.pdf...
 	%project%.pdf
 )
 
+::ONLY FOR BRAIN
+echo _____________________
+::move pictures to image folder
+for /f %%a in ('dir /b ^| findstr "png"') do move /Y %%a images/
+::move all images to article folder
+xcopy /S /Y images "../syscarut/articles/115/images"
+
 ::ask if user wants to rerun the script
 echo _____________________
-set /p rerun=rerun script? yes[1] or no[2]:
+set /p rerun=rerun script? yes[1] or no[2]: 
 if %rerun% equ 1 (
 	set renewdefaults=0
 	build.bat
 )
-
 ::return expansion variable to normal
 endlocal

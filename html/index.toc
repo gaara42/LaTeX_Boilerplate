@@ -1,0 +1,11 @@
+\contentsline {chapter}{\textbf {2013.05.20}}{4}{chapter*.2}
+\contentsline {section}{analyzing OPIDs for brain readout}{4}{section*.3}
+\contentsline {chapter}{\textbf {2013.05.22}}{5}{chapter*.4}
+\contentsline {section}{mining the visual system for algorithms}{5}{section*.5}
+\contentsline {section}{simulating neural systems}{5}{section*.7}
+\contentsline {chapter}{\textbf {2013.05.24 [draft]}}{7}{chapter*.9}
+\contentsline {section}{optical readout of brain data}{7}{section*.10}
+\contentsline {section}{equation test}{7}{section*.12}
+\contentsline {chapter}{References}{9}{section*.13}
+\contentsline {chapter}{Index}{11}{chapter*.14}
+\contentsline {chapter}{Footnotes}{12}{chapter*.15}

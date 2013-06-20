@@ -1,0 +1,62 @@
+% biafra ahanonu
+% latex_boilerplate
+% updated: 2013.04.30
+%_______BIOINFOMATICS_______
+% Automatic fasta formatting
+\newcommand{\fasta}[2]{
+#1
+\begin{spacing}{0}{\tiny\seqsplit{#2}}\end{spacing}\vspace{1em}
+}
+%_______LIST_______
+% Automatic list creation!
+\NewDocumentCommand \lbpitemize {> { \SplitList { , } } m }{%
+	\begin{itemize}
+	{\footnotesize
+		\ProcessList {#1} {\myref }
+	}
+	\end{itemize}
+ }
+\NewDocumentCommand{\myref}{m}{
+	\item \llidx{#1}{}
+}
+%_______CODE_______
+% Use to include a code file in the text
+\renewcommand{\lstlistingname}{{\color{red}Code}}
+\DeclareCaptionFont{white}{ \color{white} }
+\DeclareCaptionFormat{listing}{
+  \parbox{\textwidth}{{\color{red}#1}#2#3}
+}
+% \captionsetup[lstlisting]{
+	% format=listing, labelfont=red, textfont=black, singlelinecheck=false, margin=0pt, font={bf,footnotesize} 
+% }
+\newcommand{\includecode}[6][c]{
+	\lstinputlisting[caption=#3, escapechar=,label=code:#4,firstline=#5, lastline=#6]{#2}
+}
+%_______EQUATION_______
+\newcommand{\lbpeq}[3]{
+	\begin{equation}
+		\label{eq:#2}
+		#1
+	\end{equation}
+}
+%_______LINK_______
+\makeatletter
+\let\oldhref=\href
+\renewcommand{\href}[2]{\oldhref{#1}{{\color{red}#2}}}
+\makeatother
+% \renewcommand\UrlFont{\ttfamily\color{red}}
+% \renewcommand{\href}[2]{{\color{red}\hyper@linkurl{\Hurl{#2}}{\Hurl{#1}}}}
+% \DeclareRobustCommand{\href}{\hyper@normalise\href@}
+% \renewcommand{\href}[2]{}
+% \newcommand\hreffootnote@[2]{\footnote{\hyper@linkurl{\Hurl{#2}}{#1}}}
+% \DeclareRobustCommand{\hreffootnote}{\hyper@normalise\hreffootnote@}
+%_______ANSWERS_______
+% Switch on/off answers
+\newcommand{\answers}[1]{{\color{blue}#1}}
+%_______SEPARATING_LINE_______
+%Make a line for separating in-text sections
+\newcommand*\lbpsepline{
+	\begin{center}
+		\rule[1ex]{.5\textwidth}{.5pt}
+	\end{center}
+}

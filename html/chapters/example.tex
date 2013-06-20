@@ -1,0 +1,48 @@
+%biafra ahanonu
+%updated: 2013.05.27
+
+\lchapter{2013.05.20}
+
+\section{analyzing OPIDs for brain readout} % (fold)
+\label{sub:analyzing_opids_for_brain_readout}
+
+	\href{http://web.media.mit.edu/~yael/}{Yael Maguire} came by class a couple weeks ago to chat about using RFID or other wireless technologies (e.g. \href{http://en.wikipedia.org/wiki/Optical\_RFID}{optical RFID})
+	to measure brain activity.\footnote{Test footnote} The chief reason for this is that using electrode or other physical channels to extract information out of the brain would not scale properly if you want to measure hundreds,
+	thousands, or millions of neurons. Many of the ideas were pretty neat,
+	but i wanted to do a quick calculation about whether you could feasibly \emph{fit} nano-OPIDs into the brain, assuming the other technical hurdles were worked out.
+
+	The basic schematic for the chip (in a \emph{best} case scenario) was about \emph{10x10x5 μm = 5e-16 m\textsuperscript{3}}. Assuming that the human brain contains about 10\textsuperscript{11} neurons, we have \emph{5e-16 m\textsuperscript{3} * 10\textsuperscript{11} neurons =
+	5e-05 m\textsuperscript{3}} in total volume for our chips if we want to record from every neuron in the brain.
+	\href{http://hypertextbook.com/facts/2001/ViktoriyaShchupak.shtml}{Human brain volume} is \textasciitilde{}1450 cm\textsuperscript{3} = 0.00145 m\textsuperscript{3}. So if we want to calculate the amount of space that our chips would take up: \emph{5e-05 m\textsuperscript{3}/0.00145 m\textsuperscript{3}} = \textbf{\textasciitilde{}3.4\% of total brain volume}.
+
+	That might not seem like a lot, but for a system as delicately balanced as the brain, that could cause serious problems, the least of which are experimental artifacts. I'll try to contact a neurologist or search through the literature on brain tumor sizes that cause serious problems to see how this distributed increase in brain volume would disrupt behavior.
+
+\lchapter{2013.05.22}
+
+	\section{mining the visual system for algorithms}
+
+		In \href{http://www.stanford.edu/class/cs379c/}{cs379c} we talked with \href{http://www.coxlab.org/}{David Cox} over at Harvard (check out some of his \href{http://www.coxlab.org/projects/subprojects/advanced\_electrode\_positioning/}{awesome work}!). He works with the rodent visual system in the hopes of mining it for better computer vision algorithms and has developed some pretty sweet methods. Of the questions asked, the one pertaining to how the BRAIN initiative would help him with his algorithms proved quite informative. He mentioned that the focus on more neurons should be complimented by a focus on imaging the \emph{same} neuron for longer periods of time. I asked briefly about what information he would gain,
+		or how he would adapt his models, should be gain access to this data---the implication was that if you could simulate the data you would get, how would this guide the technology you needed to build. He noted that this might not be the best use of time, but upon prompting him about the development of the nervous system, such as the formation of \href{http://en.wikipedia.org/wiki/Ocular\_dominance\_column}{ocular dominance columns}, he stated that it might help inform whether to look at the development of individual elements within a model as it was trained to recognize particular objects.
+
+		David also mentioned \href{http://en.wikipedia.org/wiki/Echo\_state\_network}{echo state networks}. Not super familiar with them, but will have to look into it more! There is also the possibility of using \href{http://www.nature.com/news/2009/090527/full/459492a.html}{marmoset's as model organisms}, which might help bridge the current gap between primates and lower mammals as funding for chimp and other primate research declines. And the recent hype over CLARITY\citep{chung2013structural} raises the question of whether traditional brain slicing (embodied by such companies as \href{http://www.neuroscienceassociates.com/}{NeuroScience Associates}
+		and \href{http://fdneurotech.com/}{FD NeuroTechnologies}) will decline.
+		Given the apparent difficulty of CLARITY, for simple histological checks there shouldn't be a worry in the medium-term.
+
+		\fig{images/CLARITY.jpg}{Example of the CLARITY technique in action, it allows viewing of stains in the brain without the need to slice it into many sections, potentially allowing for better localization of proteins, etc.}{chung2013structural}
+
+	\section{simulating neural systems} % (fold)
+	\label{sub:simulating_neural_systems}
+
+		\fig{images/Stent1978.jpg}{Modeling leech movement circa 70s}{Stent1978}
+
+		A discussion yesterday about simulation of a neural system based on physiological and activity data reminded me of an excellent \emph{Science} paper from 1978 (yes, \emph{ancient} in internet-time) called \href{http://www.sciencemag.org/content/200/4348/1348.short}{Neuronal generation of the leech swimming movement}.\citep{stent1978neuronal} Read this paper for 9.29j at MIT (taught by \href{http://web.mit.edu/feelab/}{Michael Fee}, who does some \href{http://www.nature.com/nature/journal/v456/n7219/abs/nature07448.html}{amazing work with birds}) and we want to see how modeling simple circuits could lead to insight about organization of a system. While the BRAIN initiative hopes to map out many more neurons, old papers like this are instructive in guiding why we need to measure more neurons for longer periods of time and what we will gain from this.
+
+\lchapter{2013.05.24 [draft]}
+	\section{optical readout of brain data}
+		Was talking in lab to \lidx{Nobie Redmon}{} about how we would read-out the \emph{90TB/sec} of data from recording voltage in every neuron in the human brain. We weren't sure whether it would be best to go an optical route. There are several technologies that can already reach 40GB+/sec, such as \href{http://en.wikipedia.org/wiki/Passive_optical_network}{PON systems}. Cvijetic discusses the advantages of \lidx{optical orthogonal frequency division multiplexing}{} (OFDM) to increase data rates.\citep{cvijetic2012ofdm}
+
+		\fig{images/OFDMnetwork.jpg}{Example OFDM circuit}{OFDMnetwork}
+	\section{equation test}
+		The below is just a test that the equation conversion works properly, as i'll be showing my work for back-of-the-envelope calculations in the future.
+		\lbpeq{E=\frac{1}{2}\sum^{n}_{q=1}\sum^{K}_{k=1}[y_{k}(x^{q}, w)-t^{q}_{k}]^2}{sumOfSquares}{}
+		\lbpeq{M+Q_{abs}=\epsilon\sigma T_r^4+h_c(T_r-T_a)+E+C}{heat_exchange}{}
