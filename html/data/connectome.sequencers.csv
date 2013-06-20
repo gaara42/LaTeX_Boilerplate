@@ -1,0 +1,12 @@
+company,machine,read (bp),error rate,error type,USD/Gb,source
+Illumina,MiSeq,150,0.8,subsitution,502,\citep{quail2012tale}
+Ion Torrent,PGM,200,1.71,indel,1000,"\citep{quail2012tale,loman2012performance}"
+PacBio\footnote{The high error rate rules this one out at the moment even though it has a preferable read length.},RS,1000,12.86,CG deletion,2000,"\citep{quail2012tale,glenn2011field}"
+Illumina\footnote{It has been observed that the GA read error rate is dependent on base position.},GAIIx,150,0.76,subsitution,148,\citep{quail2012tale}
+Illumina,HiSeq 2000,150,0.26,subsitution,41,\citep{quail2012tale}
+454,GS Jr. Titanium,400,1,indel,22000,\citep{glenn2011field}
+Life Technologies,Starlight,1000,NA,NA,NA,\citep{glenn2011field}
+454,FLX Titanium,400,1,indel,12400,\citep{glenn2011field}
+454, FLX+,700,1,indel,7000,\citep{glenn2011field}
+Helicos,,35,NA,NA,NA,\citep{glenn2011field}
+SOLiD,4,50,0.06,A-T bias,110,\citep{glenn2011field}

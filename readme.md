@@ -136,7 +136,8 @@ Go to your personal LaTeX projects directory (or wherever) and clone the reposit
 
 <!-- * TODO Improved organization of  -->
 <!-- * TODO Added working example of latex conversion with pandoc -->
-<!-- * Updated `build.sh` to be at same functional level as `build.bat`.  -->
+* Added `csvsimple` tables to html code.
+* Implicitly call `tex4ht` parameters (e.g. `\usepackage[html,imgdir:images/,fn-in]{tex4ht}`) in `packages.tex` for htlatex and changed command line call to `ht latex` to account for this. This helps avoid errors due to passing options via args in the commandline. (2013.06.20)
 * Updated `build.sh` to bring it in line with `build.bat` (actually, its technically a couple steps ahead...but bash>>>batch, so no surprise). They should be updated concurrently going forward. (2013.06.19)
 * Major update: separated code into html and pdf branches. Tried to maintain them in a single code base, but that proved difficult and they each have their own advantages (esp. the need to greater simplicity in the html code). These will likely be merged once i simplify the pdf codebase. The html version has been tested with `htlatex` only, tex2page and others will be implemented in the future. `build.bat` has been updated to reflect this change, asking for the directory and automatically switching to the correct TeX version (htlatex for html and xelatex for pdf). At the moment, the html branch is based on a personal project and will be scrubbed/generalized in the future. (2013.06.19)
 * Fixed problem with setting output to display with `bibtex`, updated `lbpindex` references to `lidx`, moved `xcolor` package around to avoid problems of setting it with table, changed `\includecode` to remove caption errors. (2013.06.19)

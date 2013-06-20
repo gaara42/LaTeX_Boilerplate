@@ -3,19 +3,21 @@
 
 \lchapter{2013.05.20}
 
-\section{analyzing OPIDs for brain readout} % (fold)
-\label{sub:analyzing_opids_for_brain_readout}
+	\section{analyzing OPIDs for brain readout} % (fold)
+	\label{sub:analyzing_opids_for_brain_readout}
 
-	\href{http://web.media.mit.edu/~yael/}{Yael Maguire} came by class a couple weeks ago to chat about using RFID or other wireless technologies (e.g. \href{http://en.wikipedia.org/wiki/Optical\_RFID}{optical RFID})
-	to measure brain activity.\footnote{Test footnote} The chief reason for this is that using electrode or other physical channels to extract information out of the brain would not scale properly if you want to measure hundreds,
-	thousands, or millions of neurons. Many of the ideas were pretty neat,
-	but i wanted to do a quick calculation about whether you could feasibly \emph{fit} nano-OPIDs into the brain, assuming the other technical hurdles were worked out.
+		\csvautotabular{data/connectome.sequencers.csv}
 
-	The basic schematic for the chip (in a \emph{best} case scenario) was about \emph{10x10x5 μm = 5e-16 m\textsuperscript{3}}. Assuming that the human brain contains about 10\textsuperscript{11} neurons, we have \emph{5e-16 m\textsuperscript{3} * 10\textsuperscript{11} neurons =
-	5e-05 m\textsuperscript{3}} in total volume for our chips if we want to record from every neuron in the brain.
-	\href{http://hypertextbook.com/facts/2001/ViktoriyaShchupak.shtml}{Human brain volume} is \textasciitilde{}1450 cm\textsuperscript{3} = 0.00145 m\textsuperscript{3}. So if we want to calculate the amount of space that our chips would take up: \emph{5e-05 m\textsuperscript{3}/0.00145 m\textsuperscript{3}} = \textbf{\textasciitilde{}3.4\% of total brain volume}.
+		\href{http://web.media.mit.edu/~yael/}{Yael Maguire} came by class a couple weeks ago to chat about using RFID or other wireless technologies (e.g. \href{http://en.wikipedia.org/wiki/Optical\_RFID}{optical RFID})
+		to measure brain activity.\footnote{Test footnote} The chief reason for this is that using electrode or other physical channels to extract information out of the brain would not scale properly if you want to measure hundreds,
+		thousands, or millions of neurons. Many of the ideas were pretty neat,
+		but i wanted to do a quick calculation about whether you could feasibly \emph{fit} nano-OPIDs into the brain, assuming the other technical hurdles were worked out.
 
-	That might not seem like a lot, but for a system as delicately balanced as the brain, that could cause serious problems, the least of which are experimental artifacts. I'll try to contact a neurologist or search through the literature on brain tumor sizes that cause serious problems to see how this distributed increase in brain volume would disrupt behavior.
+		The basic schematic for the chip (in a \emph{best} case scenario) was about \emph{10x10x5 μm = 5e-16 m\textsuperscript{3}}. Assuming that the human brain contains about 10\textsuperscript{11} neurons, we have \emph{5e-16 m\textsuperscript{3} * 10\textsuperscript{11} neurons =
+		5e-05 m\textsuperscript{3}} in total volume for our chips if we want to record from every neuron in the brain.
+		\href{http://hypertextbook.com/facts/2001/ViktoriyaShchupak.shtml}{Human brain volume} is \textasciitilde{}1450 cm\textsuperscript{3} = 0.00145 m\textsuperscript{3}. So if we want to calculate the amount of space that our chips would take up: \emph{5e-05 m\textsuperscript{3}/0.00145 m\textsuperscript{3}} = \textbf{\textasciitilde{}3.4\% of total brain volume}.
+
+		That might not seem like a lot, but for a system as delicately balanced as the brain, that could cause serious problems, the least of which are experimental artifacts. I'll try to contact a neurologist or search through the literature on brain tumor sizes that cause serious problems to see how this distributed increase in brain volume would disrupt behavior.
 
 \lchapter{2013.05.22}
 
@@ -23,6 +25,8 @@
 
 		In \href{http://www.stanford.edu/class/cs379c/}{cs379c} we talked with \href{http://www.coxlab.org/}{David Cox} over at Harvard (check out some of his \href{http://www.coxlab.org/projects/subprojects/advanced\_electrode\_positioning/}{awesome work}!). He works with the rodent visual system in the hopes of mining it for better computer vision algorithms and has developed some pretty sweet methods. Of the questions asked, the one pertaining to how the BRAIN initiative would help him with his algorithms proved quite informative. He mentioned that the focus on more neurons should be complimented by a focus on imaging the \emph{same} neuron for longer periods of time. I asked briefly about what information he would gain,
 		or how he would adapt his models, should be gain access to this data---the implication was that if you could simulate the data you would get, how would this guide the technology you needed to build. He noted that this might not be the best use of time, but upon prompting him about the development of the nervous system, such as the formation of \href{http://en.wikipedia.org/wiki/Ocular\_dominance\_column}{ocular dominance columns}, he stated that it might help inform whether to look at the development of individual elements within a model as it was trained to recognize particular objects.
+
+		\csvautotabular{data/activity.DNAPs.csv}
 
 		David also mentioned \href{http://en.wikipedia.org/wiki/Echo\_state\_network}{echo state networks}. Not super familiar with them, but will have to look into it more! There is also the possibility of using \href{http://www.nature.com/news/2009/090527/full/459492a.html}{marmoset's as model organisms}, which might help bridge the current gap between primates and lower mammals as funding for chimp and other primate research declines. And the recent hype over CLARITY\citep{chung2013structural} raises the question of whether traditional brain slicing (embodied by such companies as \href{http://www.neuroscienceassociates.com/}{NeuroScience Associates}
 		and \href{http://fdneurotech.com/}{FD NeuroTechnologies}) will decline.

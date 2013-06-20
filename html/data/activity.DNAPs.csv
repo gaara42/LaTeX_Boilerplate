@@ -1,0 +1,14 @@
+DNAP,errors/bp,processivity,bases/min,ions,source
+Taq\footnote{Properties are an average of source info},2.00E-04,20.6,4829,NA,\citep{langhorst2012polbase}
+$\Phi$29,3.00E-06,70,11760,NA,\citep{langhorst2012polbase}
+T4,2.00E-08,1130,13044,NA,\citep{langhorst2012polbase}
+Dpo4,1.50E-04,NA,228,"Ca$^{++}$, Mn$^{++}$, Mg$^{++}$",\citep{langhorst2012polbase}
+T7,2.60E-07,1622,13404,NA,\citep{langhorst2012polbase}
+Human Pol alpha,5.00E-05,230.5,45,Ca$^{++}$,\citep{langhorst2012polbase}
+Pfu,1.30E-06,10,1500,NA,\citep{langhorst2012polbase}
+KOD1,1.46E-06,300,8280,NA,\citep{langhorst2012polbase}
+Tth\footnote{Switch fron DNA to RNA template in presence of Mn},7.70E-05,8600,21000,"Mn$^{++}$, Mg$^{++}$",\citep{langhorst2012polbase}
+Bst,1.50E-05,NA,NA,NA,\citep{langhorst2012polbase}
+Pow,7.40E-07,NA,NA,NA,\citep{langhorst2012polbase}
+PGBD Pol I,2.70E-06,NA,1380,NA,\citep{langhorst2012polbase}
+Pab Pol I,6.60E-07,NA,NA,NA,\citep{langhorst2012polbase}

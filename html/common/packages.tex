@@ -6,6 +6,9 @@
 %Declare type, book is just one
 %a4 is better looking, remove if in USA
 \documentclass[oneside,12pt,a4paper]{book}%a4paper
+% to get around bash issues, implicitly load tex4ht options
+% http://www.tug.org/applications/tex4ht/mn-commands.html
+\usepackage[html,imgdir:images/,fn-in]{tex4ht}
 %_____________________
 %FUNCTIONS
 %Use key packages for more advanced macros
@@ -49,6 +52,12 @@
 % \usepackage[table]{xcolor}
 %Make a table that splits itself across multiple pages
 % \usepackage{longtable}
+%generate table from csv
+\usepackage{csvsimple}
+% allow use of % in csv
+\newcommand{\csvloopx}[2][]{\csvloop{#1,#2}}
+\newcommand{\csvautotabularx}[2][]{\csvloopx[#1]{autotabular={#2}}}
+\newcommand{\respectpercent}{\catcode`\%=12\relax}
 %_____________________
 %GRAPHICS/IMAGE
 \usepackage{graphicx}
@@ -97,7 +106,7 @@
 %Split arbitrarily long text to multiple lines
 % \usepackage{seqsplit}
 % Flush footnotes
-% \usepackage[hang,flushmargin]{footmisc} 
+% \usepackage[hang,flushmargin]{footmisc}
 % Lipsum included for filler text
 % \usepackage{lipsum}
 % For strike outs
@@ -133,7 +142,7 @@
 %FONTS
 %___Helvetica, use pdfLaTeX
 % \usepackage[T1]{fontenc}
-% \usepackage{helvet}	
+% \usepackage{helvet}
 %Set base font for document to sans-serif
 %TURN OFF if using Futura or fontspec with XeLaTeX
 % \renewcommand{\familydefault}{\sfdefault}

@@ -27,7 +27,8 @@ getDir(){
 	# 	echo 'incorrect input, try again.'
 	# 	getDir
 	# fi
-	read -p "directory? " -i $texType -e usrDir
+	if [[ -z $usrDir ]]; then usrDir=$texType; fi
+	read -p "directory? " -i $usrDir -e usrDir
 	cd $usrDir
 	echo $( pwd )
 	separator
@@ -94,23 +95,25 @@ setDefaultValues(){
 	displayDefaultValues
 }
 removeTempFiles(){
+	separator
 	#If temp files exist, delete them
 	echo "cleaning up $project.* files..."
-	echo $( find . -name "*.aux" -delete )
 	find . -name "*.aux" -delete
-	find . -type f -name "index.*" -not -name "*.tex" -not -name "*.html"
-	for file in `find -type f $project.* | egrep -v $savefiles`; do
+	# find . -type f -name "index.*" -not -name "*.tex" -not -name "*.html"
+	for file in `find $project.* | egrep -v $savefiles`; do
 		rm -f $file
 	done
 }
 buildHtmlFile(){
+	separator
 	echo $tex $projectfile
 	# compile references
+	echo "building references"
 	for (( build = 0; build <= 2; build++ )); do
-		latex $output $project
-		bibtex $boutput $project
+		latex $output $project >> $project.logs
+		bibtex $boutput $project >> $project.logs
 	done
-	# set htlatex options
+	# set htlatex options, now set in packages.tex
 	# fn-in puts footnotes at the end in the main html file
 	htmlops="html,imgdir:images/,fn-in"
 	htmlops2=""
@@ -126,10 +129,11 @@ buildHtmlFile(){
 			rm zindex.*
 			makeindex -o ${project}.ind ${project}.4dx
 		fi
+		if [[ $tex == 'htlatex' ]]; then tex='ht latex';fi
 		if [[ $texoutput == 1 ]]; then
-			$tex $project.tex $htmlops $htmlops2
+			$tex $project.tex
 		elif [[ $texoutput == 0 ]]; then
-			$tex $project.tex $htmlops $htmlops2 > $project.logs
+			$tex $project.tex >> $project.logs
 		fi
 	done
 }

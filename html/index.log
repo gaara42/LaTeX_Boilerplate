@@ -1,12 +1,18 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=latex 2013.5.27)  20 JUN 2013 08:42
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=latex 2013.5.27)  20 JUN 2013 22:57
 entering extended mode
-**\makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx\HCode\def\HCod
-e##1{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.{\g
-@addto@macro\@documentclasshook{\RequirePackage[#1,html]{tex4ht}}\let\HCode\doc
-umentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname te
-x4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{\HC
-ode}{\documentstyle[tex4ht]}}}\makeatother\HCode html.a.b.c.\input  index.tex
+**index.tex
 (C:\Users\B\Dropbox\github\latex_boilerplate\html\index.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
 \@input{common/packages.aux}
 (C:\Users\B\Dropbox\github\latex_boilerplate\html\common/packages.tex
 (C:\Users\B\Software\Portable\MikTeX\tex\latex\base\book.cls
@@ -288,12 +294,29 @@ Package: xparse 2013/03/12 v4467 L3 Experimental document command parser
 \l__xparse_processor_int=\count131
 \l__xparse_v_nesting_int=\count132
 )
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\csvsimple\csvsimple.sty
+Package: csvsimple 2012/11/08 version 1.06 LaTeX CSV file processing
+
+(C:\Users\B\Software\Portable\MikTeX\tex\latex\pgf\utilities\pgfkeys.sty
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\pgf\utilities\pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks20
+\pgfkeys@temptoks=\toks21
+
+(C:\Users\B\Software\Portable\MikTeX\tex\generic\pgf\utilities\pgfkeysfiltered.
+code.tex
+\pgfkeys@tmptoks=\toks22
+)))
+\csv@file=\read1
+\c@csvinputline=\count133
+\c@csvrow=\count134
+\c@csvcol=\count135
+)
 (C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
 (C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
-\KV@toks@=\toks20
+\KV@toks@=\toks23
 )
 (C:\Users\B\Software\Portable\MikTeX\tex\latex\graphics\graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
@@ -326,7 +349,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \caption@parindent=\dimen152
 \caption@hangindent=\dimen153
 )
-\c@ContinuedFloat=\count133
+\c@ContinuedFloat=\count136
 )
 (C:\Users\B\Software\Portable\MikTeX\tex\latex\was\gensymb.sty
 Package: gensymb 2003/07/02 v1.0 (WaS)
@@ -336,14 +359,14 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 )
 (C:\Users\B\Software\Portable\MikTeX\tex\latex\tools\multicol.sty
 Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
-\c@tracingmulticols=\count134
+\c@tracingmulticols=\count137
 \mult@box=\box43
 \multicol@leftmargin=\dimen154
-\c@unbalance=\count135
-\c@collectmore=\count136
-\doublecol@number=\count137
-\multicoltolerance=\count138
-\multicolpretolerance=\count139
+\c@unbalance=\count138
+\c@collectmore=\count139
+\doublecol@number=\count140
+\multicoltolerance=\count141
+\multicolpretolerance=\count142
 \full@width=\dimen155
 \page@free=\dimen156
 \premulticols=\dimen157
@@ -373,14 +396,14 @@ Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \@tempa=\box64
 \@tempa=\box65
 \@tempa=\box66
-\c@columnbadness=\count140
-\c@finalcolumnbadness=\count141
+\c@columnbadness=\count143
+\c@finalcolumnbadness=\count144
 \last@try=\dimen159
 \multicolovershoot=\dimen160
 \multicolundershoot=\dimen161
 \mult@nat@firstbox=\box67
 \colbreak@box=\box68
-\multicol@sort@counter=\count142
+\multicol@sort@counter=\count145
 )
 (C:\Users\B\Software\Portable\MikTeX\tex\latex\datetime\datetime.sty
 Package: datetime 2010/09/21 v2.58 Date Time Package
@@ -390,48 +413,48 @@ Package: fmtcount 2012/10/24 v2.02
 
 (C:\Users\B\Software\Portable\MikTeX\tex\latex\etoolbox\etoolbox.sty
 Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
-\etb@tempcnta=\count143
+\etb@tempcnta=\count146
 )
 (C:\Users\B\Software\Portable\MikTeX\tex\latex\fmtcount\fcprefix.sty
 Package: fcprefix 2012/09/28
 
 (C:\Users\B\Software\Portable\MikTeX\tex\latex\fmtcount\fcnumparser.sty
 Package: fcnumparser 2012/09/28
-\fc@digit@counter=\count144
+\fc@digit@counter=\count147
 ))
-\c@padzeroesN=\count145
-\fc@tmpcatcode=\count146
-\@DT@modctr=\count147
-\@ordinalctr=\count148
-\@orgargctr=\count149
-\@strctr=\count150
-\@tmpstrctr=\count151
-\@DT@loopN=\count152
-\@DT@X=\count153
+\c@padzeroesN=\count148
+\fc@tmpcatcode=\count149
+\@DT@modctr=\count150
+\@ordinalctr=\count151
+\@orgargctr=\count152
+\@strctr=\count153
+\@tmpstrctr=\count154
+\@DT@loopN=\count155
+\@DT@X=\count156
 
 (C:\Users\B\Software\Portable\MikTeX\tex\latex\fmtcount\fc-english.def
 File: fc-english.def 2012/06/18
 ))
-\@day=\count154
-\@month=\count155
-\@year=\count156
-\c@HOUR=\count157
-\c@HOURXII=\count158
-\c@MINUTE=\count159
-\c@TOHOUR=\count160
-\c@TOMINUTE=\count161
-\c@SECOND=\count162
-\currenthour=\count163
-\currentminute=\count164
-\currentsecond=\count165
+\@day=\count157
+\@month=\count158
+\@year=\count159
+\c@HOUR=\count160
+\c@HOURXII=\count161
+\c@MINUTE=\count162
+\c@TOHOUR=\count163
+\c@TOMINUTE=\count164
+\c@SECOND=\count165
+\currenthour=\count166
+\currentminute=\count167
+\currentsecond=\count168
 Package datetime Info: No datetime.cfg file found, using default settings on in
 put line 292.
-\@dtctr=\count166
-\dayofyear=\count167
-\dayofweek=\count168
+\@dtctr=\count169
+\dayofyear=\count170
+\dayofweek=\count171
 LaTeX Info: Redefining \today on input line 724.
-\dt@a=\toks21
-\dt@b=\toks22
+\dt@a=\toks24
+\dt@b=\toks25
 )
 (C:\Users\B\Software\Portable\MikTeX\tex\latex\hyperref\hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
@@ -493,13 +516,13 @@ Package auxhook Warning: Cannot patch \document,
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen162
-\Hy@linkcounter=\count169
-\Hy@pagecounter=\count170
+\Hy@linkcounter=\count172
+\Hy@pagecounter=\count173
 
 (C:\Users\B\Software\Portable\MikTeX\tex\latex\hyperref\pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count171
+\Hy@SavedSpaceFactor=\count174
 
 (C:\Users\B\Software\Portable\MikTeX\tex\latex\00miktex\hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -512,7 +535,7 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count172
+\c@Hy@tempcnt=\count175
 
 (C:\Users\B\Software\Portable\MikTeX\tex\latex\ltxmisc\url.sty
 \Urlmuskip=\muskip17
@@ -520,10 +543,10 @@ Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen163
-\Fld@menulength=\count173
+\Fld@menulength=\count176
 \Field@Width=\dimen164
 \Fld@charsize=\dimen165
-\Field@toks=\toks23
+\Field@toks=\toks26
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -533,7 +556,7 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count174
+\Hy@abspage=\count177
 
 
 Package hyperref Message: Stopped early.
@@ -548,15 +571,15 @@ Package hyperref Info: tex4ht is already loaded.
 )
 
 Package hyperref Warning: Unexpected value for option `hidelinks'
-(hyperref)                is ignored on input line 131.
+(hyperref)                is ignored on input line 140.
 
-Package hyperref Info: Option `colorlinks' set `true' on input line 131.
+Package hyperref Info: Option `colorlinks' set `true' on input line 140.
 (C:\Users\B\Software\Portable\MikTeX\tex\latex\natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip57
 \bibsep=\skip58
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count175
+\c@NAT@ctr=\count178
 )
 (C:\Users\B\Software\Portable\MikTeX\tex\latex\base\makeidx.sty
 Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
@@ -611,7 +634,7 @@ Package color Info: Driver file: dvips.def on input line 130.
 File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
 --- needs --- tex4ht index ---
-\tmp:cnt=\count176
+\tmp:cnt=\count179
 (C:\Users\B\Dropbox\github\latex_boilerplate\html\index.tmp)
 \tmp:dim=\skip59
 --------------------------------------
@@ -692,8 +715,8 @@ on `imgdir:.../'
 (C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\html4-math.4ht
 version 2009-05-18-23:01
 )
-\:tokwrite=\toks24
-\:tokpage=\toks25
+\:tokwrite=\toks27
+\:tokpage=\toks28
 --------------------------------------
 --- Note --- for back links to toc, use the command line option `sections+'
 --------------------------------------
@@ -743,9 +766,7 @@ ommand line option `enumerate-'
 --- Note --- for bitmap framebox'es, use the command line option `pic-framebox'
 
 --------------------------------------
---------------------------------------
---- Note --- for inline footnotes use command line option `fn-in'
---------------------------------------
+\fn:box=\box69
 --------------------------------------
 --- Note --- for tracing of latex font commands, use the command line option `f
 onts'
@@ -916,7 +937,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (C:\Users\B\Software\Portable\MikTeX\tex\generic\oberdiek\gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count177
+\c@section@level=\count180
 )
 (C:\Users\B\Software\Portable\MikTeX\tex\generic\tex4ht\nameref.4ht
 version 2010-09-04-21:02
@@ -1049,7 +1070,7 @@ Package gensymb Info: Using \Omega for \ohm on input line 17.
 
 Package gensymb Warning: Not defining \micro.
 
-\AtBeginShipoutBox=\box69
+\AtBeginShipoutBox=\box70
 Package hyperref Info: Link coloring ON on input line 17.
 LaTeX Info: Redefining \ref on input line 17.
 LaTeX Info: Redefining \pageref on input line 17.
@@ -1093,64 +1114,64 @@ Missing character: There is no ¼ in font cmti12!
 
 [4
 
-] [5
+] [5] [6
 
-] [6
+] [7] [8
 
 ]
-l.31 --- TeX4ht warning --- Cannot determine size of graphic in images/CLARITY.
+l.35 --- TeX4ht warning --- Cannot determine size of graphic in images/CLARITY.
 jpg (no BoundingBox) ---
-l. 31 --- needs --- images/CLARITY.jpg ---
-[7
+l. 35 --- needs --- images/CLARITY.jpg ---
+[9
 
-] [8
-
-] [9
-
-]
-l.36 --- TeX4ht warning --- Cannot determine size of graphic in images/Stent197
-8.jpg (no BoundingBox) ---
-l. 36 --- needs --- images/Stent1978.jpg ---
-[10
+] [10
 
 ] [11
 
-] [12
+]
+l.40 --- TeX4ht warning --- Cannot determine size of graphic in images/Stent197
+8.jpg (no BoundingBox) ---
+l. 40 --- needs --- images/Stent1978.jpg ---
+[12
 
 ] [13
 
+] [14
+
+] [15
+
 ]
-l.44 --- TeX4ht warning --- Cannot determine size of graphic in images/OFDMnetw
+l.48 --- TeX4ht warning --- Cannot determine size of graphic in images/OFDMnetw
 ork.jpg (no BoundingBox) ---
-l. 44 --- needs --- images/OFDMnetwork.jpg ---
-[14
+l. 48 --- needs --- images/OFDMnetwork.jpg ---
+[16
 
 ]
-l. 47 Writing index.idv[1] (index0x.png)
-l. 48 Writing index.idv[2] (index1x.png)
-) [15
+l. 51 Writing index.idv[1] (index0x.png)
+l. 52 Writing index.idv[2] (index1x.png)
+) [17
 
-] [16
+] [18
 
 ]
 (C:\Users\B\Dropbox\github\latex_boilerplate\html\common/references.tex
-[17
-
-] (C:\Users\B\Dropbox\github\latex_boilerplate\html\index.bbl [18]))
 [19
 
-] (C:\Users\B\Dropbox\github\latex_boilerplate\html\common/index.tex
-[20
-
-] (C:\Users\B\Dropbox\github\latex_boilerplate\html\index.ind [21
-
-] [22
+] (C:\Users\B\Dropbox\github\latex_boilerplate\html\index.bbl [20] [21
 
 ]))
-(C:\Users\B\Dropbox\github\latex_boilerplate\html\common/footnote.tex [23])
+[22] (C:\Users\B\Dropbox\github\latex_boilerplate\html\common/index.tex
+[23
+
+] (C:\Users\B\Dropbox\github\latex_boilerplate\html\index.ind [24
+
+] [25
+
+]))
+(C:\Users\B\Dropbox\github\latex_boilerplate\html\common/footnote.tex [26])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 49.
 
-[24
+[27
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
@@ -1161,12 +1182,12 @@ Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 49.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 49.
  ) 
 Here is how much of TeX's memory you used:
- 17367 strings out of 493922
- 272475 string characters out of 3144115
- 478409 words of memory out of 3000000
- 20259 multiletter control sequences out of 15000+200000
+ 18028 strings out of 493922
+ 286952 string characters out of 3144115
+ 501400 words of memory out of 3000000
+ 20901 multiletter control sequences out of 15000+200000
  11701 words of font info for 42 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 44i,6n,46p,5202b,556s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 48i,13n,62p,4741b,577s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on index.dvi (27 pages, 42428 bytes).
+Output written on index.dvi (30 pages, 79532 bytes).

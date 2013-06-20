@@ -94,13 +94,14 @@ if %tex%==xelatex goto pdfloop
 
 ::htlatex section
 :htmlout
+	if %tex% == htlatex set tex=ht latex
 	echo %tex% %project%.tex
 	::switch for if user wants output
 	latex %output% %project%
 	bibtex %boutput% %project%
 	latex %output% %project%
 	bibtex %boutput% %project%
-	::set some options for htlatex
+	::set some options for htlatex, now set in packages.tex
 	SET htmlops="html,imgdir:images/,fn-in"
 	SET htmlops2=""
 	::"xhtml,fn-in,imgdir:images/"" -cunihtf -utf8"
@@ -114,8 +115,8 @@ if %tex%==xelatex goto pdfloop
 			del zindex.*
 			makeindex -o %project%.ind %project%.4dx
 		)
-		if %checkout% equ 1 %tex% %project%.tex %htmlops% %htmlops2%
-		if %checkout% equ 0 %tex% %project%.tex %htmlops% %htmlops2% > %project%.logs
+		if %checkout% equ 1 %tex% %project%.tex
+		if %checkout% equ 0 %tex% %project%.tex > %project%.logs
 		set /a build=%build%+1
 	goto loophtml
 ::goto end
