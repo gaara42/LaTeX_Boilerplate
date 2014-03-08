@@ -45,7 +45,7 @@ getDefaultValues(){
 	# tex=xelatex
 	if [[ -z $renewdefaults ]]; then
 		output="-interaction=batchmode"
-		boutput="--quiet"
+		boutput="--terse"
 		rerun=1
 		viewpdf=0
 		dcheck=1

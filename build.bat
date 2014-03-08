@@ -5,6 +5,10 @@
 ::turn off echoing of commands
 @echo off
 cls
+::define separaters
+set largeDivider=_______________________________________________________________
+set plusDivider=++++++++++++++++++
+set miniDivider=_______
 ::allow proper variable setting
 setlocal enabledelayedexpansion
 ::welcome
@@ -18,12 +22,14 @@ if not defined texType (
 if %texType%==html set tex=htlatex
 if %texType%==pdf set tex=xelatex
 ::move to directory
-set /p usrDir=directory?
+if not defined usrDir (
+	set /p usrDir=directory?
+)
 cd %usrDir%
 ::display current directory and title
 pwd
 title %cd%
-echo _____________________
+echo %largeDivider%
 
 ::defaults
 if not defined renewdefaults (
@@ -85,8 +91,8 @@ if %dcheck% equ 0 (
 for /f %%a in ('dir /b ^| findstr /v %savefiles% ^| findstr /r %project%') do del %%a
 
 ::compile several times to get all references/links/indices correct
-echo _____________________
-set /a build=0
+echo %largeDivider%
+set /a build=1
 echo %tex%
 if %tex%==htlatex goto htmlout
 if %tex%==pdflatex goto pdfloop
@@ -97,6 +103,8 @@ if %tex%==xelatex goto pdfloop
 	if %tex% == htlatex set tex=ht latex
 	echo %tex% %project%.tex
 	::switch for if user wants output
+	echo %miniDivider%
+	echo building bibtex...
 	latex %output% %project%
 	bibtex %boutput% %project%
 	latex %output% %project%
@@ -106,11 +114,13 @@ if %tex%==xelatex goto pdfloop
 	SET htmlops2=""
 	::"xhtml,fn-in,imgdir:images/"" -cunihtf -utf8"
 	:loophtml
-		echo _____________________
+		echo.
+		echo %largeDivider%
 		echo build #%build%
-		if %build%==2 goto end
+		if %build%==4 goto end
 		if %build%==1 (
-			echo '\def\filename{{%project%}{idx}{4dx}{ind}} \input C:/Users/B/software/Portable/MikTeX/tex/generic/tex4ht/idxmake.4ht ' > zindex.tex
+			::C:/Users/B/software/Portable/MikTeX/tex/generic/tex4ht/
+			echo '\def\filename{{%project%}{idx}{4dx}{ind}} \input idxmake.4ht ' > zindex.tex
 			tex zindex.tex
 			del zindex.*
 			makeindex -o %project%.ind %project%.4dx
@@ -123,13 +133,13 @@ if %tex%==xelatex goto pdfloop
 
 ::pdflatex and xelatex section
 :pdfloop
-	if %build%==3 goto end
-	echo _____________________
+	if %build%==4 goto end
+	echo %largeDivider%
 	echo build #%build%
 	%tex% --enable-installer %output% %project%.tex /wait
-	echo +++++++
+	echo %plusDivider%
 	bibtex %boutput% %project%
-	echo +++++++
+	echo %plusDivider%
 	makeindex %project%.idx
 	set /a build=%build%+1
 goto pdfloop
@@ -138,7 +148,7 @@ goto pdfloop
 :end
 
 ::remove all project files, save the below
-echo _____________________
+echo %largeDivider%
 echo cleaning up and deleting files...
 	@echo on
 	for /f %%a in ('dir /b ^| findstr /v %savefiles% ^| findstr /r %project%') do del %%a
@@ -148,15 +158,15 @@ echo cleaning up and deleting files...
 	echo done with cleanup
 
 ::open project file
-echo _____________________
+echo %largeDivider%
 if %viewpdf%==1 (
 	echo opening %project%.pdf...
 	%project%.pdf
 )
 
 ::ask if user wants to rerun the script
-echo _____________________
-set /p rerun=rerun script? yes[1] or no[2]:
+echo %largeDivider%
+set /p rerun=rerun script? yes[1] or no[0]:
 if %rerun% equ 1 (
 	set renewdefaults=0
 	build.bat

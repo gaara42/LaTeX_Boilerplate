@@ -1,0 +1,26 @@
+% biafra ahanonu
+% latex_boilerplate
+% updated: 2013.06.16
+% file contains new macros for figures, chapters, etc. most are appended with lbp as a pseudo-namespace.
+
+%
+\newcommand*{\startYear}{2013}
+\newcommand*{\endYear}{2013}
+% http://tex.stackexchange.com/questions/56207/how-to-convert-a-one-digit-number-to-a-two-digit-number
+\newcommand\twoDigits[1]{%
+   \ifnum#1<10 0#1\else #1\fi
+}
+\newcommand{\inputChapters}{
+    \foreach \YYYY in {\startYear,...,\endYear}{%
+        \foreach \MM in {12,11,...,1}{%
+            \foreach \DD in {31,30,...,1}{%
+                \edef\FileName{\YYYY.\twoDigits{\MM}.\twoDigits{\DD}}
+                \IfFileExists{chapters/\FileName} {%
+                    \include{chapters/\FileName}%
+                }{%
+                        % no file, do nothing
+                }%
+            }%
+        }%
+    }%
+}

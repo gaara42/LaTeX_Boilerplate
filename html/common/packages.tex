@@ -4,7 +4,7 @@
 %This document contains all the package loaded, add/remove at will
 %_____________________
 %Declare type, book is just one
-%a4 is better looking, remove if in USA
+%a4 is better looking, remove if in the USA
 \documentclass[oneside,12pt,a4paper]{book}%a4paper
 % to get around bash issues, implicitly load tex4ht options
 % http://www.tug.org/applications/tex4ht/mn-commands.html
@@ -23,6 +23,8 @@
 % \usepackage[nomessages]{fp}% http://ctan.org/pkg/fp
 %_____________________
 %CODING
+% foreach loop
+\usepackage{tikz}
 %Include code
 % \usepackage{minted}
 % \usepackage{listings}
@@ -171,9 +173,10 @@
 \usepackage[numbers,sort&compress]{natbib}
 %\usepackage{biblatex}
 %Rename the bibliography to whatever name you want
-\renewcommand\bibname{References}
+\renewcommand\bibname{references}
 %__________________
 %INDEX
 %Used to make indices with: \index{term}
 \usepackage{makeidx}
 \makeindex
+\renewcommand\indexname{index}

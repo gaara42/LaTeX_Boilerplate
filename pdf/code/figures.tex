@@ -71,31 +71,32 @@
 	label/.estore in = \multiFigLabel,
 	capTitle/.estore in = \multiFigCapTitle,
 	capDes/.estore in = \multiFigCapDesc,
+	figwidth/.estore in = \multiFigWidth,
 }
 %Create a new multi figure command
 \newcommand\multifig[9][]{
 	%command looks like \multiFigure[key=val,...]{panelTitle}{imageLocation}..
-	%example: 
+	%example:
 		%\multiFigure[label=11,capTitle=Hello,capDes=World]{fig}{images/Map.jpg}{fig}{images/Map.jpg}{fig}{images/Map.jpg}{fig}{images/Map.jpg}
 	%First arg ([key=val,...]) passed to pgfkeys, get new variables back, circumvent the 9 argument rule for \newcommand
 	\pgfkeys{/multiFigure, #1}
 	\begin{figure*}[ht!]
 	\begin{center}
-		\subfloat[#2]{\includegraphics[width=.45\textwidth,scale=1.0]{#3}}  
+		\subfloat[#2]{\includegraphics[width=\multiFigWidth,scale=1.0]{#3}}
 		\ifthenelse{\isempty{#5}}{}{
-		\subfloat[#4]{\includegraphics[width=.45\textwidth,scale=1.0]{#5}}
+		\subfloat[#4]{\includegraphics[width=\multiFigWidth,scale=1.0]{#5}}
 		}\\
 		\ifthenelse{\isempty{#7}}{}{
-		\subfloat[#6]{\includegraphics[width=.45\textwidth,scale=1.0]{#7}}
-		} 
+		\subfloat[#6]{\includegraphics[width=\multiFigWidth,scale=1.0]{#7}}
+		}
 		\ifthenelse{\isempty{#8}}{}{
-		\subfloat[#8]{\includegraphics[width=.45\textwidth,scale=1.0]{#9}}
+		\subfloat[#8]{\includegraphics[width=\multiFigWidth,scale=1.0]{#9}}
 		}
 		\captionsetup{labelformat=empty}
 		\caption{\textbf{{\color{red}Figure \ref{fig:\multiFigLabel}} |  \multiFigCapTitle}\\ \multiFigCapDesc}
 		\label{fig:\multiFigLabel}
 	\end{center}
-	\end{figure*}	
+	\end{figure*}
 }
 %_______Watermark_______
 \newcommand\watermarkpic[1]{

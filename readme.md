@@ -7,14 +7,16 @@
 ## Features
 
 * Functional LaTeX project, download and start typesetting right away. Tested and works with MiKTeX.
-* Automated compiling via scripts for Windows (`build.bat`) and Unix (`build.sh`) users.
+* Automated compiling via scripts for Windows (`build.bat`) and Unix/OSX (`build.sh`) users. Allows for both pdf and html output.
 * Fully commented with explanations for more difficult to understand elements.
 * Various new commands to allow standardization of figure style and other common formatting.
 	* Functional \newcommand example implemented with `pgfkeys`.
 * BibTex example file and example citation usage inside main text.
 * Index implemented with example indices implemented in text (i.e. `\index{}`)
 * Automatic list creation, answer key code, and equation citation.
-* Much more!
+* Table creation straight from .csv files using `csvsimple`.
+* Automated inclusion of all files in a directory.
+* And more!
 
 ## Installation
 
@@ -39,7 +41,7 @@ Go to your personal LaTeX projects directory (or wherever) and clone the reposit
 
 * After installing LaTeX distribution of choice, need to add the folder (e.g. `\MikTeX\miktex\bin`) containing `pdflatex.exe`, `bibtex.exe`, `makeindex` and `xelatex.exe` to you `PATH` environment variable.
 
-### Linux
+### Linux/OSX
 
 * Install [MikTeX](https://help.ubuntu.com/community/MiktexPackageManager) or another LaTeX distribution.
 * `pdflatex`, `bibtex`, `makeindex` and `xelatex` should be callable from command-line automatically.
@@ -136,7 +138,8 @@ Go to your personal LaTeX projects directory (or wherever) and clone the reposit
 
 <!-- * TODO Improved organization of  -->
 <!-- * TODO Added working example of latex conversion with pandoc -->
-* Added `csvsimple` tables to html code.
+* Added `tikz` package to implement `foreach` loop for inputing files automatically from a folder, see `html/code/io.tex`. (2013.07.02)
+* Added `csvsimple` tables to html code. (2013.06.20)
 * Implicitly call `tex4ht` parameters (e.g. `\usepackage[html,imgdir:images/,fn-in]{tex4ht}`) in `packages.tex` for htlatex and changed command line call to `ht latex` to account for this. This helps avoid errors due to passing options via args in the commandline. (2013.06.20)
 * Updated `build.sh` to bring it in line with `build.bat` (actually, its technically a couple steps ahead...but bash>>>batch, so no surprise). They should be updated concurrently going forward. (2013.06.19)
 * Major update: separated code into html and pdf branches. Tried to maintain them in a single code base, but that proved difficult and they each have their own advantages (esp. the need to greater simplicity in the html code). These will likely be merged once i simplify the pdf codebase. The html version has been tested with `htlatex` only, tex2page and others will be implemented in the future. `build.bat` has been updated to reflect this change, asking for the directory and automatically switching to the correct TeX version (htlatex for html and xelatex for pdf). At the moment, the html branch is based on a personal project and will be scrubbed/generalized in the future. (2013.06.19)
