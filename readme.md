@@ -50,47 +50,47 @@ Go to your personal LaTeX projects directory (or wherever) and clone the reposit
 
 * The option to compile between `xelatex`, `pdflatex`, and `htlatex` is given in `build.(bat/sh)`. `xelatex` and `pdflatex` will both give a PDF output while `htlatex` will produce a html webpage. `xelatex` is best for non-standard fonts.
 
-###xelatex
+### xelatex
 
 * Nothing to see here (for now!).
 
-###pdflatex
+### pdflatex
 
 * Comment out `\usepackage{fontspec}` and `\setmainfont{Futura Std Book}` in `package.tex` to avoid errors.
 
-###htlatex
+### htlatex
 
 * See `pdflatex`. In addition, may need to remove figures or other special floats if errors occur.
 
-####tex4ht.env
+#### tex4ht.env
 
 * This file should be changed to improve the equation image quality output.
 * Add a space in front of `<dvipng>` and `<\dvipng>` and change `-D 72` to `-D 150` to get higher quality image. Then remove space from in front of `<convert>` and `</convert>` so it is not used.
 
 ## Instructions
 
-###Overview
+### Overview
 
 * The project has been tested on MiKTeX 2.9 and compiles fine (`project.tex`). If there are errors, open an issue and let me know.
 * Open `project.tex`, contains the main TeX mark-up and references to other files. `\include` is used to add other project files.
 
-###Build
+### Build
 
 * User is prompted to choose whether you want output; suppressed using `-interaction=batchmode` for (xe)latex or `--quiet` for bibtex.
 * Removes .aux and other files then builds with (xe)latex and bibtex. Opens .pdf afterwards.
 * Windows: double-click `build.bat`.
 * Unix: open Terminal, cd to directory, and type `bash build.sh`.
 
-###Shortcuts
+### Shortcuts
 
 * Sublime Text 2 shortcuts have been added to the `\extras\sublime_text` folder.
 
-###Fonts
+### Fonts
 
 * `\common\packages.tex` contains packages used and settings to get particular fonts working, example include Helvetica and Futura.
 * Under `\assets` is `FuturaStd-Book.otf`, which must be installed on the system to use xelatex for custom `Futura Std Book` font seen in `packages.tex`.
 
-###Pre-loaded
+### Pre-loaded
 
 * These files are loaded before `\begin{document}`.
 * `common\packages.tex` contains all the packages to be loaded.
@@ -100,7 +100,7 @@ Go to your personal LaTeX projects directory (or wherever) and clone the reposit
 	* `pgfkeys` is used to circumvent the 9-argument problem with \newcommand.
 * `common\thanks.tex` is for copyright, thanks and update date tracking.
 
-###Main Body
+### Main Body
 
 * These files are loaded in `\begin{document}` environment.
 * `\chapters\citations.tex` includes some citations to figures, tables, and code.
@@ -114,20 +114,20 @@ Go to your personal LaTeX projects directory (or wherever) and clone the reposit
 * `\images` has example images used in `\appendix\figures.tex` to create figures.
 * `sections\section1.tex` is an example file to create a new section.
 
-###Bibliography
+### Bibliography
 
 * Bibliography implemented in BibTeX, more extensible than manually entering citations.
 * Run BibTeX twice before running (Xe)LaTeX to have citations included (automatically done with build scripts).
 * `citations\cited.bib` is the bibtex file, contains book, article, online and other example source citations.
 * `citations\Citations.xlsx` is an Excel spreadsheet that allows quick formatting of sources into LaTeX format if source online doesn't provide .bib link.
 
-###Index
+### Index
 
 * Index implemented using `makeidx` package and `makeindex`.
 * `citations\index.tex` contains the TeX code to include in the main project file.
 * `\lbpindex{term}{}` is the new command to help add `term` at specified position while also adding it to the index, e.g. `term\index{term}`.
 
-###Conversion
+### Conversion
 
 * I have included batch files (bash scripts forthecoming) to easily convert HTML to LaTeX and vis-versa. More Batch/Bash scripts to come for other common conversions.
 * Windows: make sure to include the `pandoc` directory (e.g. `C:\Program Files\Pandoc`) in your `PATH` environment variable.
@@ -177,7 +177,7 @@ Go to your personal LaTeX projects directory (or wherever) and clone the reposit
 * Addition of conditional statement to figure to dynamically generate different multi-panel figures.
 * Bash scripts for pandoc conversion.
 
-##License
+## License
 
 Biafra Ahanonu
 
