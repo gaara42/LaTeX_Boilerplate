@@ -1,6 +1,8 @@
 ::biafra ahanonu
 ::updated: 2013.06.19
 ::latex_boilerplate
+:: changelog
+	:: 2021.11.09 [12:32:57] - switch htlatex (depreciated) to make4ht
 
 ::turn off echoing of commands
 @echo off
@@ -100,7 +102,7 @@ if %tex%==xelatex goto pdfloop
 
 ::htlatex section
 :htmlout
-	if %tex% == htlatex set tex=ht latex
+	if %tex% == htlatex set tex=make4ht -ux
 	echo %tex% %project%.tex
 	::switch for if user wants output
 	echo %miniDivider%
