@@ -127,8 +127,8 @@ if %tex%==xelatex goto pdfloop
 			del zindex.*
 			makeindex -o %project%.ind %project%.4dx
 		)
-		if %checkout% equ 1 %tex% %project%.tex
-		if %checkout% equ 0 %tex% %project%.tex > %project%.logs
+		if %checkout% equ 1 %tex% %project%.tex "fn-in"
+		if %checkout% equ 0 %tex% %project%.tex "fn-in" > %project%.logs
 		set /a build=%build%+1
 	goto loophtml
 ::goto end
